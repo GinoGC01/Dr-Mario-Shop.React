@@ -55,3 +55,11 @@ return(
   </span>
 )
 }
+
+export function FavoriteHeart(){
+  return(
+    <span className="material-symbols-outlined favorite-product">
+      favorite
+    </span>
+  )
+}

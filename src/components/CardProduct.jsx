@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { AddCart, RemoveCart } from "../components/Icons";
+import { AddCart, FavoriteHeart, RemoveCart } from "../components/Icons";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import { useProductsVisited } from "../Hooks/useProductsVisited";
@@ -31,6 +31,17 @@ export default function CardProduct({
           : "Card animate__animated animate__fadeIn animate__faster"
       }
     >
+      <section className="favorite-section__Card">
+        <span
+          className={
+            selected
+              ? "material-symbols-outlined favorite-product-selected"
+              : "material-symbols-outlined favorite-product"
+          }
+        >
+          favorite
+        </span>
+      </section>
       <div
         className={
           selected ? "img-content__Card-selected" : "img-content__Card"

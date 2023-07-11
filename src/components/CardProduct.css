@@ -52,6 +52,28 @@
   background-color: var(--background);
 }
 
+.favorite-section__Card{
+  position: relative;
+  width: 100%;
+}
+
+.favorite-product, .favorite-product-selected{
+  position: absolute;
+  font-size: 1em;
+  color: #040a0f;
+  top: 2px;
+  right: 5px;
+  z-index: 1000;
+}
+
+.favorite-product-selected{
+  font-size: 1.3em;
+  top: 10px;
+  right: 12px;
+}
+
+
+
 /* img */
 
 .img-content__Card {
