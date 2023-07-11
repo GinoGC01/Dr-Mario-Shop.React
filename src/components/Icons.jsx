@@ -26,8 +26,32 @@ export function AddCart(){
 
 export function RemoveCart(){
   return(
-    <span className="material-symbols-outlined">
+    <span className="material-symbols-outlined  remove-cart">
       remove_shopping_cart
     </span>
   )
+}
+
+export function FiltersIcon(){
+  return(
+    <span className="material-symbols-outlined">
+      filter_alt
+    </span>
+  )
+}
+
+export function ArrowDown (){
+  return(
+    <span className="material-symbols-outlined">
+      expand_more
+    </span>
+  )
+}
+
+export function RigthArrow(){
+return(
+  <span className="material-symbols-outlined">
+    arrow_right_alt
+  </span>
+)
 }

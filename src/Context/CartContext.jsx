@@ -1,21 +1,22 @@
-import { createContext} from "react";
+import { createContext, useState } from "react";
 import { useReduceCart } from "../Hooks/useReduceCart";
 
-export const CartContext = createContext()
+export const CartContext = createContext();
 
-export function CartProvider ({children}){
-    const {state, addToCart, removeFromCart, clearCart, restartToCart} = useReduceCart()
+export function CartProvider({ children }) {
+  const { state, addToCart, removeFromCart, clearCart, restartToCart } = useReduceCart();
 
-    return(
-        <CartContext.Provider value={{
-            cart: state,
-            addToCart,
-            removeFromCart,
-            restartToCart,
-            clearCart
-
-        }}>
-            {children}
-        </CartContext.Provider>
-    )
+  return (
+    <CartContext.Provider
+      value={{
+        cart: state,
+        addToCart,
+        removeFromCart,
+        restartToCart,
+        clearCart,
+      }}
+    >
+      {children}
+    </CartContext.Provider>
+  );
 }

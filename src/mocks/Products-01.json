@@ -1,7 +1,7 @@
 [
     {
         "id":"101",
-        "cantidad":1,
+        "cantidadDisponible":4,
         "categoria": "buzos",
         "nombre": "Buzo Gildan Premium",
         "stock": true,
@@ -20,7 +20,7 @@
     },
     {
         "id":"102",
-        "cantidad":1,
+        "cantidadDisponible":1,
         "categoria": "buzos",
         "nombre": "Buzo Gildan Premium",
         "stock": true,
@@ -39,7 +39,7 @@
     },
     {
         "id":"103",
-        "cantidad":1,
+        "cantidadDisponible":1,
         "categoria": "buzos",
         "nombre": "Buzo M&M green",
         "stock": true,
@@ -58,7 +58,7 @@
     },
     {
         "id":"104",
-        "cantidad":1,
+        "cantidadDisponible":1,
         "categoria": "buzos",
         "nombre": "Buzo Athleta",
         "stock": true,
@@ -77,7 +77,7 @@
     },
     {
         "id":"105",
-        "cantidad":1,
+        "cantidadDisponible":1,
         "categoria": "buzos",
         "nombre": "Red Rose",
         "stock": true,
@@ -96,7 +96,7 @@
     },
     {
         "id":"106",
-        "cantidad":1,
+        "cantidadDisponible":1,
         "categoria": "camperas",
         "nombre": "Campera Goodie",
         "stock": true,
@@ -115,7 +115,7 @@
     },
     {
         "id":"107",
-        "cantidad":1,
+        "cantidadDisponible":1,
         "categoria": "buzos",
         "nombre": "Buzo Navi",
         "stock": true,
@@ -134,7 +134,7 @@
     },
     {
         "id":"108",
-        "cantidad":1,
+        "cantidadDisponible":1,
         "categoria": "buzos",
         "nombre": "Buzo Harms",
         "stock": true,
@@ -153,7 +153,7 @@
     },
     {
         "id":"109",
-        "cantidad":1,
+        "cantidadDisponible":1,
         "categoria": "camperas",
         "nombre": "Campera NIKE",
         "stock": true,
@@ -172,7 +172,7 @@
     },
     {
         "id":"110",
-        "cantidad":1,
+        "cantidadDisponible":1,
         "categoria": "buzos",
         "nombre": "Buzo SQUON",
         "stock": true,
@@ -191,7 +191,7 @@
     },
     {
         "id":"111",
-        "cantidad":1,
+        "cantidadDisponible":1,
         "categoria": "buzos",
         "nombre": "Buzo Gildan Premium",
         "stock": true,
@@ -210,7 +210,7 @@
     },
     {
         "id":"112",
-        "cantidad":1,
+        "cantidadDisponible":1,
         "categoria": "buzos",
         "nombre": "Buzo Turth-Black",
         "stock": true,
@@ -229,7 +229,7 @@
     },
     {
         "id":"113",
-        "cantidad":1,
+        "cantidadDisponible":1,
         "categoria": "buzos",
         "nombre": "Buzo Independent",
         "stock": true,
@@ -248,7 +248,7 @@
     },
     {
         "id":"114",
-        "cantidad":1,
+        "cantidadDisponible":1,
         "categoria": "buzos",
         "nombre": "Buzo Snoop OVERSIZE",
         "stock": true,
@@ -267,7 +267,7 @@
     },
     {
         "id":"115",
-        "cantidad":1,
+        "cantidadDisponible":1,
         "categoria": "buzos",
         "nombre": "Buzo Hawks",
         "stock": true,
@@ -286,7 +286,7 @@
     },
     {
         "id":"116",
-        "cantidad":1,
+        "cantidadDisponible":1,
         "categoria": "buzos",
         "nombre": "Buzo Colonia",
         "stock": true,
@@ -305,7 +305,7 @@
     },
     {
         "id":"117",
-        "cantidad":1,
+        "cantidadDisponible":1,
         "categoria": "buzos",
         "nombre": "Buzo Tek",
         "stock": true,
@@ -324,7 +324,7 @@
     },
     {
         "id":"118",
-        "cantidad":1,
+        "cantidadDisponible":1,
         "categoria": "buzos",
         "nombre": "47'-Blue",
         "stock": true,
@@ -343,7 +343,7 @@
     },
     {
         "id":"119",
-        "cantidad":1,
+        "cantidadDisponible":1,
         "categoria": "buzos",
         "nombre": "Buzo Champion Bebaly",
         "stock": true,
@@ -362,7 +362,7 @@
     },
     {
         "id":"120",
-        "cantidad":1,
+        "cantidadDisponible":1,
         "categoria": "buzos",
         "nombre": "Buzo Everlast Red",
         "stock": true,
@@ -381,7 +381,7 @@
     },
     {
         "id":"121",
-        "cantidad":1,
+        "cantidadDisponible":1,
         "categoria": "buzos",
         "nombre": "Buzo Gildan Bordo",
         "stock": true,
@@ -400,7 +400,7 @@
     },
     {
         "id":"122",
-        "cantidad":1,
+        "cantidadDisponible":1,
         "categoria": "buzos",
         "nombre": "Buzo NASA - POINT",
         "stock": true,
@@ -419,7 +419,7 @@
     },
     {
         "id":"123",
-        "cantidad":1,
+        "cantidadDisponible":1,
         "categoria": "camperas",
         "nombre": "Buzo Truss",
         "stock": true,
@@ -438,7 +438,7 @@
     },
     {
         "id":"124",
-        "cantidad":1,
+        "cantidadDisponible":1,
         "categoria": "buzos",
         "nombre": "Buzo Praire Mountain",
         "stock": true,
@@ -457,7 +457,7 @@
     },
     {
         "id":"125",
-        "cantidad":1,
+        "cantidadDisponible":1,
         "categoria": "buzos",
         "nombre": "Buzo Troilee",
         "stock": true,
@@ -476,7 +476,7 @@
     },
     {
         "id":"126",
-        "cantidad":1,
+        "cantidadDisponible":1,
         "categoria": "buzos",
         "nombre": "Buzo Custom - Blue Galaxy",
         "stock": true,
@@ -495,7 +495,7 @@
     },
     {
         "id":"127",
-        "cantidad":1,
+        "cantidadDisponible":1,
         "categoria": "buzos",
         "nombre": "Buzo Hawaii",
         "stock": true,
@@ -514,7 +514,7 @@
     },
     {
         "id":"128",
-        "cantidad":1,
+        "cantidadDisponible":1,
         "categoria": "buzos",
         "nombre": "White NIKE",
         "stock": true,
@@ -533,7 +533,7 @@
     },
     {
         "id":"129",
-        "cantidad":1,
+        "cantidadDisponible":1,
         "categoria": "camperas",
         "nombre": "Campera Gildan",
         "stock": true,
@@ -552,7 +552,7 @@
     },
     {
         "id":"130",
-        "cantidad":1,
+        "cantidadDisponible":1,
         "categoria": "buzos",
         "nombre": "Buzo Gildan",
         "stock": true,
@@ -571,7 +571,7 @@
     },
     {
         "id":"131",
-        "cantidad":1,
+        "cantidadDisponible":1,
         "categoria": "buzos",
         "nombre": "Buzo Canvas",
         "stock": true,
@@ -590,7 +590,7 @@
     },
     {
         "id":"132",
-        "cantidad":1,
+        "cantidadDisponible":1,
         "categoria": "camperas",
         "nombre": "Campera GAP",
         "stock": true,
@@ -609,7 +609,7 @@
     },
     {
         "id":"133",
-        "cantidad":1,
+        "cantidadDisponible":1,
         "categoria": "buzos",
         "nombre": "Buzo Army",
         "stock": true,
@@ -628,7 +628,7 @@
     },
     {
         "id":"134",
-        "cantidad":1,
+        "cantidadDisponible":1,
         "categoria": "buzos",
         "nombre": "Buzo Pernant",
         "stock": true,
@@ -647,7 +647,7 @@
     },
     {
         "id":"135",
-        "cantidad":1,
+        "cantidadDisponible":1,
         "categoria": "buzos",
         "nombre": "Buzo Gildan Premium",
         "stock": true,
@@ -666,7 +666,7 @@
     },
     {
         "id":"136",
-        "cantidad":1,
+        "cantidadDisponible":1,
         "categoria": "buzos",
         "nombre": "Buzo Port",
         "stock": true,
@@ -685,7 +685,7 @@
     },
     {
         "id":"137",
-        "cantidad":1,
+        "cantidadDisponible":1,
         "categoria": "buzos",
         "nombre": "Buzo Green",
         "stock": true,
@@ -704,7 +704,7 @@
     },
     {
         "id":"138",
-        "cantidad":1,
+        "cantidadDisponible":1,
         "categoria": "buzos",
         "nombre": "Buzo Champion",
         "stock": true,
@@ -723,7 +723,7 @@
     },
     {
         "id":"139",
-        "cantidad":1,
+        "cantidadDisponible":1,
         "categoria": "buzos",
         "nombre": "Buzps Hanes",
         "stock": true,
@@ -742,7 +742,7 @@
     },
     {
         "id":"140",
-        "cantidad":1,
+        "cantidadDisponible":1,
         "categoria": "buzos",
         "nombre": "Buzo Champion",
         "stock": true,
@@ -761,7 +761,7 @@
     },
     {
         "id":"141",
-        "cantidad":1,
+        "cantidadDisponible":1,
         "categoria": "buzos",
         "nombre": "Buzo Vanta-Black",
         "stock": true,
@@ -780,7 +780,7 @@
     },
     {
         "id":"142",
-        "cantidad":1,
+        "cantidadDisponible":1,
         "categoria": "buzos",
         "nombre": "Buzo Urban",
         "stock": true,
@@ -799,7 +799,7 @@
     },
     {
         "id":"143",
-        "cantidad":1,
+        "cantidadDisponible":1,
         "categoria": "buzos",
         "nombre": "Buzo Company",
         "stock": true,
@@ -818,7 +818,7 @@
     },
     {
         "id":"144",
-        "cantidad":1,
+        "cantidadDisponible":1,
         "categoria": "camperas",
         "nombre": "Campera Avengers",
         "stock": true,
@@ -837,7 +837,7 @@
     },
     {
         "id":"145",
-        "cantidad":1,
+        "cantidadDisponible":1,
         "categoria": "camperas",
         "nombre": "Campera Junk",
         "stock": true,
@@ -856,7 +856,7 @@
     },
     {
         "id":"146",
-        "cantidad":1,
+        "cantidadDisponible":1,
         "categoria": "buzos",
         "nombre": "Buzo American",
         "stock": true,
@@ -875,7 +875,7 @@
     },
     {
         "id":"147",
-        "cantidad":1,
+        "cantidadDisponible":1,
         "categoria": "buzos",
         "nombre": "Buzo Nike",
         "stock": false,
@@ -894,7 +894,7 @@
     },
     {
         "id":"148",
-        "cantidad":1,
+        "cantidadDisponible":1,
         "categoria": "buzos",
         "nombre": "Buzo Jerzees",
         "stock": true,

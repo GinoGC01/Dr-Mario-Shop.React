@@ -1,9 +1,12 @@
+import { useState } from "react"
 import {useFilters} from "../Hooks/useFilters"
+import { FiltersIcon, ArrowDown} from './Icons'
 
 
 export function Filters(){
 
     const {CATEGORY_ID, PRICE_ID, MARCA_ID, TALLE_ID, setFilters, filters} = useFilters()
+    const [filtrarPor, setFiltrarPor] = useState(false)
 
     function handleCategory(e){
         const value = e.target.value
@@ -36,11 +39,21 @@ export function Filters(){
             talle:value
         }))  
     }
+
+    function handleFiltersContent (){
+      setFiltrarPor(!filtrarPor)
+    }
   
     return(
       <header>
-        <form>
-            <div>
+        <h2>Sección de productos</h2>
+        <button onClick={handleFiltersContent} className="button-filters">
+          <FiltersIcon/>
+          Filtros
+          {filtrarPor && <ArrowDown/>}
+        </button>
+        <form className={filtrarPor ? "filters__content-on" : "filters__content"}>
+            <div className="category">
               <label htmlFor={CATEGORY_ID}>Categorias</label>
               <select name={CATEGORY_ID} id={CATEGORY_ID} onChange={handleCategory}>
                 <option value="all">Todas</option>
@@ -49,13 +62,13 @@ export function Filters(){
               </select>
             </div>
   
-            <div>
-              <label htmlFor={PRICE_ID}>Precio desde:</label>
-              <input type="range" name={PRICE_ID} id={PRICE_ID} min={5000} max={25000} onChange={handleCPrice} />
+            <div className="price-from">
+              <label htmlFor={PRICE_ID}>Precio desde</label>
+              <input type="range" name={PRICE_ID} id={PRICE_ID} min={12500} max={25000} onChange={handleCPrice} value={filters.minPrice} />
               <span>${filters.minPrice}</span>
             </div>
   
-            <div>
+            <div className="merch">
               <label htmlFor={MARCA_ID}>Marca</label>
               <select name={MARCA_ID} id={MARCA_ID} onChange={handleMarca}>
                 <option value="all">Todas</option>
@@ -70,7 +83,7 @@ export function Filters(){
               </select>
             </div>
 
-            <div>
+            <div className="talle">
              <label htmlFor={TALLE_ID}>Talles</label>
              <select name={TALLE_ID} id={TALLE_ID} onChange={handleTalle}>
                 <option value="all">Todos</option>

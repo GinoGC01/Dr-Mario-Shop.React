@@ -20,7 +20,15 @@
     --variable: #d941e2;
     --highlight: #efdb43;
     --select-arrow: url("data:image/svg+xml;charset=utf-8,%3C?xml version='1.0' encoding='utf-8'?%3E %3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' height='62.5' width='116.9' fill='%23efefef'%3E %3Cpath d='M115.3,1.6 C113.7,0 111.1,0 109.5,1.6 L58.5,52.7 L7.4,1.6 C5.8,0 3.2,0 1.6,1.6 C0,3.2 0,5.8 1.6,7.4 L55.5,61.3 C56.3,62.1 57.3,62.5 58.4,62.5 C59.4,62.5 60.5,62.1 61.3,61.3 L115.2,7.4 C116.9,5.8 116.9,3.2 115.3,1.6Z'/%3E %3C/svg%3E");
+
   }
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
 
 html{
     font-family: 'Roboto', sans-serif;
@@ -30,43 +38,58 @@ body{
     background-color: var(--background-body) ;
 }
 
-.Card{
+.filters__content, .filters__content-on{
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    transition: width ease-in-out .2s;
+    margin:10px  auto;
+}
+
+.filters__content-on{
+    width: 100%;
+    height: auto;
+}
+
+form > div > label{
+    color: white;
+    text-transform: uppercase;
+}
+form > div{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+}
+
+.price-from > span{
+    font-size: large;
+}
+
+.button-filters{
     display: flex;
     align-items: center;
-    gap: 1em;
-    width: 100%;
-    margin: 1em auto;
-    background-color: var(--background);
-    border-radius: 20px 0 0 20px;
+    border: none;
+    color: white;
+    padding: 5px 30px;
+    margin-bottom: 10px;
 }
 
-.img__Card {
-    width: 100px;
-    background-color: white;
-    border-radius: 20px 0 0 20px;
-    object-fit: contain;
-}
-
-.text__Card{
-    width: 100%;
-    padding: 0 5px;
-    color: var(--form-text);
-}
-
-.price__Card{
-    margin: 5px 0 10px;
-}
-
-
-
-.add-cart{
-    font-size: 1em;
+.button-filters:focus{
+    box-shadow: none;
 }
 
 .Productos{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
     margin: 0;
     padding: 0;
 }
+
 
 /* cart */
 
@@ -79,7 +102,7 @@ body{
     position: fixed;
     top: 0;
     right: 0;
-    z-index: 1000;
+    z-index: 3000;
 
     display: flex;
     justify-content: center;
@@ -102,16 +125,19 @@ body{
     position: fixed;
     top: 0;
     right: 0;
+    z-index: 1000;
 
     display: none;
     flex-direction: column;
     justify-content: space-between;
 
-    width: 230px;
     padding: 10px;
     max-height: 100vh;
-    background-color:#161f27ce;
+    background-color:#161f27fa;
     overflow: scroll;
+}
+.aside__Cart::-webkit-scrollbar{
+    height: 0;
 }
 
 .input-button__Cart:checked ~ .aside__Cart{
@@ -125,12 +151,84 @@ body{
     justify-content: space-between;
 
 
-    margin: 0;
+    margin: auto;
     padding: 0;
+    width: 95%;
 }
 
 .card__aside{
     border-bottom: 1px solid white;
-    width: 80%;
+    width: 100%;
     margin-bottom: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
+
+.card__aside > img{
+    display: block;
+    width: 100%;
+    margin: auto;
+}
+
+.data__aside{
+    display: flex;
+    flex-direction: column;
+}
+
+.title-card__aside{
+    font-size: .8em;
+    display: block;
+    white-space: nowrap;
+}
+
+.text-content__aside{
+    margin: 0;
+    padding: 5px 0;
+}
+
+.cantidad{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cantidad > p > span{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.cantidad > button{
+    width: 100%;
+}
+
+
+/* productos recientes */
+
+.productos-recientes__container{
+    position: relative;
+    margin: 10px 0;
+}
+
+.container-productos__productos-recientes{
+    display: flex;
+    overflow: scroll;
+    gap: 10px;
+    padding: 10px;
+}
+
+.container-productos__productos-recientes::-webkit-scrollbar{
+    width: 0;
+    height: 5px;
+}
+
+.container-productos__productos-recientes > .Card{
+    max-width: 60%;
+    flex: 1 0 60%;
+}
+
+  .productos-recientes__container > h2{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    font-size: 1.1em;
+  }
