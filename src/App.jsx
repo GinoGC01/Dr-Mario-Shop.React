@@ -7,6 +7,7 @@ import { useFilters } from "./Hooks/useFilters";
 import { CartProvider } from "./Context/CartContext";
 import { ProductosVisitadosProvider } from "./Context/ProductsVistedContext";
 import { ProductsVisited } from "./components/ProductsVisited";
+import FavoriteProducts from "./components/FavoriteProducts";
 import "./App.css";
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       <ProductosVisitadosProvider>
         <Cart />
         <Filters />
+        <FavoriteProducts/>
         <ProductsVisited />
         <Products products={filteredProducts} />
       </ProductosVisitadosProvider>

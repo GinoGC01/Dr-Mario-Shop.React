@@ -3,12 +3,14 @@ export const ProductosVisitadosContext = createContext();
 
 export function ProductosVisitadosProvider({ children }) {
   const [productosVisitados, setProductosVisitados] = useState([]);
+  const [productosFavoritos, setProductosFavoritos] = useState([])
 
   useEffect(() => {
     const ProductVisitedInitialState =
       JSON.parse(localStorage.getItem("products-visited-Dr-Mario-IND")) || [];
     setProductosVisitados(ProductVisitedInitialState);
   }, []);
+
 
   const updateLocalStorage = (state) => {
     localStorage.setItem(
@@ -31,11 +33,34 @@ export function ProductosVisitadosProvider({ children }) {
     updateLocalStorage(newState);
   }
 
+  function AddProductosFavoritos(producto){
+    const { id } = producto;
+    const productoFavorito = productosFavoritos.findIndex(
+      (item) => item.id === id
+    );
+
+    if (productoFavorito >= 0) return;
+
+    const newState = [...productosFavoritos, { ...producto }];
+
+    setProductosFavoritos(newState);
+    updateLocalStorage(newState);
+  }
+
+  function deleteProductosFavoritos(producto){
+    const { id } = producto;
+    const newState = productosFavoritos.filter((item) => item.id !== id);
+    setProductosFavoritos(newState);
+  }
+
   return (
     <ProductosVisitadosContext.Provider
       value={{
         productosVisitados,
         handleProductosVisitados,
+        productosFavoritos,
+        AddProductosFavoritos,
+        deleteProductosFavoritos
       }}
     >
       {children}

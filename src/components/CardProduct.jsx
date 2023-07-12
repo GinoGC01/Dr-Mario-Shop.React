@@ -13,14 +13,29 @@ export default function CardProduct({
   removeFromCart,
   addToCart,
   isProductInCart,
+  isFavoriteProduct
 }) {
   const [selected, setSelected] = useState(false);
-  const { handleProductosVisitados } = useProductsVisited();
+  const { handleProductosVisitados, AddProductosFavoritos, deleteProductosFavoritos, productosFavoritos } = useProductsVisited();
 
   const handleSelected = () => {
     setSelected(!selected);
     handleProductosVisitados(product);
   };
+
+  const handleFavoriteProducts = () =>{
+
+    const {id} = product
+    const productIndex = productosFavoritos.findIndex(item => item.id === id)
+
+    if(productIndex >= 0){
+      deleteProductosFavoritos(product)
+      return
+    }
+
+    AddProductosFavoritos(product)
+
+  }
 
   return (
     <li
@@ -32,15 +47,17 @@ export default function CardProduct({
       }
     >
       <section className="favorite-section__Card">
-        <span
+        <div
           className={
             selected
-              ? "material-symbols-outlined favorite-product-selected"
-              : "material-symbols-outlined favorite-product"
+              ? "favorite-product-selected"
+              : "favorite-product"
           }
+
+          onClick={handleFavoriteProducts}
         >
-          favorite
-        </span>
+          {isFavoriteProduct ? <i className="fa-solid fa-heart animate__animated animate__rubberBand animate__fasted"></i> : <i className="fa-regular fa-heart"></i>}
+        </div>
       </section>
       <div
         className={

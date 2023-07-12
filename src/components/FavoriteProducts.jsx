@@ -1,34 +1,33 @@
-import React from "react";
-import CardProduct from "./CardProduct";
-import { useCart } from "../Hooks/useCart";
-import { RigthArrow } from "./Icons";
-import { useProductsVisited } from "../Hooks/useProductsVisited";
+import React from 'react'
+import { useProductsVisited } from '../Hooks/useProductsVisited'
+import { useCart } from '../Hooks/useCart'
+import CardProduct from './CardProduct'
+import { RigthArrow } from './Icons'
 
-export function ProductsVisited() {
-  const { addToCart, removeFromCart, cart } = useCart();
+export default function FavoriteProducts() {
 
-  const { productosVisitados, productosFavoritos} = useProductsVisited();
+    const {productosFavoritos} = useProductsVisited()
+    const { addToCart, removeFromCart, cart } = useCart();
 
-  const checkProductInCart = (product) => {
-    const check = cart.some((item) => item.id === product.id);
-    return check;
-  };
+    const checkProductInCart = (product) => {
+        const check = cart.some((item) => item.id === product.id);
+        return check;
+    };
 
-  const ckeckProductFavorite = product => {
-    const checkFavoriteProduct = productosFavoritos.some((item) => item.id === product.id);
-    return checkFavoriteProduct
-}
-
+    const ckeckProductFavorite = product => {
+        const checkFavoriteProduct = productosFavoritos.some((item) => item.id === product.id);
+        return checkFavoriteProduct
+    }
 
   return (
     <>
-      {productosVisitados.length > 0 && (
+      {productosFavoritos.length > 0 && (
         <section className="productos-recientes__container">
           <h2>
-            Productos vistos recientemente <RigthArrow />{" "}
+            Productos Favoritos <RigthArrow/>
           </h2>
           <ul className="container-productos__productos-recientes">
-            {productosVisitados
+            {productosFavoritos
               .map((product) => {
                 const isProductInCart = checkProductInCart(product);
                 const isFavoriteProduct = ckeckProductFavorite(product)
@@ -49,5 +48,5 @@ export function ProductsVisited() {
         </section>
       )}
     </>
-  );
+  )
 }
