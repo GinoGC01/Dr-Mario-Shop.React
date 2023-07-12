@@ -1,35 +1,36 @@
-export const cartInitalState = JSON.parse(localStorage.getItem("cart-Dr-Mario-Shop")) || [];
+/* eslint-disable no-fallthrough */
+export const cartInitalState = JSON.parse(localStorage.getItem('cart-Dr-Mario-Shop')) || []
 
 export const updateLocalStorage = (state) => {
-  localStorage.setItem("cart-Dr-Mario-Shop", JSON.stringify(state));
-};
+  localStorage.setItem('cart-Dr-Mario-Shop', JSON.stringify(state))
+}
 
 export const cartReducer = (state, action) => {
-  const { type: actionType, payload: actionPayload } = action;
+  const { type: actionType, payload: actionPayload } = action
 
   switch (actionType) {
-    case "ADD_TO_CART": {
-      const { id } = actionPayload;
-      const productInCartIndex = state.findIndex((item) => item.id === id);
+    case 'ADD_TO_CART': {
+      const { id } = actionPayload
+      const productInCartIndex = state.findIndex((item) => item.id === id)
 
       if (productInCartIndex >= 0) {
-        const newState = structuredClone(state);
+        const newState = structuredClone(state)
         if (newState[productInCartIndex].cantidadDisponible <= 1) {
-          updateLocalStorage(newState);
-          return newState;
+          updateLocalStorage(newState)
+          return newState
         } else if (
           newState[productInCartIndex].cantidadDisponible ===
           newState[productInCartIndex].cantidad
         ) {
-          updateLocalStorage(newState);
+          updateLocalStorage(newState)
 
-          return newState;
+          return newState
         }
 
-        newState[productInCartIndex].cantidad++;
-        updateLocalStorage(newState);
+        newState[productInCartIndex].cantidad++
+        updateLocalStorage(newState)
 
-        return newState;
+        return newState
       }
 
       const newStateadded = [
@@ -38,49 +39,49 @@ export const cartReducer = (state, action) => {
         // copia el objeto
         {
           ...actionPayload,
-          cantidad: 1,
+          cantidad: 1
         }
-      ];
-      updateLocalStorage(newStateadded);
+      ]
+      updateLocalStorage(newStateadded)
 
-      return newStateadded;
+      return newStateadded
     }
 
-    case "REMOVE_FROM_CART": {
-      const { id } = actionPayload;
-      const newState = state.filter((item) => item.id !== id);
-      updateLocalStorage(newState);
+    case 'REMOVE_FROM_CART': {
+      const { id } = actionPayload
+      const newState = state.filter((item) => item.id !== id)
+      updateLocalStorage(newState)
 
-      return newState;
+      return newState
     }
 
-    case "RESTART_FROM_CART": {
-      const { id } = actionPayload;
-      const productInCartIndex = state.findIndex((item) => item.id === id);
+    case 'RESTART_FROM_CART': {
+      const { id } = actionPayload
+      const productInCartIndex = state.findIndex((item) => item.id === id)
 
-      const newState = [...state];
+      const newState = [...state]
 
       if (newState[productInCartIndex].cantidad > 1) {
-        const newState = structuredClone(state);
-        newState[productInCartIndex].cantidad--;
-        updateLocalStorage(newState);
+        const newState = structuredClone(state)
+        newState[productInCartIndex].cantidad--
+        updateLocalStorage(newState)
 
-        return newState;
+        return newState
       }
 
       if (newState[productInCartIndex].cantidad <= 1) {
-        const newState = state.filter((item) => item.id !== id);
-        updateLocalStorage(newState);
+        const newState = state.filter((item) => item.id !== id)
+        updateLocalStorage(newState)
 
-        return newState;
+        return newState
       }
     }
 
-    case "CLEAR_CART": {
-      updateLocalStorage([]);
-      return [];
+    case 'CLEAR_CART': {
+      updateLocalStorage([])
+      return []
     }
   }
 
-  return state;
-};
+  return state
+}

@@ -1,50 +1,48 @@
-import { useState } from "react"
-import {useFilters} from "../Hooks/useFilters"
-import { FiltersIcon, ArrowDown} from './Icons'
+import React, { useState } from 'react'
+import { useFilters } from '../Hooks/useFilters'
+import { FiltersIcon, ArrowDown } from './Icons'
 
+export function Filters () {
+  const { CATEGORY_ID, PRICE_ID, MARCA_ID, TALLE_ID, setFilters, filters } = useFilters()
+  const [filtrarPor, setFiltrarPor] = useState(false)
 
-export function Filters(){
+  function handleCategory (e) {
+    const value = e.target.value
+    setFilters(prevState => ({
+      ...prevState,
+      category: value
+    }))
+  }
 
-    const {CATEGORY_ID, PRICE_ID, MARCA_ID, TALLE_ID, setFilters, filters} = useFilters()
-    const [filtrarPor, setFiltrarPor] = useState(false)
+  function handleCPrice (e) {
+    const value = e.target.value
+    setFilters(prevState => ({
+      ...prevState,
+      minPrice: value
+    }))
+  }
 
-    function handleCategory(e){
-        const value = e.target.value
-        setFilters(prevState =>({
-            ... prevState,
-            category:value
-        }))  
-    }
+  function handleMarca (e) {
+    const value = e.target.value
+    setFilters(prevState => ({
+      ...prevState,
+      marca: value
+    }))
+  }
 
-    function handleCPrice(e){
-        const value = e.target.value
-        setFilters(prevState =>({
-            ... prevState,
-            minPrice:value
-        }))  
-    }
+  function handleTalle (e) {
+    const value = e.target.value
+    setFilters(prevState => ({
+      ...prevState,
+      talle: value
+    }))
+  }
 
-    function handleMarca(e){
-        const value = e.target.value
-        setFilters(prevState =>({
-            ... prevState,
-            marca:value
-        }))  
-    }
+  function handleFiltersContent () {
+    setFiltrarPor(!filtrarPor)
+  }
 
-    function handleTalle(e){
-        const value = e.target.value
-        setFilters(prevState =>({
-            ... prevState,
-            talle:value
-        }))  
-    }
-
-    function handleFiltersContent (){
-      setFiltrarPor(!filtrarPor)
-    }
-  
-    return(
+  return (
       <header>
         <h2>Sección de productos</h2>
         <button onClick={handleFiltersContent} className="button-filters">
@@ -52,7 +50,7 @@ export function Filters(){
           Filtros
           {filtrarPor && <ArrowDown/>}
         </button>
-        <form className={filtrarPor ? "filters__content-on" : "filters__content"}>
+        <form className={filtrarPor ? 'filters__content-on' : 'filters__content'}>
             <div className="category">
               <label htmlFor={CATEGORY_ID}>Categorias</label>
               <select name={CATEGORY_ID} id={CATEGORY_ID} onChange={handleCategory}>
@@ -61,13 +59,13 @@ export function Filters(){
                 <option value="camperas">Camperas</option>
               </select>
             </div>
-  
+
             <div className="price-from">
               <label htmlFor={PRICE_ID}>Precio desde</label>
               <input type="range" name={PRICE_ID} id={PRICE_ID} min={12500} max={25000} onChange={handleCPrice} value={filters.minPrice} />
               <span>${filters.minPrice}</span>
             </div>
-  
+
             <div className="merch">
               <label htmlFor={MARCA_ID}>Marca</label>
               <select name={MARCA_ID} id={MARCA_ID} onChange={handleMarca}>
@@ -94,9 +92,9 @@ export function Filters(){
                 <option value="XXL">Talle XXL</option>
              </select>
             </div>
-  
+
           </form>
       </header>
-      
-    )
-  }
+
+  )
+}

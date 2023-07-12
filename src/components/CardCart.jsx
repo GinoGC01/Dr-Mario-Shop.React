@@ -1,26 +1,27 @@
-import { useState } from "react";
-import { useCart } from "../Hooks/useCart";
+import React, { useState } from 'react'
+import { useCart } from '../Hooks/useCart'
 import 'animate.css'
 
 export const CardCart = ({ product }) => {
-  const { restartToCart, addToCart } = useCart();
+  const { restartToCart, addToCart } = useCart()
 
-  const [quantityDisponible, setQuantityDisponible] = useState(null);
+  const [quantityDisponible, setQuantityDisponible] = useState(null)
 
-  function handleQuantity(product) {
+  function handleQuantity (product) {
     if (
       product.cantidadDisponible === 1 ||
       product.cantidadDisponible === product.cantidad
     ) {
-      setQuantityDisponible(true);
+      setQuantityDisponible(true)
     } else if (product.cantidadDisponible > 1) {
-      setQuantityDisponible(false);
-      addToCart(product);
+      setQuantityDisponible(false)
+      addToCart(product)
     }
   }
 
   return (
-    <li style={{ listStyle: "none" }} className="card__aside">
+    // eslint-disable-next-line react/react-in-jsx-scope
+    <li style={{ listStyle: 'none' }} className="card__aside">
       <img src={product.img.image01} alt={product.nombre} />
       <div className="data__aside">
         <div className="text-content__aside">
@@ -34,7 +35,7 @@ export const CardCart = ({ product }) => {
         <button
           className="add-product__aside"
           onClick={() => {
-            handleQuantity(product);
+            handleQuantity(product)
           }}
         >
           +
@@ -42,7 +43,7 @@ export const CardCart = ({ product }) => {
         <button
           className="substract-product__aside"
           onClick={() => {
-            restartToCart(product);
+            restartToCart(product)
           }}
         >
           -
@@ -52,7 +53,7 @@ export const CardCart = ({ product }) => {
             `Solo hay ${product.cantidadDisponible} disponibles`}
         </p>
         </div>
-      </div> 
+      </div>
     </li>
-  );
-};
+  )
+}

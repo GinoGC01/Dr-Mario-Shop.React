@@ -4,20 +4,19 @@ import { useCart } from '../Hooks/useCart'
 import CardProduct from './CardProduct'
 import { RigthArrow } from './Icons'
 
-export default function FavoriteProducts() {
+export default function FavoriteProducts () {
+  const { productosFavoritos } = useProductsVisited()
+  const { addToCart, removeFromCart, cart } = useCart()
 
-    const {productosFavoritos} = useProductsVisited()
-    const { addToCart, removeFromCart, cart } = useCart();
+  const checkProductInCart = (product) => {
+    const check = cart.some((item) => item.id === product.id)
+    return check
+  }
 
-    const checkProductInCart = (product) => {
-        const check = cart.some((item) => item.id === product.id);
-        return check;
-    };
-
-    const ckeckProductFavorite = product => {
-        const checkFavoriteProduct = productosFavoritos.some((item) => item.id === product.id);
-        return checkFavoriteProduct
-    }
+  const ckeckProductFavorite = product => {
+    const checkFavoriteProduct = productosFavoritos.some((item) => item.id === product.id)
+    return checkFavoriteProduct
+  }
 
   return (
     <>
@@ -29,7 +28,7 @@ export default function FavoriteProducts() {
           <ul className="container-productos__productos-recientes">
             {productosFavoritos
               .map((product) => {
-                const isProductInCart = checkProductInCart(product);
+                const isProductInCart = checkProductInCart(product)
                 const isFavoriteProduct = ckeckProductFavorite(product)
                 return (
                   <CardProduct
@@ -40,7 +39,7 @@ export default function FavoriteProducts() {
                     removeFromCart={removeFromCart}
                     isFavoriteProduct={isFavoriteProduct}
                   />
-                );
+                )
               })
               .reverse()
               .slice(0, 6)}

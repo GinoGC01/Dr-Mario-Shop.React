@@ -1,10 +1,10 @@
-import { createContext, useState } from "react";
-import { useReduceCart } from "../Hooks/useReduceCart";
+import React, { createContext } from 'react'
+import { useReduceCart } from '../Hooks/useReduceCart'
 
-export const CartContext = createContext();
+export const CartContext = createContext()
 
-export function CartProvider({ children }) {
-  const { state, addToCart, removeFromCart, clearCart, restartToCart } = useReduceCart();
+export function CartProvider ({ children }) {
+  const { state, addToCart, removeFromCart, clearCart, restartToCart } = useReduceCart()
 
   return (
     <CartContext.Provider
@@ -13,10 +13,10 @@ export function CartProvider({ children }) {
         addToCart,
         removeFromCart,
         restartToCart,
-        clearCart,
+        clearCart
       }}
     >
       {children}
     </CartContext.Provider>
-  );
+  )
 }

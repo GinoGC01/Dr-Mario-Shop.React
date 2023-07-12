@@ -1,20 +1,20 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect } from 'react'
 
-export function useQuantityProductsCart({ cart }) {
-  const [quantityProducts, setquantityProducts] = useState(0);
+export function useQuantityProductsCart ({ cart }) {
+  const [quantityProducts, setquantityProducts] = useState(0)
 
-  function handleQuantityProducts() {
+  function handleQuantityProducts () {
     const quantityProductsdone = cart.reduce(
       (acc, producto) => acc + producto.cantidad,
       0
-    );
-    setquantityProducts(quantityProductsdone);
-    return quantityProductsdone;
+    )
+    setquantityProducts(quantityProductsdone)
+    return quantityProductsdone
   }
 
   useEffect(() => {
-    handleQuantityProducts();
-  }, [cart]);
+    handleQuantityProducts()
+  }, [cart])
 
-  return { quantityProducts };
+  return { quantityProducts }
 }

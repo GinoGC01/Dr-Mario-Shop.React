@@ -1,60 +1,57 @@
-import { createContext, useEffect, useState } from "react";
-export const ProductosVisitadosContext = createContext();
+import React, { createContext, useEffect, useState } from 'react'
+export const ProductosVisitadosContext = createContext()
 
-export function ProductosVisitadosProvider({ children }) {
-  const [productosVisitados, setProductosVisitados] = useState([]);
+export function ProductosVisitadosProvider ({ children }) {
+  const [productosVisitados, setProductosVisitados] = useState([])
   const [productosFavoritos, setProductosFavoritos] = useState([])
 
   useEffect(() => {
-    const ProductVisitedInitialState = JSON.parse(localStorage.getItem("products-visited-Dr-Mario-IND")) || [];
-    setProductosVisitados(ProductVisitedInitialState);
-    const FavoritesProdcutsitialState = JSON.parse(localStorage.getItem("favorite-products-Dr-Mario-IND")) || [];
-    setProductosFavoritos(FavoritesProdcutsitialState);
-  }, []);
-
+    const ProductVisitedInitialState = JSON.parse(localStorage.getItem('products-visited-Dr-Mario-IND')) || []
+    setProductosVisitados(ProductVisitedInitialState)
+    const FavoritesProdcutsitialState = JSON.parse(localStorage.getItem('favorite-products-Dr-Mario-IND')) || []
+    setProductosFavoritos(FavoritesProdcutsitialState)
+  }, [])
 
   const updateLocalStorage = (state, storage) => {
     localStorage.setItem(
       storage,
       JSON.stringify(state)
-    );
-  };
+    )
+  }
 
-
-  function handleProductosVisitados(producto) {
-    const { id } = producto;
+  function handleProductosVisitados (producto) {
+    const { id } = producto
     const productoVisitado = productosVisitados.findIndex(
       (item) => item.id === id
-    );
+    )
 
-    if (productoVisitado >= 0) return;
+    if (productoVisitado >= 0) return
 
-    const newState = [...productosVisitados, { ...producto }];
+    const newState = [...productosVisitados, { ...producto }]
 
-    setProductosVisitados(newState);
-    updateLocalStorage(newState, "products-visited-Dr-Mario-IND");
+    setProductosVisitados(newState)
+    updateLocalStorage(newState, 'products-visited-Dr-Mario-IND')
   }
 
-  function AddProductosFavoritos(producto){
-    const { id } = producto;
+  function AddProductosFavoritos (producto) {
+    const { id } = producto
     const productoFavorito = productosFavoritos.findIndex(
       (item) => item.id === id
-    );
+    )
 
-    if (productoFavorito >= 0) return;
+    if (productoFavorito >= 0) return
 
-    const newState = [...productosFavoritos, { ...producto }];
+    const newState = [...productosFavoritos, { ...producto }]
 
-    setProductosFavoritos(newState);
-    updateLocalStorage(newState, "favorite-products-Dr-Mario-IND");
+    setProductosFavoritos(newState)
+    updateLocalStorage(newState, 'favorite-products-Dr-Mario-IND')
   }
 
-  function deleteProductosFavoritos(producto){
-    const { id } = producto;
-    const newState = productosFavoritos.filter((item) => item.id !== id);
-    setProductosFavoritos(newState);
-    updateLocalStorage(newState, "favorite-products-Dr-Mario-IND");
-
+  function deleteProductosFavoritos (producto) {
+    const { id } = producto
+    const newState = productosFavoritos.filter((item) => item.id !== id)
+    setProductosFavoritos(newState)
+    updateLocalStorage(newState, 'favorite-products-Dr-Mario-IND')
   }
 
   return (
@@ -69,5 +66,5 @@ export function ProductosVisitadosProvider({ children }) {
     >
       {children}
     </ProductosVisitadosContext.Provider>
-  );
+  )
 }
