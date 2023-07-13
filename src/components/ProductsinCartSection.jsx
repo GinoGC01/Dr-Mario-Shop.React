@@ -5,7 +5,7 @@ import { useTotalCost } from '../Hooks/useTotaCost'
 import { ProductsInCart } from './ProductsInCart'
 import { Link } from 'react-router-dom'
 
-export function ProductsinCartSection ({ openForm }) {
+export function ProductsinCartSection ({ openForm, formactive }) {
   const { cart, clearCart } = useCart()
   const { quantityProducts } = useQuantityProductsCart({ cart })
   const { totalCost } = useTotalCost({ cart })
@@ -31,19 +31,19 @@ export function ProductsinCartSection ({ openForm }) {
           ? (
           <section>
             <p>
-              Gasto total: $ <b>{totalCost}</b>{' '}
+              Gasto total: $ <b>{totalCost}</b>
             </p>
             <p>Total Productos: {quantityProducts} </p>
             <div>
               <button onClick={clearCart}>Vaciar Carrito</button>
-              <button onClick={openForm}>
-                <a href="/Carrito/#ordenDeCompra">Finalizar compra</a>
+              <button onClick={openForm} className={formactive ? 'button-finalizar-compra' : 'animate__animated animate__pulse animate__infinite animate__slow button-finalizar-compra'} disabled={!!formactive}>
+                <a href="/Carrito/#ordenDeCompra" >Finalizar compra</a>
               </button>
             </div>
           </section>
             )
           : (
-          <button>
+          <button >
             <Link to="/">Volver a la tienda</Link>
           </button>
             )}

@@ -17,7 +17,7 @@ export const CartWhitProduct = ({ cart, clearCart }) => {
           <RemoveCart />
         </button>
         <button className="completar-compra-buttons__aside">
-          <Link to="/Carrito">
+          <Link to="/Carrito/#ordenDeCompra">
             Completar compra
             <CkeckoutBuys />
           </Link>

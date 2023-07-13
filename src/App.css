@@ -317,3 +317,18 @@ form > div{
     font-size: 1.2em;
     text-transform: uppercase;
   }
+
+  .button-finalizar-compra{
+    background-color: #040a0f;
+    padding: 0;
+    width: 12em;
+    height: 3em;
+  }
+
+  .button-finalizar-compra > a{
+    color: white;
+    display: block;
+    padding: 12px;
+    width: 100%;
+    height: 100%;
+  }

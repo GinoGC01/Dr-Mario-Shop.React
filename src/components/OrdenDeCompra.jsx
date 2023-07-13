@@ -6,11 +6,13 @@ import { useIDS } from '../Hooks/useIDS'
 
 export function OrdenDeCompra ({ handleOrdenCompra }) {
   const { NAME_ID_FORCOMP, EMAIL_ID_FORCOMP, NUMERO_TEL_ID_FORCOMP, DIRECTION_ID_FORCOMP, INDICACIONES_ID_FORCOMP } = useIDS()
-  const { cart } = useCart()
+  const { cart, clearCart } = useCart()
   const { totalCost } = useTotalCost({ cart })
   const IdOrdenCompra = OrdenId()
+
   const handleFormSubmit = () => {
-    setTimeout(() => handleOrdenCompra(), 1000)
+    setTimeout(() => handleOrdenCompra(), 2000)
+    setTimeout(() => clearCart(), 2000)
   }
 
   const ordenProductos = cart.map(item => {
@@ -26,11 +28,22 @@ export function OrdenDeCompra ({ handleOrdenCompra }) {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    const { email, nombre, phone, direction, indications, productos, totalCost, idCompra } = Object.fromEntries(
+    const { email, nombre, phone, direction } = Object.fromEntries(
       new FormData(e.target)
     )
 
-    console.log(email, nombre, phone, direction, indications, productos, totalCost, idCompra)
+    if (email === '' || nombre === '' || direction === '') {
+      alert('revise los campos, por favor')
+      console.log('no se mando')
+      return false
+    } else if (!/^[0-9]{10}$/.test(phone)) {
+      alert('introduzca un número de teléfono válido')
+      console.log('no se mando')
+      return false
+    }
+    console.log('se mandó')
+    handleFormSubmit()
+    return true
   }
 
   return (
@@ -58,7 +71,7 @@ export function OrdenDeCompra ({ handleOrdenCompra }) {
       </div>
       <div>
         <label htmlFor={NUMERO_TEL_ID_FORCOMP}>Numero de teléfono</label>
-        <input type="number" id={NUMERO_TEL_ID_FORCOMP} name="phone" required />
+        <input type="number" id={NUMERO_TEL_ID_FORCOMP} name="phone" required pattern="[0-9]{10}"/>
       </div>
       <div>
         <label htmlFor={DIRECTION_ID_FORCOMP}>Dirección (para envio) </label>
@@ -68,7 +81,7 @@ export function OrdenDeCompra ({ handleOrdenCompra }) {
         <label htmlFor={INDICACIONES_ID_FORCOMP}>Indicaciones (opcional) </label>
         <textarea type="text" id={INDICACIONES_ID_FORCOMP} name="indications" />
       </div>
-      <button onClick={handleFormSubmit}>Enviar orden de compra</button>
+      <button>Enviar orden de compra</button>
     </form>
   )
 }
