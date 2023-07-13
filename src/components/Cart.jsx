@@ -1,24 +1,8 @@
 import React, { useId } from 'react'
-import { RemoveCart, ShoppBag } from './Icons'
+import { ShoppBag } from './Icons'
 import { useCart } from '../Hooks/useCart'
-import { CardCart } from './CardCart'
 import { useQuantityProductsCart } from '../Hooks/useQuantityProductsCart'
-
-const CartWhitProduct = ({ cart, clearCart }) => {
-  return (
-    <>
-      <h3>Products In cart</h3>
-      <ul className="ul__aside">
-        {cart.map((product) => {
-          return <CardCart key={product.id} product={product} />
-        })}
-      </ul>
-      <button onClick={clearCart}>
-        <RemoveCart />
-      </button>
-    </>
-  )
-}
+import { CartWhitProduct } from './CartWhitProduct'
 
 export function Cart () {
   const MENU_HAMBURGUESA_ID = useId()
@@ -42,7 +26,7 @@ export function Cart () {
         {cart.length > 0
           ? (
           <CartWhitProduct cart={cart} clearCart={clearCart} />)
-          : <p>no hay productos en el carrito :c</p>
+          : <p>No hay productos en el carrito :c</p>
         }
       </aside>
     </section>

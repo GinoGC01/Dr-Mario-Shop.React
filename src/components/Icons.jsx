@@ -63,3 +63,11 @@ export function FavoriteHeart () {
     </span>
   )
 }
+
+export function CkeckoutBuys () {
+  return (
+    <span className="material-symbols-outlined">
+      shopping_cart_checkout
+    </span>
+  )
+}

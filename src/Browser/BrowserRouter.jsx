@@ -1,10 +1,9 @@
 import React from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import CartSection from './Pages/CartSection'
-import Home from './Pages/Home'
-import './App.css'
+import CartSection from '../Pages/CartSection'
+import Home from '../Pages/Home'
 
-function App () {
+export function BrowserRouterComponent () {
   return (
     <>
       <BrowserRouter>
@@ -16,5 +15,3 @@ function App () {
     </>
   )
 }
-
-export default App

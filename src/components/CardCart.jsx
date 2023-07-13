@@ -1,16 +1,17 @@
+/* eslint-disable no-unused-expressions */
 import React, { useState } from 'react'
 import { useCart } from '../Hooks/useCart'
 import 'animate.css'
 
 export const CardCart = ({ product }) => {
   const { restartToCart, addToCart } = useCart()
-
   const [quantityDisponible, setQuantityDisponible] = useState(null)
 
   function handleQuantity (product) {
+    // limite de productos para agregar y restar del carrito
     if (
       product.cantidadDisponible === 1 ||
-      product.cantidadDisponible === product.cantidad
+            product.cantidadDisponible === product.cantidad
     ) {
       setQuantityDisponible(true)
     } else if (product.cantidadDisponible > 1) {
@@ -28,15 +29,12 @@ export const CardCart = ({ product }) => {
           <strong className="title-card__aside">{product.nombre}</strong>
           <p className="price__aside">$ {product.precio}</p>
           <p>Talle: {product.talle.talle}</p>
-
+          <p>cantidad: <b>{product.cantidad}</b></p>
         </div>
         <div className="cantidad">
-        <p>cantidad: <span>{product.cantidad}</span></p>
         <button
           className="add-product__aside"
-          onClick={() => {
-            handleQuantity(product)
-          }}
+          onClick={() => { handleQuantity(product) }}
         >
           +
         </button>

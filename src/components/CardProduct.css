@@ -81,6 +81,7 @@
 
 .back-arrow__favorite-section-selected {
   font-size: 2em;
+  width: 20px;
   top: 10px;
   left: 0;
 }

@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 
 export function useQuantityProductsCart ({ cart }) {
+  // numero total de productos en el carrito
   const [quantityProducts, setquantityProducts] = useState(0)
 
   function handleQuantityProducts () {
