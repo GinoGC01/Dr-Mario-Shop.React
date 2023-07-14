@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-expressions */
 import React, { useState } from 'react'
 import { useCart } from '../Hooks/useCart'
+import Toastify from 'toastify-js'
 import 'animate.css'
 
 export const CardCart = ({ product }) => {
@@ -18,6 +19,27 @@ export const CardCart = ({ product }) => {
       setQuantityDisponible(false)
       addToCart(product)
     }
+  }
+
+  const handleRestartToCart = () => {
+    Toastify({
+      text: 'Producto eliminado :c',
+      duration: 3000,
+      close: false,
+      gravity: 'top',
+      position: 'left',
+      stopOnFocus: true,
+      style: {
+        background: '#202b38',
+        fontSize: '.8rem',
+        width: '200px',
+        boxShadow: '0 0 15px black',
+        opacity: '1',
+        borderRadius: '10px',
+        paddingLeft: '15px'
+      },
+      onClick: restartToCart(product)
+    }).showToast()
   }
 
   return (
@@ -41,7 +63,7 @@ export const CardCart = ({ product }) => {
         <button
           className="substract-product__aside"
           onClick={() => {
-            restartToCart(product)
+            handleRestartToCart(product)
           }}
         >
           -

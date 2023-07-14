@@ -25,10 +25,17 @@ export function ProductosVisitadosProvider ({ children }) {
       (item) => item.id === id
     )
 
+    // actualiza la ux de los ultimos 6 productos vistos
+    if (productosVisitados.length > 5) {
+      const newState = [...productosVisitados.slice(1)]
+
+      setProductosVisitados(newState)
+      updateLocalStorage(newState, 'products-visited-Dr-Mario-IND')
+    }
+    // no repite el producto
     if (productoVisitado >= 0) return
 
     const newState = [...productosVisitados, { ...producto }]
-
     setProductosVisitados(newState)
     updateLocalStorage(newState, 'products-visited-Dr-Mario-IND')
   }

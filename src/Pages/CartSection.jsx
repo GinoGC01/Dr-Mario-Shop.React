@@ -12,7 +12,7 @@ export default function CartSection () {
 
   return (
     <section>
-      <ProductsinCartSection openForm={handleOrdenCompra} formactive={formActive}/>
+      <ProductsinCartSection openForm={handleOrdenCompra} formactive={formActive} setFormActive={setFormActive}/>
       {formActive && (
         <OrdenDeCompra handleOrdenCompra={handleOrdenCompra} />
       )}

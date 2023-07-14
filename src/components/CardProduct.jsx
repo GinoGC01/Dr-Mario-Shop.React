@@ -3,10 +3,12 @@ import { AddCart, RemoveCart } from '../components/Icons'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Pagination } from 'swiper/modules'
 import { useProductsVisited } from '../Hooks/useProductsVisited'
+import Toastify from 'toastify-js'
 import 'animate.css'
 import './CardProduct.css'
 import 'swiper/css'
 import 'swiper/css/pagination'
+import 'toastify-js/src/toastify.css'
 
 export default function CardProduct ({
   product,
@@ -39,6 +41,47 @@ export default function CardProduct ({
     }
 
     AddProductosFavoritos(product)
+  }
+
+  const handleAddToCart = (product) => {
+    Toastify({
+      text: 'Producto agregado',
+      duration: 3000,
+      close: false,
+      gravity: 'top',
+      position: 'left',
+      stopOnFocus: true,
+      style: {
+        background: '#202b38',
+        fontSize: '.8rem',
+        width: '200px',
+        boxShadow: '0 0 15px black',
+        opacity: '1',
+        borderRadius: '10px'
+      },
+      onClick: addToCart(product) // Callback after click
+    }).showToast()
+  }
+
+  const handleRemoveFromCart = () => {
+    Toastify({
+      text: 'Producto eliminado :c',
+      duration: 3000,
+      close: false,
+      gravity: 'top',
+      position: 'left',
+      stopOnFocus: true,
+      style: {
+        background: '#202b38',
+        fontSize: '.8rem',
+        width: '200px',
+        boxShadow: '0 0 15px black',
+        opacity: '1',
+        borderRadius: '10px',
+        paddingLeft: '15px'
+      },
+      onClick: removeFromCart(product)
+    }).showToast()
   }
 
   return (
@@ -119,6 +162,7 @@ export default function CardProduct ({
             src={product.img.image01}
             alt={product.nombre}
             className={selected ? 'img__Card' : 'img__Card-selected'}
+            loading='lazy'
           />
             )}
       </div>
@@ -145,7 +189,7 @@ export default function CardProduct ({
             transition: 'background-color 0.3s'
           }}
           onClick={() => {
-            isProductInCart ? removeFromCart(product) : addToCart(product)
+            isProductInCart ? handleRemoveFromCart(product) : handleAddToCart(product)
           }}
         >
           {isProductInCart ? <RemoveCart /> : <AddCart />}

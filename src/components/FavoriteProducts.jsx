@@ -41,8 +41,7 @@ export default function FavoriteProducts () {
                   />
                 )
               })
-              .reverse()
-              .slice(0, 6)}
+              .reverse()}
           </ul>
         </section>
       )}
