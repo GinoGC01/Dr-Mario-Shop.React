@@ -1,21 +1,29 @@
 import React, { useState } from 'react'
 import { useCart } from '../Hooks/useCart'
 
-export function CardCartSection ({ item }) {
-  const { restartToCart, addToCart } = useCart()
+export function CardCartSection ({ item, setFormActive }) {
+  const { restartToCart, addToCart, cart } = useCart()
   const [quantityDisponible, setQuantityDisponible] = useState(null)
 
-  function handleQuantity (product) {
+  function handleQuantity (item) {
     // limite de productos para agregar y restar del carrito
     if (
-      product.cantidadDisponible === 1 ||
-              product.cantidadDisponible === product.cantidad
+      item.cantidadDisponible === 1 ||
+      item.cantidadDisponible === item.cantidad
     ) {
       setQuantityDisponible(true)
-    } else if (product.cantidadDisponible > 1) {
+    } else if (item.cantidadDisponible > 1) {
       setQuantityDisponible(false)
-      addToCart(product)
+      addToCart(item)
     }
+  }
+
+  const handleRestarToCart = item => {
+    if (cart.length === 1 && item.cantidad === 1) {
+      setFormActive(false)
+      console.log('hecho')
+    }
+    restartToCart(item)
   }
 
   return (
@@ -33,7 +41,7 @@ export function CardCartSection ({ item }) {
 
               <div className='buttons-card__cart-section'>
                 <button onClick={() => { handleQuantity(item) }}> + </button>
-                <button onClick={() => { restartToCart(item) }}> - </button>
+                <button onClick={() => { handleRestarToCart(item) }}> - </button>
                 <p style={{ opacity: 0.3 }}>{quantityDisponible && `Solo hay ${item.cantidadDisponible} disponibles`}</p>
               </div>
             </div>

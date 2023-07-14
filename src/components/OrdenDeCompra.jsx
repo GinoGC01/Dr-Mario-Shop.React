@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { useCart } from '../Hooks/useCart'
 import { useTotalCost } from '../Hooks/useTotaCost'
 import { OrdenId } from '../Logic/IdOrdenCompra'
@@ -8,7 +8,11 @@ export function OrdenDeCompra ({ handleOrdenCompra }) {
   const { NAME_ID_FORCOMP, EMAIL_ID_FORCOMP, NUMERO_TEL_ID_FORCOMP, DIRECTION_ID_FORCOMP, INDICACIONES_ID_FORCOMP } = useIDS()
   const { cart, clearCart } = useCart()
   const { totalCost } = useTotalCost({ cart })
-  const IdOrdenCompra = OrdenId()
+  const [IdOrdenCompra, setIDOrdenCompra] = useState(null)
+
+  useEffect(() => {
+    setIDOrdenCompra(OrdenId())
+  }, [])
 
   const handleFormSubmit = () => {
     setTimeout(() => handleOrdenCompra(), 2000)
@@ -17,13 +21,13 @@ export function OrdenDeCompra ({ handleOrdenCompra }) {
 
   const ordenProductos = cart.map(item => {
     return `Producto N° ${item.id} = 
-              (Nombre: ${item.nombre}, 
-              Cantidad: ${item.cantidad}, 
-              Talle: ${item.talle.talle}, 
-              Precio: $${item.precio}, 
-              Precio Total: $${item.precio * item.cantidad})
+            (Nombre: ${item.nombre}, 
+            Cantidad: ${item.cantidad}, 
+            Talle: ${item.talle.talle}, 
+            Precio: $${item.precio}, 
+            Precio Total: $${item.precio * item.cantidad})
               
-              `
+            `
   })
 
   const handleSubmit = (e) => {
@@ -58,7 +62,7 @@ export function OrdenDeCompra ({ handleOrdenCompra }) {
         <p> (se recomienda guardar el ID de la orden de compra por cualquier inconveniente)</p>
       </header>
       <div>
-        <input type='hidden' value={`Precio Total de la orden: ${totalCost}`} name='totalCost'/>
+        <input type='hidden' value={`Precio Total de la orden: $${totalCost}`} name='totalCost'/>
         <input type='hidden' value={ordenProductos} name='productos'/>
         <input type='hidden' value={`ID de la compra: ${IdOrdenCompra}`} name='idCompra'/>
 

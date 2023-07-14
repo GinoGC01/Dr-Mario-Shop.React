@@ -8,6 +8,7 @@ export function usePagination ({ products }) {
   useEffect(() => {
     const itemsPage = [...products].splice(0, ITEM_FOR_PAGE)
     setItems(itemsPage)
+    setCurrentPage(0)
   }, [products])
 
   const nextPage = () => {

@@ -12,7 +12,7 @@ export const CardCart = ({ product }) => {
     // limite de productos para agregar y restar del carrito
     if (
       product.cantidadDisponible === 1 ||
-            product.cantidadDisponible === product.cantidad
+      product.cantidadDisponible === product.cantidad
     ) {
       setQuantityDisponible(true)
     } else if (product.cantidadDisponible > 1) {
@@ -51,27 +51,24 @@ export const CardCart = ({ product }) => {
           <strong className="title-card__aside">{product.nombre}</strong>
           <p className="price__aside">$ {product.precio}</p>
           <p>Talle: {product.talle.talle}</p>
-          <p>cantidad: <b>{product.cantidad}</b></p>
+          <p>
+            cantidad: <b>{product.cantidad}</b>
+          </p>
         </div>
         <div className="cantidad">
-        <button
-          className="add-product__aside"
-          onClick={() => { handleQuantity(product) }}
-        >
-          +
-        </button>
-        <button
-          className="substract-product__aside"
-          onClick={() => {
-            handleRestartToCart(product)
-          }}
-        >
-          -
-        </button>
-        <p style={{ opacity: 0.5 }}>
-          {quantityDisponible &&
-            `Solo hay ${product.cantidadDisponible} disponibles`}
-        </p>
+          <button className="add-product__aside" onClick={() => { handleQuantity(product) }}>
+            +
+          </button>
+          <button
+            className="substract-product__aside"
+            onClick={handleRestartToCart}
+          >
+            -
+          </button>
+          <p style={{ opacity: 0.5 }}>
+            {quantityDisponible &&
+              `Solo hay ${product.cantidadDisponible} disponibles`}
+          </p>
         </div>
       </div>
     </li>

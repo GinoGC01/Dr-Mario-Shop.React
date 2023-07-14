@@ -43,7 +43,7 @@ export function ProductsinCartSection ({ openForm, formactive, setFormActive }) 
 
         {cart.length > 0
           ? (
-          <ProductsInCart cart={cart} />
+          <ProductsInCart cart={cart} setFormActive={setFormActive} />
             )
           : (
           <div>
