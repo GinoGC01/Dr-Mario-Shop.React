@@ -49,8 +49,8 @@ export const CardCart = ({ product }) => {
       <div className="data__aside">
         <div className="text-content__aside">
           <strong className="title-card__aside">{product.nombre}</strong>
-          <p className="price__aside">$ {product.precio}</p>
-          <p>Talle: {product.talle.talle}</p>
+          <p className="price__aside"><b>$ {product.precio}</b></p>
+          <p>Talle:<b> {product.talle.talle}</b></p>
           <p>
             cantidad: <b>{product.cantidad}</b>
           </p>

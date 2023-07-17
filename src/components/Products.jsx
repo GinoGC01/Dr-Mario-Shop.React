@@ -27,18 +27,21 @@ export function Products ({ products }) {
   })
 
   return (
-    <>
+    <section className="Section-products">
       <ul className="Productos">{itemsInShop}</ul>
-      <p>
-        página {currentPageVisible} / {totalPages}{' '}
-      </p>
-      <button onClick={prevPage}>
-        <i className="fa-solid fa-chevron-left"></i>
-      </button>
-      <button onClick={nextPage}>
-        {' '}
-        <i className="fa-solid fa-chevron-right"></i>
-      </button>
-    </>
+      <div className="pagination-container">
+        <p>
+          <b>{currentPageVisible} / {totalPages}</b>
+        </p>
+        <div className='buttons__pagination'>
+          <button onClick={prevPage}>
+            <i className="fa-solid fa-chevron-left"></i>
+          </button>
+          <button onClick={nextPage}>
+            <i className="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
   )
 }

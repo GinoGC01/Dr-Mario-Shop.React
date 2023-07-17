@@ -11,7 +11,7 @@ export default function CartSection () {
   }
 
   return (
-    <section>
+    <section className='cart-section'>
       <ProductsinCartSection openForm={handleOrdenCompra} formactive={formActive} setFormActive={setFormActive}/>
       {formActive && (
         <OrdenDeCompra handleOrdenCompra={handleOrdenCompra} />

@@ -33,8 +33,8 @@ export function ProductsinCartSection ({ openForm, formactive, setFormActive }) 
     })
   }
   return (
-      <ul className="animate__animated animate__fadeIn">
-        <header>
+      <ul className="card-conteiner__cart-section animate__animated animate__fadeIn">
+        <header className='header__cart-section'>
           <Link to="/" className="back-to-home__cart-section">
             <span className="material-symbols-outlined">chevron_left</span>
           </Link>
@@ -52,7 +52,7 @@ export function ProductsinCartSection ({ openForm, formactive, setFormActive }) 
             )}
         {cart.length > 0
           ? (
-          <section>
+          <section className='data-cart-section'>
             <p>
               Gasto total: $ <b>{totalCost}</b>
             </p>

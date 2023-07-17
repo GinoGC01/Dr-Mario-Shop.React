@@ -71,3 +71,11 @@ export function CkeckoutBuys () {
     </span>
   )
 }
+
+export function Lupa () {
+  return (
+    <span className="material-symbols-outlined">
+      search
+    </span>
+  )
+}
