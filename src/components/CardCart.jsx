@@ -3,27 +3,27 @@ import React, { useState } from 'react'
 import { useCart } from '../Hooks/useCart'
 import Toastify from 'toastify-js'
 import 'animate.css'
+import Swal from 'sweetalert2'
 
 export const CardCart = ({ product }) => {
-  const { restartToCart, addToCart } = useCart()
-  const [quantityDisponible, setQuantityDisponible] = useState(null)
-
+  const { restartToCart, addToCart, cart } = useCart()
+  const [cantidadDisponible, setCantidadDisponible] = useState(null)
   function handleQuantity (product) {
     // limite de productos para agregar y restar del carrito
     if (
       product.cantidadDisponible === 1 ||
       product.cantidadDisponible === product.cantidad
     ) {
-      setQuantityDisponible(true)
+      setCantidadDisponible(true)
     } else if (product.cantidadDisponible > 1) {
-      setQuantityDisponible(false)
+      setCantidadDisponible(false)
       addToCart(product)
     }
   }
 
   const handleRestartToCart = () => {
     Toastify({
-      text: 'Producto eliminado :c',
+      text: 'Producto eliminado',
       duration: 3000,
       close: false,
       gravity: 'top',
@@ -42,14 +42,41 @@ export const CardCart = ({ product }) => {
     }).showToast()
   }
 
+  const handleRestarToCart = product => {
+    if (cart.length <= 1 && product.cantidad === 1) {
+      Swal.fire({
+        title: '¿Está seguro?',
+        text: 'Se eliminará el último producto del carrito',
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#0c151c',
+        cancelButtonColor: '#a9a9a9',
+        confirmButtonText: 'Si eliminar',
+        iconColor: '#0c151c'
+      }).then((result) => {
+        if (result.isConfirmed) {
+          restartToCart(product)
+          Swal.fire({
+            text: 'El carrito quedó vacío',
+            icon: 'success',
+            confirmButtonColor: '#0c151c',
+            confirmButtonText: 'OK'
+
+          })
+        }
+      })
+      return
+    }
+    handleRestartToCart()
+  }
+
   return (
-    // eslint-disable-next-line react/react-in-jsx-scope
     <li style={{ listStyle: 'none' }} className="card__aside">
       <img src={product.img.image01} alt={product.nombre} />
       <div className="data__aside">
         <div className="text-content__aside">
           <strong className="title-card__aside">{product.nombre}</strong>
-          <p className="price__aside"><b>$ {product.precio}</b></p>
+          <p className="price__aside"><b>$ {product.precio * product.cantidad}</b></p>
           <p>Talle:<b> {product.talle.talle}</b></p>
           <p>
             cantidad: <b>{product.cantidad}</b>
@@ -61,12 +88,12 @@ export const CardCart = ({ product }) => {
           </button>
           <button
             className="substract-product__aside"
-            onClick={handleRestartToCart}
+            onClick={() => { handleRestarToCart(product) }}
           >
             -
           </button>
           <p style={{ opacity: 0.5 }}>
-            {quantityDisponible &&
+            {cantidadDisponible &&
               `Solo hay ${product.cantidadDisponible} disponibles`}
           </p>
         </div>

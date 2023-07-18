@@ -79,3 +79,11 @@ export function Lupa () {
     </span>
   )
 }
+
+export function Done () {
+  return (
+    <span className="material-symbols-outlined">
+      done
+    </span>
+  )
+}

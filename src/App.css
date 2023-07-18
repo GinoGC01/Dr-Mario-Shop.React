@@ -280,7 +280,7 @@ body{
 
 .input-button__Cart:checked ~ .aside__Cart-0{
     opacity: 1;
-    z-index: 1000;
+    z-index: 10000;
     bottom: 80px;
     right: 16px;
 }
@@ -338,7 +338,7 @@ body{
     display: block;
     width: 100%;
     height: 210px;
-    object-fit: cover;
+    object-fit: contain;
     margin: auto;
     filter: drop-shadow(0 0 5px #101316 );
 }
@@ -425,12 +425,56 @@ body{
     position: relative;
 }
 
-  /* cart section */
+  /* products in cart section */
+
+  .header__cart-section{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+  }
+
+  .header__cart-section::after{
+    content: url('../public/images/isotipo\ blanco.png');
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    transform: translate(-15em, 10em) scale(1.7);
+    opacity: .1;
+  }
+
+  .header__cart-section > h3{
+    font-size: 2em;
+    text-transform: uppercase;
+    text-shadow: 0 0 15px #040a0f;
+  }
+
+
+  .back-to-home__cart-section{
+    position: absolute;
+    top: 0;
+    left: 10px;
+    border-radius: 50%;
+    border: 1px solid white;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  .card-conteiner__cart-section{
+    background-size: cover;
+    background-position: 90%;
+  }
+
+
   .card__cart-section{
     position: relative;
     z-index: 1000;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: space-between;
     width: 95%;
@@ -439,7 +483,6 @@ body{
     border: 1px solid #0c151c77;
     box-shadow: 0 0 15px #161f27;
     background-color: #161f27d5;
-
   }
 
   .card__cart-section::after{
@@ -450,6 +493,13 @@ body{
     z-index: -1;
     top: 0;
     backdrop-filter: blur(15px);
+}
+
+.title-prodcuts-cart{
+    display: flex;
+    align-items: center;
+    gap: .2em;
+    font-size: 1.5em;
 }
 
   .img-card-content__cart-section{
@@ -466,12 +516,28 @@ body{
     flex-direction: column;
     gap: 5px;
     width: 100%;
-    padding: 0 10px 5px;
+    padding: 7px 10px 5px;
+  }
+
+  .data-cart-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3em;
+    margin-bottom: 2em;
   }
 
   .data-card__cart-section > strong {
     font-size: 1.2em;
     text-transform: uppercase;
+  }
+
+  .buttons__cart-section{
+    display: flex;
+    justify-content: space-between;
+    width: 98%;
+    margin: auto;
   }
 
   .button-finalizar-compra{
@@ -489,34 +555,215 @@ body{
     height: 100%;
   }
 
+  /* orden de compra */
 
-  /* products in cart section */
-
-  .header__cart-section{
-    position: relative;
+  .orden-compra{
+    width: 95%;
+    margin: auto;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1em;
+    flex-direction: column;
+    background-color: #040a0f;
+    padding: 5px 10px;
   }
 
-  .header__cart-section > h3{
-    font-size: 1.5em;
+  .header__orden-compra > h2{
+    display: block;
+    font-size: 1.8em;
+    width: 100%;
+    text-align: center;
     text-transform: uppercase;
   }
 
+  .header__orden-compra > strong{
+    display: block;
+    font-size: 1.2em;
+  }
 
-  .header__cart-section > a > span{
+
+  .header__orden-compra > small{
+    display: block;
+  }
+
+  .section-input__orden-compra{
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+    width: 100%;
+    margin-top: 20px;
+    
+  }
+
+  .input-container{
+    width: 100%;
+  }
+
+  .input-container > input {
+    width: 100%;
+  }
+/* orden enviada */
+
+.section-orden-Enviada::after{
+    content: url('../public/images/isotipo\ blanco.png');
     position: absolute;
-    top: 0;
-    left: 10px;
-    border-radius: 50%;
-    border: 1px solid white;
+    top: 100px;
+    left: -290px;
+    z-index: -1;
+    transform: scale(1.3);
+    opacity: .04;
+  }
+
+.Done-icon__orden-Enviada{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3em;
+    width: 100%;
+}
+
+.Done-icon__orden-Enviada span{
+    position: relative;
+    z-index: 100;
+    font-size: 3.5em;
+    font-weight: 600;
     color: white;
-  }
+    margin-top: 50px;
+    transform: scale(1.4);
+}
+
+.Done-icon__orden-Enviada span::after,
+.Done-icon__orden-Enviada span::before{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: calc(50% - 25px);
+    left: calc(50% - 25px);
+    display: block;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #008a0094;
+
+}
+
+.Done-icon__orden-Enviada span::after{
+    animation: pulse2; 
+    animation-duration: 2s;
+    animation-delay: .3s;
+
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in-out;
+}
+
+.Done-icon__orden-Enviada span::before{
+    animation: pulse1; 
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in-out;
+}
+
+.Done-icon__orden-Enviada > p{
+    font-size: 1.6em;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-shadow: 0 0 15px #040a0f86;
+
+}
+
+.section-orden-Enviada > h1{
+    font-size: 1.6em;
+    text-align: center;
+    text-shadow: 0 0 15px #040a0f86;
+}
+
+.section-orden-Enviada > p{
+    font-size: 1.2em;
+    padding: 0 5px;
+    text-align: center;
+}
+
+.Home__orden-Enviada{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    margin:30px  auto 0;
+    background-color: #161f27;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+.Preguntas-frecuentes__orden-Enviada{
+    display: block;
+    width: 100%;
+    font-size: .8em;
+    margin-top: 20px;
+    text-align: center;
+    text-decoration: underline;
+}
 
 
-  .card-conteiner__cart-section{
-    background-size: cover;
-    background-position: 90%;
-  }
+@keyframes pulse1 {
+    from {transform: scale(1);}
+    to {transform: scale(1.3);}
+}
+
+@keyframes pulse2 {
+    from {transform: scale(1);
+    opacity: 1;}
+    to {transform: scale(1.7);
+    opacity: .3;}
+}
+
+/* preguntas Frecuentes */
+
+.preguntas-frecuentes{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.preguntas-frecuentes::after{
+    content: url('../public/images/isotipo\ blanco.png');
+    position: absolute;
+    top: 100px;
+    left: -290px;
+    z-index: -1;
+    transform: scale(1.3);
+    opacity: .04;
+}
+
+.preguntas-frecuentes::before{
+    content: url('../public/images/isotipo\ blanco.png');
+    position: absolute;
+    top: calc(200px + 100vh);
+    right: -200px;
+    z-index: -1;
+    transform: scale(1.3);
+    opacity: .04;
+}
+
+.preguntas-frecuentes > h1{
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.preguntas{
+    width: 98%;
+    margin: auto;
+    padding-right: .5em;
+    padding-left: 1em;
+    border-left: 1px solid rgb(238, 238, 238);
+}
+
+.pregunta{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin: 3em 0;
+}
+
+.back-to-home{
+    transform: translateY(-10px);
+    position: relative;
+    z-index: 1000;
+}

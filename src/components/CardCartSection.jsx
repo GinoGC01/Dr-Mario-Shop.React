@@ -1,9 +1,12 @@
 import React, { useState } from 'react'
 import { useCart } from '../Hooks/useCart'
+import Swal from 'sweetalert2'
+import { useQuantityProductsCart } from '../Hooks/useQuantityProductsCart'
 
 export function CardCartSection ({ item, setFormActive }) {
   const { restartToCart, addToCart, cart } = useCart()
   const [quantityDisponible, setQuantityDisponible] = useState(null)
+  const { quantityProducts } = useQuantityProductsCart({ cart })
 
   function handleQuantity (item) {
     // limite de productos para agregar y restar del carrito
@@ -20,8 +23,29 @@ export function CardCartSection ({ item, setFormActive }) {
 
   const handleRestarToCart = item => {
     if (cart.length === 1 && item.cantidad === 1) {
-      setFormActive(false)
-      console.log('hecho')
+      Swal.fire({
+        title: '¿Está seguro?',
+        text: `${quantityProducts > 1 ? 'Se eliminarán' : 'Se eliminará'} ${quantityProducts} ${quantityProducts > 1 ? 'productos' : 'producto'} del carrito`,
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#0c151c',
+        cancelButtonColor: '#a9a9a9',
+        confirmButtonText: 'Si eliminar',
+        iconColor: '#0c151c'
+      }).then((result) => {
+        if (result.isConfirmed) {
+          setFormActive(false)
+          restartToCart(item)
+          Swal.fire({
+            text: `${quantityProducts > 1 ? 'Se eliminaron' : 'Se eliminió'} ${quantityProducts} ${quantityProducts > 1 ? 'productos' : 'producto'} del carrito`,
+            icon: 'success',
+            confirmButtonColor: '#0c151c',
+            confirmButtonText: 'OK'
+
+          })
+        }
+      })
+      return
     }
     restartToCart(item)
   }
@@ -34,7 +58,7 @@ export function CardCartSection ({ item, setFormActive }) {
             </div>
             <div className='data-card__cart-section'>
               <strong>{item.nombre}</strong>
-              <p>Precio: <b>$ {item.precio}</b></p>
+              <p>Precio: <b>$ {item.precio * item.cantidad}</b></p>
               <p>Talle: <b>{item.talle.talle}</b></p>
               <p>Marca: <b>{item.marca}</b></p>
               <p>Cantidad: <b>{item.cantidad}</b></p>

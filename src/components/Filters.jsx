@@ -15,7 +15,11 @@ export function Filters () {
   const [filtrarPor, setFiltrarPor] = useState(false)
   const searchFilter = useRef()
 
-  function handleSearch () {
+  function onSubmit (e) {
+    e.preventDefault()
+  }
+
+  function handleSearch (e) {
     const value = searchFilter.current.value.toLowerCase()
     if (value === '') {
       setFilters((prevState) => ({
@@ -76,7 +80,7 @@ export function Filters () {
         <button onClick={handleFiltersContent} className="button-filters">
           <FiltersIcon />
         </button>
-        <form className="form__filters">
+        <form className="form__filters" onSubmit={onSubmit}>
           <div
             className={filtrarPor ? 'filters__content-on' : 'filters__content'}
           >
