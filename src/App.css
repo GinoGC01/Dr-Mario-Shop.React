@@ -436,7 +436,7 @@ body{
   }
 
   .header__cart-section::after{
-    content: url('../public/images/isotipo\ blanco.png');
+    content: url('../../images/isotipo\ blanco.png');
     position: absolute;
     top: 0;
     z-index: -1;
@@ -603,7 +603,7 @@ body{
 /* orden enviada */
 
 .section-orden-Enviada::after{
-    content: url('../public/images/isotipo\ blanco.png');
+    content: url('../../images/isotipo\ blanco.png');
     position: absolute;
     top: 100px;
     left: -290px;
@@ -723,7 +723,7 @@ body{
 }
 
 .preguntas-frecuentes::after{
-    content: url('../public/images/isotipo\ blanco.png');
+    content: url('../../images/isotipo\ blanco.png');
     position: absolute;
     top: 100px;
     left: -290px;
@@ -733,7 +733,7 @@ body{
 }
 
 .preguntas-frecuentes::before{
-    content: url('../public/images/isotipo\ blanco.png');
+    content: url('../../images/isotipo\ blanco.png');
     position: absolute;
     top: calc(200px + 100vh);
     right: -200px;
