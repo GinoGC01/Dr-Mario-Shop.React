@@ -83,7 +83,7 @@ export function OrdenDeCompra ({ handleOrdenCompra }) {
             value={`ID de la compra: ${IdOrdenCompra}`}
             name="idCompra"
           />
-          <input type="hidden" name="_next" value="https:/celebrated-tulumba-e53fa2.netlify.app/Orden-Enviada"/>
+          <input type="hidden" name="_next" value="celebrated-tulumba-e53fa2.netlify.app/Orden-Enviada"/>
         </div>
 
         <div className="input-container name__orden-compra">
