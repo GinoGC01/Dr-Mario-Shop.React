@@ -1,13 +1,16 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { useCart } from '../Hooks/useCart'
 import { useQuantityProductsCart } from '../Hooks/useQuantityProductsCart'
 import { useTotalCost } from '../Hooks/useTotaCost'
 import { ProductsInCart } from './ProductsInCart'
 import { Link } from 'react-router-dom'
 import { Cart, RigthArrow } from '../components/Icons'
+import { OrdenEnviada } from './OrdenEnviada'
 import Swal from 'sweetalert2'
 
-export function ProductsinCartSection ({ openForm, formactive, setFormActive }) {
+import { OrdenCompraContext } from '../Context/OrdenCompraContex'
+
+function CartOfCartSection ({ openForm, formactive, setFormActive }) {
   const { cart, clearCart } = useCart()
   const { quantityProducts } = useQuantityProductsCart({ cart })
   const { totalCost } = useTotalCost({ cart })
@@ -15,7 +18,9 @@ export function ProductsinCartSection ({ openForm, formactive, setFormActive }) 
   const handleClearCart = () => {
     Swal.fire({
       title: '¿Está seguro?',
-      text: `Se eliminarán ${quantityProducts} ${quantityProducts > 1 ? 'productos' : 'producto'} del carrito`,
+      text: `Se eliminarán ${quantityProducts} ${
+        quantityProducts > 1 ? 'productos' : 'producto'
+      } del carrito`,
       icon: 'warning',
       showCancelButton: true,
       confirmButtonColor: '#0c151c',
@@ -26,16 +31,21 @@ export function ProductsinCartSection ({ openForm, formactive, setFormActive }) 
     }).then((result) => {
       if (result.isConfirmed) {
         clearCart()
+        setFormActive(false)
         Swal.fire({
-          text: `${quantityProducts > 1 ? 'Se eliminaron' : 'Se eliminió'} ${quantityProducts} ${quantityProducts > 1 ? 'productos' : 'producto'} del carrito`,
+          text: `${
+            quantityProducts > 1 ? 'Se eliminaron' : 'Se eliminió'
+          } ${quantityProducts} ${
+            quantityProducts > 1 ? 'productos' : 'producto'
+          } del carrito`,
           icon: 'success',
           confirmButtonColor: '#0c151c',
           confirmButtonText: 'OK'
-
         })
       }
     })
   }
+
   return (
     <>
       <header className="header__cart-section">
@@ -69,7 +79,9 @@ export function ProductsinCartSection ({ openForm, formactive, setFormActive }) 
               <p>
                 Gasto total: $ <b>{totalCost}</b>
               </p>
-              <p>Total de productos: <b>{quantityProducts}</b> </p>
+              <p>
+                Total de productos: <b>{quantityProducts}</b>{' '}
+              </p>
             </div>
             <div className="buttons__cart-section">
               <button onClick={handleClearCart}>Vaciar Carrito</button>
@@ -93,6 +105,25 @@ export function ProductsinCartSection ({ openForm, formactive, setFormActive }) 
           </button>
             )}
       </ul>
+    </>
+  )
+}
+
+export function ProductsinCartSection ({ openForm, formactive, setFormActive }) {
+  const { sendMail } = useContext(OrdenCompraContext)
+  return (
+    <>
+      {sendMail
+        ? (
+        <OrdenEnviada />
+          )
+        : (
+        <CartOfCartSection
+          formactive={formactive}
+          openForm={openForm}
+          setFormActive={setFormActive}
+        />
+          )}
     </>
   )
 }
