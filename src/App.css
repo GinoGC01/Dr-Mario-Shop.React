@@ -830,3 +830,66 @@ body{
     position: relative;
     z-index: 1000;
 }
+
+/* guia de talles */
+
+.guia-talles-conteiner{
+    position: relative;
+    padding: 10px;
+    padding-top: 0;
+}
+
+.guia-talles-conteiner::before{
+    content: url('../../images/isotipo\ blanco.png');
+    position: absolute;
+    top: 100px;
+    left: -290px;
+    z-index: -1;
+    transform: scale(1.3);
+    opacity: .04;
+}
+
+.header__guia-talles-conteiner > h2{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.header__guia-talles-conteiner > img {
+    display: block;
+    width: 3.5em;
+    margin: auto;
+}
+
+.header__guia-talles-conteiner,
+.article-section__guia-talles-conteiner{
+    padding: 10px;
+    border-left: 1px solid white;
+}
+
+.article-section__guia-talles-conteiner{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.article-section__guia-talles-conteiner > strong{
+    position: relative;
+    font-size: 1.2em;
+}
+
+.article-section__guia-talles-conteiner > strong::before{
+    content: '';
+    position: absolute;
+    left: -.5em;
+    top: 1em;
+    width: .3em;
+    height: 1px;
+    display: block;
+    background-color: white;
+}
+
+.article-section__guia-talles-conteiner > img{
+    display: block;
+    height: 10em;
+    width: 100%;
+}

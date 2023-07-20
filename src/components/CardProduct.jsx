@@ -216,9 +216,9 @@ export default function CardProduct ({
           className={
             selected ? 'data-product__Card-selected' : 'data-product__Card'
           }
-          to={'#'}
+          to={'/Guia-de-Talles'}
         >
-          Guía de tallas
+          Guía de talles
         </Link>
         {product.stock &&
           <button
