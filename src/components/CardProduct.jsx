@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 import { AddCart, RemoveCart } from '../components/Icons'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Pagination } from 'swiper/modules'
+import { Pagination, Zoom } from 'swiper/modules'
 import { useProductsVisited } from '../Hooks/useProductsVisited'
+import { Link } from 'react-router-dom'
 import Toastify from 'toastify-js'
 import 'animate.css'
 import './CardProduct.css'
@@ -131,7 +132,8 @@ export default function CardProduct ({
             pagination={{
               dynamicBullets: true
             }}
-            modules={[Pagination]}
+            zoom={true}
+            modules={[Pagination, Zoom]}
             className="mySwiper"
           >
             <SwiperSlide>
@@ -162,7 +164,7 @@ export default function CardProduct ({
             src={product.img.image01}
             alt={product.nombre}
             className={selected ? 'img__Card' : 'img__Card-selected'}
-            loading='lazy'
+            loading="lazy"
           />
             )}
       </div>
@@ -171,7 +173,9 @@ export default function CardProduct ({
           {product.nombre}
         </strong>
         <div className="price">
-          <p>$ {product.precio}</p>
+          <p>
+            $ <b>{product.precio}</b>
+          </p>
           <strike className="price__offer">$ {product.precio + 3500}</strike>
         </div>
         <div
@@ -179,21 +183,58 @@ export default function CardProduct ({
             selected ? 'data-product__Card-selected' : 'data-product__Card'
           }
         >
-          <p className="details details-open">Marca: {product.marca}</p>
-          <p className="details details-open">Talle: {product.talle.talle}</p>
+          <p className="details details-open">
+            {' '}
+            Marca: <b>{product.marca}</b>{' '}
+          </p>
+          <p className="details details-open">
+            Talle: <b>{product.talle.talle}</b>
+          </p>
+          <p>
+            Stock:{' '}
+            <b>
+              <span
+                style={{
+                  color: product.stock && '#00ce23f5',
+                  opacity: !product.stock && '0.5',
+                  fontWeight: !product.stock && '200'
+                }}
+              >
+                {product.stock ? 'Disponible' : 'Sin Stock'}
+              </span>
+            </b>
+          </p>
+          <p>
+            Cantidad:{' '}
+            <b>
+              {product.stock ? product.cantidadDisponible : '0'}{' '}
+              {product.cantidadDisponible > 1 ? 'Unidades' : 'Unidad'}
+            </b>
+          </p>
         </div>
-        <button
+        <Link
+          className={
+            selected ? 'data-product__Card-selected' : 'data-product__Card'
+          }
+          to={'#'}
+        >
+          Guía de tallas
+        </Link>
+        {product.stock &&
+          <button
           className={selected ? 'button__Card-selected' : 'button__Card'}
           style={{
             backgroundColor: isProductInCart ? 'red' : '#0c151c',
             transition: 'background-color 0.3s'
           }}
           onClick={() => {
-            isProductInCart ? handleRemoveFromCart(product) : handleAddToCart(product)
+            isProductInCart
+              ? handleRemoveFromCart(product)
+              : handleAddToCart(product)
           }}
         >
           {isProductInCart ? <RemoveCart /> : <AddCart />}
-        </button>
+        </button>}
       </div>
     </li>
   )

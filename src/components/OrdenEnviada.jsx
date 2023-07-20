@@ -27,6 +27,7 @@ export function OrdenEnviada () {
       <Link
         to="/Preguntas-Frecuentes"
         className="Preguntas-frecuentes__orden-Enviada"
+        onClick={handlerSendMail}
       >
         Preguntas frecuentes
       </Link>

@@ -1,6 +1,8 @@
 import React from 'react'
 import { useIDS } from '../Hooks/useIDS'
 import { useSendOrdenCompra } from '../Hooks/useSendOrdenCompra'
+import { Link } from 'react-router-dom'
+import Loader from './Loader'
 
 export function OrdenDeCompra ({ handleOrdenCompra }) {
   const {
@@ -18,7 +20,7 @@ export function OrdenDeCompra ({ handleOrdenCompra }) {
     <>
       {loading
         ? (
-        <p>Enviando...</p>
+        <Loader/>
           )
         : (
         <form
@@ -35,10 +37,13 @@ export function OrdenDeCompra ({ handleOrdenCompra }) {
               Se recomienda guardar el <b>CÓDIGO</b> de la orden de compra por
               cualquier inconveniente.
             </small>
+            <Link to={'/Preguntas-Frecuentes'}><small>¿Qué es una orden de compra?</small></Link>
             <strong style={{ color: 'red' }}>{error && (ErrorSend.message === 'TypeError: Failed to fetch' ? 'Error al enviar la orden, intente de nuevo mas tarde, gracias.' : ErrorSend.message)}</strong>
           </header>
           <section className="section-input__orden-compra">
             <div>
+              {/* estilo */}
+              <input type="hidden" name="_template" value="table"/>
               <input
                 type="hidden"
                 value={`Precio Total de la orden: $${totalCost}`}
@@ -121,6 +126,7 @@ export function OrdenDeCompra ({ handleOrdenCompra }) {
             <button type="submit" onClick={handleSubmit}>
               Enviar orden de compra
             </button>
+            <Link className='terminos-condiciones__orden-compra'><small>Términos y condiciones</small></Link>
           </section>
         </form>
           )}

@@ -46,12 +46,10 @@ export const CartWhitProduct = ({ cart, clearCart, restartToCart }) => {
         <button onClick={handleClearCart}>
           <RemoveCart />
         </button>
-        <button className="completar-compra-buttons__aside">
-          <Link to="/Carrito/#ordenDeCompra">
+          <Link to="/Carrito/#ordenDeCompra" className="completar-compra-buttons__aside">
             Completar compra
             <CkeckoutBuys />
           </Link>
-        </button>
       </div>
     </section>
   )

@@ -145,6 +145,7 @@ export function Filters () {
               ref={searchFilter}
               id={SEARCH_ID}
               onChange={handleSearch}
+              placeholder='Filtrar por nombre, marca...'
             />
             <label htmlFor={SEARCH_ID}>
               <Lupa />

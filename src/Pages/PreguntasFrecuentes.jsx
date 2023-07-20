@@ -13,6 +13,19 @@ export default function PreguntasFrecuentes () {
       <section className="preguntas-frecuentes">
         <h1>PREGUNTAS FRECUENTES</h1>
         <ul className="preguntas">
+        <li className="pregunta">
+            <strong>¿Qué es una orden de compra?</strong>
+            <p>
+              En nuestro sistema de ventas no utilizamos métodos de pago online,
+              en la página web. Por eso, creamos un sistema de ventas a travez
+              de ordenes de compra con un <strong>NUMERO DE ORDEN</strong>{' '}
+              único. En esta orden, solicitamos una serie de datos para ponernos
+              en contacto y coordinar métodos de pagos, envios y demás dudas que
+              pueda llegar a tener, atravez de nuestros vendedores. La finalidad
+              de este método es proteger a nuestros clientes de fraudes y
+              estáfas, contactandonos personalmente.
+            </p>
+          </li>
           <li className="pregunta">
             <strong>¿Qué forma de pago puedo utilizar?</strong>
             <p>
@@ -20,19 +33,6 @@ export default function PreguntasFrecuentes () {
               , <strong>Uala</strong>, <strong>BruBank</strong>,{' '}
               <strong>Cuenta DNI</strong>, <strong>MODO</strong>,{' '}
               <strong>Transferencias Bancarias</strong>.
-            </p>
-          </li>
-          <li className="pregunta">
-            <strong>¿Qué es una orden de compra?</strong>
-            <p>
-              En nuestro sistema de ventas no utilizamos métodos de pago online,
-              en nuestra página. Por eso, creamos un sistema de ventas a travez
-              de ordenes de compra con un <strong>NUMERO DE ORDEN</strong>{' '}
-              único. En esta orden, solicitamos una serie de datos para ponernos
-              en contacto y coordinar métodos de pagos, envios y demás dudas que
-              pueda llegar a tener, atravez de nuestros vendedores. La finalidad
-              de este método es proteger a nuestros clientes de fraudes y
-              estáfas contactandonos personalmente.
             </p>
           </li>
           <li className="pregunta">

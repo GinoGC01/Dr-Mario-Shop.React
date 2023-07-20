@@ -221,7 +221,6 @@ body{
     flex-direction: column;
     justify-content: space-between;
 
-    padding: 10px;
     max-height: 100vh;
     width: 100%;
     box-shadow: 0 5px 25px #040a0f;
@@ -232,14 +231,15 @@ body{
     
 }
 
-.aside__Cart::after{
+.aside__Cart::before{
     content: '';
-    height: 100%;
-    width: 100vw;
+    min-height: 100%;
+    width: 120vw;
     position: absolute;
     z-index: -1;
     top: 0;
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 .aside__Cart-0{
@@ -321,10 +321,11 @@ body{
 
     margin: auto;
     padding: 0;
-    width: 95%;
+    width: 100%;
 }
 
 .card__aside{
+    position: relative;
     border-bottom: 1px solid white;
     width: 100%;
     margin-bottom: 15px;
@@ -333,6 +334,7 @@ body{
     padding-bottom: 10px;
 
 }
+
 
 .card__aside > img{
     display: block;
@@ -377,14 +379,26 @@ body{
 
 .buttons__aside{
     display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
 }
 
-.completar-compra-buttons__aside > a{
+.completar-compra-buttons__aside{
     display: flex;
     gap: 7px;
     align-items: center;
     color: white;
+    background-color: #0c151c;
+    padding: 14px 30px;
+    border-radius: 10px;
+    margin-bottom: 6px;
+    margin-right: 6px;
+
+}
+
+.completar-compra-buttons__aside:hover{
+    background-color: #040a0f;
 }
 
 
@@ -535,24 +549,65 @@ body{
 
   .buttons__cart-section{
     display: flex;
-    justify-content: space-between;
-    width: 98%;
+    justify-content: center;
+    width: 95%;
     margin: auto;
   }
 
   .button-finalizar-compra{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #040a0f;
     padding: 0;
-    width: 12em;
+    width: 11em;
     height: 3em;
+    border-radius: 10px;
   }
 
   .button-finalizar-compra > a{
-    color: white;
-    display: block;
-    padding: 12px;
-    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 100%;
+    width: 100%;
+    color: white;
+  }
+
+  .button-finalizar-compra > a:hover{
+    text-decoration: none;
+
+  }
+  /* sin productos */
+
+  .cart-section-no-products{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .cart-section-no-products > i{
+    font-size: 4em;
+  }
+
+  .no-products__cart-section{
+    margin-top: 20px;
+    font-size: 1.2em;
+    text-align: center;
+  }
+
+  .voler-tienda__cart-section{
+    background-color: #161f27;
+    display: block;
+    text-align: center;
+    border-radius: 10px;
+    width: 50%;
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px 0;
+    box-shadow: 0 0 10px #040a0f7a;
+
   }
 
   /* orden de compra */
@@ -560,10 +615,13 @@ body{
   .orden-compra{
     width: 95%;
     margin: auto;
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     background-color: #040a0f;
-    padding: 5px 10px;
+    box-shadow: 0 0 15px #040a0f5d;
+    padding: 10px 20px;
+    border-radius: 10px;
   }
 
   .header__orden-compra > h2{
@@ -599,6 +657,10 @@ body{
 
   .input-container > input {
     width: 100%;
+  }
+
+  .terminos-condiciones__orden-compra{
+    text-align: center;
   }
 /* orden enviada */
 
@@ -686,8 +748,9 @@ body{
 .Home__orden-Enviada{
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 50%;
-    margin:30px  auto 0;
+    margin:30px auto 0;
     background-color: #161f27;
     padding: 10px 15px;
     border-radius: 10px;
