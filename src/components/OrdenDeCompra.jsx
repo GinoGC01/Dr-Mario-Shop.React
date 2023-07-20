@@ -64,7 +64,7 @@ export function OrdenDeCompra ({ handleOrdenCompra }) {
             </div>
 
             <div className="input-container name__orden-compra">
-              <label htmlFor={NAME_ID_FORCOMP}>Nombre completo</label>
+              <label htmlFor={NAME_ID_FORCOMP}>Nombre completo *</label>
               <input
                 type="text"
                 id={NAME_ID_FORCOMP}
@@ -74,7 +74,7 @@ export function OrdenDeCompra ({ handleOrdenCompra }) {
               />
             </div>
             <div className="input-container email__orden-compra">
-              <label htmlFor={EMAIL_ID_FORCOMP}>Email</label>
+              <label htmlFor={EMAIL_ID_FORCOMP}>Email *</label>
               <input
                 type="email"
                 id={EMAIL_ID_FORCOMP}
@@ -85,7 +85,7 @@ export function OrdenDeCompra ({ handleOrdenCompra }) {
             </div>
             <div className="input-container phone__orden-compra">
               <label htmlFor={NUMERO_TEL_ID_FORCOMP}>
-                Numero de teléfono{' '}
+                Numero de teléfono *{' '}
                 <small style={{ opacity: '0.5' }}>
                   (sin puntos ni espacios)
                 </small>
@@ -101,7 +101,7 @@ export function OrdenDeCompra ({ handleOrdenCompra }) {
             </div>
             <div className="input-container dirección__orden-compra">
               <label htmlFor={DIRECTION_ID_FORCOMP}>
-                Dirección (para envío){' '}
+                Dirección * (para envío){' '}
               </label>
               <input
                 type="text"
@@ -113,7 +113,7 @@ export function OrdenDeCompra ({ handleOrdenCompra }) {
             </div>
             <div className="input-container dirección-optional__orden-compra">
               <label htmlFor={INDICACIONES_ID_FORCOMP}>
-                Indicaciones (para envío){' '}
+                Indicaciones * (para envío){' '}
               </label>
               <textarea
                 type="text"

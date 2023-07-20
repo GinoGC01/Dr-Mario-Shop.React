@@ -30,8 +30,8 @@ export function useSendOrdenCompra ({ handleOrdenCompra }) {
   })
 
   const alertOrdenCompra = async (
-    Nombre,
     Email,
+    Nombre,
     Direccion,
     Telefono,
     Referencias,
@@ -59,8 +59,8 @@ export function useSendOrdenCompra ({ handleOrdenCompra }) {
                 Accept: 'application/json'
               },
               body: JSON.stringify({
-                Nombre,
                 Email,
+                Nombre,
                 Direccion,
                 Telefono,
                 Referencias,
