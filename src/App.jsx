@@ -5,6 +5,7 @@ import Home from './Pages/Home'
 import './App.css'
 import PreguntasFrecuentes from './Pages/PreguntasFrecuentes'
 import GuiasDeTalles from './Pages/GuiasDeTalles'
+import { TerminosYCondiciones } from './Pages/TerminosYCondiciones'
 
 function App () {
   return (
@@ -16,6 +17,7 @@ function App () {
           <Route path="/Carrito/#ordenDeCompra" element={<CartSection />} />
           <Route path="/Preguntas-Frecuentes" element={<PreguntasFrecuentes/>} />
           <Route path='/Guia-de-Talles' element={<GuiasDeTalles/>} />
+          <Route path='/Terminos-y-Condiciones' element={<TerminosYCondiciones/>}/>
         </Routes>
       </BrowserRouter>
     </>

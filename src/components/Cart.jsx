@@ -17,7 +17,8 @@ export function Cart () {
         id={MENU_HAMBURGUESA_ID}
         className="input-button__Cart"
       />
-      <label htmlFor={MENU_HAMBURGUESA_ID} className={cart.length > 0 ? 'button__Cart animate__animated animate__pulse animate__infinite animate__slowed' : 'button__Cart' }>
+      <label htmlFor={MENU_HAMBURGUESA_ID} className={cart.length > 0 ? 'button__Cart animate__animated animate__pulse animate__infinite animate__slowed ' : 'button__Cart' }
+      >
         <ShoppBag />
         <span>{quantityProducts}</span>
       </label>

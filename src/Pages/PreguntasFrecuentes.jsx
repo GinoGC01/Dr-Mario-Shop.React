@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { Footer } from '../components/Footer'
 
 export default function PreguntasFrecuentes () {
   return (
@@ -10,7 +11,7 @@ export default function PreguntasFrecuentes () {
       </Link>
     </div>
 
-      <section className="preguntas-frecuentes">
+      <section className="preguntas-frecuentes" id='preguntas-frecuentes'>
         <h1>PREGUNTAS FRECUENTES</h1>
         <ul className="preguntas">
         <li className="pregunta">
@@ -24,6 +25,13 @@ export default function PreguntasFrecuentes () {
               pueda llegar a tener, atravez de nuestros vendedores. La finalidad
               de este método es proteger a nuestros clientes de fraudes y
               estáfas, contactandonos personalmente.
+            </p>
+          </li>
+          <li className="pregunta">
+            <strong>¿Cuánto tiempo es válida mi orden de compra?</strong>
+            <p>
+              Una vez procesada la orden de compra, está vigente por 24Hs para llegar concretar la compra, y el envío.
+              <small>La orden de compra se procesa una vez que ingresa al sistema y el cliente es contactado por nuestros vendedores</small>
             </p>
           </li>
           <li className="pregunta">
@@ -106,6 +114,7 @@ export default function PreguntasFrecuentes () {
           </li>
         </ul>
       </section>
+      <Footer/>
     </>
   )
 }

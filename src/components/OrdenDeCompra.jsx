@@ -126,7 +126,7 @@ export function OrdenDeCompra ({ handleOrdenCompra }) {
             <button type="submit" onClick={handleSubmit}>
               Enviar orden de compra
             </button>
-            <Link className='terminos-condiciones__orden-compra'><small>Términos y condiciones</small></Link>
+            <Link to={'/Terminos-y-Condiciones'} className='terminos-condiciones__orden-compra'><small>Términos y condiciones</small></Link>
           </section>
         </form>
           )}

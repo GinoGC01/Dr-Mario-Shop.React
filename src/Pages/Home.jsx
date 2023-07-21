@@ -7,7 +7,7 @@ import { ProductsVisited } from '../components/ProductsVisited'
 import { Products } from '../components/Products'
 import productosIniciales from '../mocks/Products-01.json'
 import DrMarioFirstSection from '../components/DrMarioFirstSection'
-import { Link } from 'react-router-dom'
+import { Footer } from '../components/Footer'
 
 export default function Home () {
   const [products] = useState(productosIniciales)
@@ -15,16 +15,16 @@ export default function Home () {
 
   const filteredProducts = filterProducts(products)
   return (
-    <main className='animate__animated animate__fadeIn'>
-          <Cart />
-          <DrMarioFirstSection/>
-        <section className='body-sections'>
-          <FavoriteProducts/>
-          <ProductsVisited />
-          <Filters />
-          <Products products={filteredProducts} />
-          <Link to={'/Preguntas-Frecuentes'}>Preguntas Frecuentes</Link>
-        </section>
+    <main className="animate__animated animate__fadeIn" id='home'>
+      <DrMarioFirstSection />
+      <section className="body-sections">
+      <Cart />
+        <FavoriteProducts />
+        <ProductsVisited />
+        <Filters />
+        <Products products={filteredProducts} />
+      </section>
+      <Footer />
 
     </main>
   )
