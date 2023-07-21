@@ -46,7 +46,7 @@ export const CardCart = ({ product }) => {
     if (cart.length <= 1 && product.cantidad === 1) {
       Swal.fire({
         title: '¿Está seguro?',
-        text: 'Se eliminará el último producto del carrito',
+        text: `Se eliminará ${product.cantidad} ${product.cantidad > 1 ? 'productos' : 'producto'} del carrito`,
         icon: 'warning',
         showCancelButton: true,
         confirmButtonColor: '#0c151c',
