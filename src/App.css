@@ -779,6 +779,7 @@ body {
 
 .preguntas-frecuentes {
   position: relative;
+  top: 0;
   width: 100%;
   overflow: hidden;
 }
@@ -810,7 +811,7 @@ body {
 }
 
 .preguntas-frecuentes  h1::before{
-  content: url('../public/images/isotipo\ blanco.png');
+  content: url('../../images/isotipo\ blanco.png');
   display: flex;
   align-items: center;
   justify-content: center;
@@ -882,7 +883,7 @@ body {
 }
 
 .tyc-container  h1::before{
-  content: url('../public/images/isotipo\ blanco.png');
+  content: url('../../images/isotipo\ blanco.png');
   display: flex;
   align-items: center;
   justify-content: center;

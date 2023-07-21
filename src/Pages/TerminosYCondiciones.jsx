@@ -5,7 +5,7 @@ import { Footer } from '../components/Footer'
 export function TerminosYCondiciones () {
   return (
     <>
-      <section className="tyc-container">
+      <section className="tyc-container" id='terminos-y-condiciones'>
         <header>
           <div className="back-to-home">
             <Link to="/" className="back-to-home__cart-section">
