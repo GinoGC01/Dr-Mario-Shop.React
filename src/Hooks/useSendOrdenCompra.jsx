@@ -9,8 +9,7 @@ export function useSendOrdenCompra ({ handleOrdenCompra }) {
   const { cart, clearCart } = useCart()
   const { totalCost } = useTotalCost({ cart })
   const formularioCompra = document.querySelector('#ordenDeCompra')
-  const { setSendMail, loading, setLoading, error, setError } =
-    useContext(OrdenCompraContext)
+  const { setSendMail, loading, setLoading, error, setError } = useContext(OrdenCompraContext)
 
   const [IdOrdenCompra, setIDOrdenCompra] = useState(null)
 
@@ -32,8 +31,11 @@ export function useSendOrdenCompra ({ handleOrdenCompra }) {
   const alertOrdenCompra = async (
     Email,
     Nombre,
-    Direccion,
     Telefono,
+    Provincia,
+    CodigoPostal,
+    Direccion,
+    Barrio,
     Referencias,
     idCompra,
     Productos,
@@ -61,8 +63,11 @@ export function useSendOrdenCompra ({ handleOrdenCompra }) {
               body: JSON.stringify({
                 Email,
                 Nombre,
-                Direccion,
                 Telefono,
+                Provincia,
+                CodigoPostal,
+                Direccion,
+                Barrio,
                 Referencias,
                 idCompra,
                 Productos,
@@ -94,6 +99,9 @@ export function useSendOrdenCompra ({ handleOrdenCompra }) {
     const idCompra = formularioCompra.idCompra.value
     const Productos = formularioCompra.Productos.value
     const TotalCost = formularioCompra.TotalCost.value
+    const Barrio = formularioCompra.Barrio.value
+    const Provincia = formularioCompra.Provincia.value
+    const CodigoPostal = formularioCompra.CodigoPostal.value
 
     if (
       Email === ' ' ||
@@ -110,7 +118,16 @@ export function useSendOrdenCompra ({ handleOrdenCompra }) {
       Direccion === '' ||
       Referencias === ' ' ||
       Referencias === null ||
-      Referencias === ''
+      Referencias === '' ||
+      Barrio === ' ' ||
+      Barrio === null ||
+      Barrio === '' ||
+      CodigoPostal === ' ' ||
+      CodigoPostal === null ||
+      CodigoPostal === '' ||
+      Provincia === ' ' ||
+      Provincia === null ||
+      Provincia === ''
     ) {
       if (error !== 'Campo incompleto. Revise los campos, por favor.') {
         setError('Campo incompleto. Revise los campos, por favor.')
@@ -123,8 +140,11 @@ export function useSendOrdenCompra ({ handleOrdenCompra }) {
       alertOrdenCompra(
         Email,
         Nombre,
-        Direccion,
         Telefono,
+        Provincia,
+        CodigoPostal,
+        Direccion,
+        Barrio,
         Referencias,
         idCompra,
         Productos,

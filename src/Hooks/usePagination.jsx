@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 
 export function usePagination ({ products }) {
-  const ITEM_FOR_PAGE = 8
+  const ITEM_FOR_PAGE = 10
   const [items, setItems] = useState([])
   const [currenPage, setCurrentPage] = useState(0)
 

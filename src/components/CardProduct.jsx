@@ -8,6 +8,7 @@ import Toastify from 'toastify-js'
 import 'animate.css'
 import './CardProduct.css'
 import 'swiper/css'
+import 'swiper/css/zoom'
 import 'swiper/css/pagination'
 import 'toastify-js/src/toastify.css'
 
@@ -120,54 +121,66 @@ export default function CardProduct ({
           chevron_left
         </span>
       </section>
-      <div
-        className={
-          selected ? 'img-content__Card-selected' : 'img-content__Card'
-        }
-        onClick={() => handleSelected(product)}
-      >
-        {selected
-          ? (
-          <Swiper
-            pagination={{
-              dynamicBullets: true
-            }}
-            zoom={true}
-            modules={[Pagination, Zoom]}
-            className="mySwiper"
-          >
-            <SwiperSlide>
+
+      {selected
+        ? <>
+        <span className='background-select' onClick={() => handleSelected(product)}></span>
+        <Swiper
+          pagination={{
+            dynamicBullets: true
+          }}
+          zoom={true}
+          modules={[Zoom, Pagination]}
+          className="mySwiper img-content__Card-selected"
+        >
+          <SwiperSlide>
+            <div className="swiper-zoom-container">
               <img
                 src={product.img.image01}
                 alt={product.nombre}
                 className={selected ? 'img__Card' : 'img__Card-selected'}
               />
-            </SwiperSlide>
-            <SwiperSlide>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="swiper-zoom-container">
               <img
                 src={product.img.image02}
                 alt={product.nombre}
                 className={selected ? 'img__Card' : 'img__Card-selected'}
               />
-            </SwiperSlide>
-            <SwiperSlide>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="swiper-zoom-container">
               <img
                 src={product.img.image03}
                 alt={product.nombre}
                 className={selected ? 'img__Card' : 'img__Card-selected'}
               />
-            </SwiperSlide>
-          </Swiper>
-            )
-          : (
-          <img
-            src={product.img.image01}
-            alt={product.nombre}
-            className={selected ? 'img__Card' : 'img__Card-selected'}
-            loading="lazy"
-          />
-            )}
-      </div>
+            </div>
+          </SwiperSlide>
+        </Swiper>
+          </>
+
+        : (
+        <div
+          className={
+            selected ? 'img-content__Card-selected' : 'img-content__Card'
+          }
+        >
+          {
+            <img
+              src={product.img.image01}
+              alt={product.nombre}
+              className={selected ? 'img__Card' : 'img__Card-selected'}
+              loading="lazy"
+              onClick={() => handleSelected(product)}
+            />
+          }
+        </div>
+          )}
+
       <div className={selected ? 'text__Card-selected' : 'text__Card'}>
         <strong className={selected ? 'title__Card-selected' : 'title__Card'}>
           {product.nombre}
@@ -176,7 +189,7 @@ export default function CardProduct ({
           <p>
             $ <b>{product.precio}</b>
           </p>
-          <strike className="price__offer">$ {product.precio + 3500}</strike>
+          <strike className="price__offer">$ {product.precio + 2500}</strike>
         </div>
         <div
           className={
@@ -220,21 +233,22 @@ export default function CardProduct ({
         >
           Guía de talles
         </Link>
-        {product.stock &&
+        {product.stock && (
           <button
-          className={selected ? 'button__Card-selected' : 'button__Card'}
-          style={{
-            backgroundColor: isProductInCart ? 'red' : '#0c151c',
-            transition: 'background-color 0.3s'
-          }}
-          onClick={() => {
-            isProductInCart
-              ? handleRemoveFromCart(product)
-              : handleAddToCart(product)
-          }}
-        >
-          {isProductInCart ? <RemoveCart /> : <AddCart />}
-        </button>}
+            className={selected ? 'button__Card-selected' : 'button__Card'}
+            style={{
+              backgroundColor: isProductInCart ? 'red' : '#0c151c',
+              transition: 'background-color 0.3s'
+            }}
+            onClick={() => {
+              isProductInCart
+                ? handleRemoveFromCart(product)
+                : handleAddToCart(product)
+            }}
+          >
+            {isProductInCart ? <RemoveCart /> : <AddCart />}
+          </button>
+        )}
       </div>
     </li>
   )

@@ -25,7 +25,7 @@ export function Footer () {
           </div>
           <ul>
             <li className="link-li">
-              <a href="/#home">Home</a>
+              <Link to="/#home">Home</Link>
             </li>
             <li className="link-li">
               <Link to="/Preguntas-Frecuentes">Preguntas frecuentes</Link>

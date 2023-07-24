@@ -51,8 +51,7 @@
   border-radius: 10px;
   background-color: var(--background);
 }
-
-.Card-selected::before{
+.background-select{
   content: "";
   position: absolute;
   top: -100px;
@@ -115,6 +114,10 @@
   width: 100%;
 }
 
+.img-content__Card-selected{
+  position: relative;
+}
+
 .img__Card,
 .img__Card-selected {
   width: 100%;
@@ -122,6 +125,7 @@
   background-color: white;
   object-fit: contain;
 }
+
 
 .swiper {
   width: 100%;

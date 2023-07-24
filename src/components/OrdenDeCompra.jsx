@@ -2,6 +2,7 @@ import React from 'react'
 import { useIDS } from '../Hooks/useIDS'
 import { useSendOrdenCompra } from '../Hooks/useSendOrdenCompra'
 import { Link } from 'react-router-dom'
+import { ProvinciasForOrdenCompra } from '../components/ProvinciasForOrdenCompra'
 import Loader from './Loader'
 
 export function OrdenDeCompra ({ handleOrdenCompra }) {
@@ -10,7 +11,10 @@ export function OrdenDeCompra ({ handleOrdenCompra }) {
     EMAIL_ID_FORCOMP,
     NUMERO_TEL_ID_FORCOMP,
     DIRECTION_ID_FORCOMP,
-    INDICACIONES_ID_FORCOMP
+    INDICACIONES_ID_FORCOMP,
+    PROVINCIA_ID_FORCOMP,
+    CODIGO_POSTAL_ID_FORCOMP,
+    BARRIO_ID_FORCOMP
   } = useIDS()
 
   const { IdOrdenCompra, loading, error, ordenProductos, handleSubmit, totalCost } = useSendOrdenCompra({ handleOrdenCompra })
@@ -99,6 +103,19 @@ export function OrdenDeCompra ({ handleOrdenCompra }) {
                 placeholder="1122223333"
               />
             </div>
+            <ProvinciasForOrdenCompra id={PROVINCIA_ID_FORCOMP}/>
+            <div className="input-container dirección__orden-compra">
+              <label htmlFor={CODIGO_POSTAL_ID_FORCOMP}>
+                Código postal * (para envío){' '}
+              </label>
+              <input
+                type="text"
+                id={CODIGO_POSTAL_ID_FORCOMP}
+                name="CodigoPostal"
+                required
+                placeholder="B1665..."
+              />
+            </div>
             <div className="input-container dirección__orden-compra">
               <label htmlFor={DIRECTION_ID_FORCOMP}>
                 Dirección * (para envío){' '}
@@ -109,6 +126,18 @@ export function OrdenDeCompra ({ handleOrdenCompra }) {
                 name="Direccion"
                 required
                 placeholder="Av... 1234, entre..."
+              />
+            </div>
+            <div className="input-container dirección__orden-compra">
+              <label htmlFor={BARRIO_ID_FORCOMP}>
+                Barrio * (para envío){' '}
+              </label>
+              <input
+                type="text"
+                id={BARRIO_ID_FORCOMP}
+                name="Barrio"
+                required
+                placeholder="Barrio..."
               />
             </div>
             <div className="input-container dirección-optional__orden-compra">
