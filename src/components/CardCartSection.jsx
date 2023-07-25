@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useCart } from '../Hooks/useCart'
-import Swal from 'sweetalert2'
 import { useQuantityProductsCart } from '../Hooks/useQuantityProductsCart'
+import { handleRemoveItemCartSection } from './Alerts'
 
 export function CardCartSection ({ item, setFormActive }) {
   const { restartToCart, addToCart, cart } = useCart()
@@ -23,28 +23,7 @@ export function CardCartSection ({ item, setFormActive }) {
 
   const handleRestarToCart = item => {
     if (cart.length === 1 && item.cantidad === 1) {
-      Swal.fire({
-        title: '¿Está seguro?',
-        text: `${quantityProducts > 1 ? 'Se eliminarán' : 'Se eliminará'} ${quantityProducts} ${quantityProducts > 1 ? 'productos' : 'producto'} del carrito`,
-        icon: 'warning',
-        showCancelButton: true,
-        confirmButtonColor: '#0c151c',
-        cancelButtonColor: '#a9a9a9',
-        confirmButtonText: 'Si eliminar',
-        iconColor: '#0c151c'
-      }).then((result) => {
-        if (result.isConfirmed) {
-          setFormActive(false)
-          restartToCart(item)
-          Swal.fire({
-            text: `${quantityProducts > 1 ? 'Se eliminaron' : 'Se eliminió'} ${quantityProducts} ${quantityProducts > 1 ? 'productos' : 'producto'} del carrito`,
-            icon: 'success',
-            confirmButtonColor: '#0c151c',
-            confirmButtonText: 'OK'
-
-          })
-        }
-      })
+      handleRemoveItemCartSection(quantityProducts, setFormActive, restartToCart, item)
       return
     }
     restartToCart(item)

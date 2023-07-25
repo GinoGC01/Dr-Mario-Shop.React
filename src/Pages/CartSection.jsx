@@ -1,10 +1,11 @@
-import React, { useState } from 'react'
+import React, { useContext } from 'react'
 
 import { ProductsinCartSection } from '../components/ProductsinCartSection'
 import { OrdenDeCompra } from '../components/OrdenDeCompra'
+import { CartContext } from '../Context/CartContext'
 
 export default function CartSection () {
-  const [formActive, setFormActive] = useState(false)
+  const { formActive, setFormActive } = useContext(CartContext)
 
   const handleOrdenCompra = () => {
     setFormActive(!formActive)

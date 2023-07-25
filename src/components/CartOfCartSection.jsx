@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { useCart } from '../Hooks/useCart'
 import { useQuantityProductsCart } from '../Hooks/useQuantityProductsCart'
 import { useTotalCost } from '../Hooks/useTotaCost'
@@ -6,11 +6,13 @@ import { ProductsInCart } from './ProductsInCart'
 import { Link } from 'react-router-dom'
 import { Cart, RigthArrow } from '../components/Icons'
 import Swal from 'sweetalert2'
+import { CartContext } from '../Context/CartContext'
 
-export function CartOfCartSection ({ openForm, formactive, setFormActive }) {
+export function CartOfCartSection ({ openForm }) {
   const { cart, clearCart } = useCart()
   const { quantityProducts } = useQuantityProductsCart({ cart })
   const { totalCost } = useTotalCost({ cart })
+  const { formActive, setFormActive } = useContext(CartContext)
 
   const handleClearCart = () => {
     Swal.fire({
@@ -46,7 +48,7 @@ export function CartOfCartSection ({ openForm, formactive, setFormActive }) {
   return (
       <>
         <header className="header__cart-section">
-          <Link to="/" className="back-to-home__cart-section">
+          <Link to="/" className="back-to-home__cart-section" onClick={() => { setFormActive(false) }}>
             <span className="material-symbols-outlined">chevron_left</span>
           </Link>
           <h3>
@@ -86,11 +88,11 @@ export function CartOfCartSection ({ openForm, formactive, setFormActive }) {
                 <button
                   onClick={openForm}
                   className={
-                    formactive
+                    formActive
                       ? 'button-finalizar-compra'
                       : 'animate__animated animate__pulse animate__infinite animate__slow button-finalizar-compra'
                   }
-                  disabled={!!formactive}
+                  disabled={!!formActive}
                 >
                   <a href="/Carrito/#ordenDeCompra" >Finalizar compra</a>
                 </button>

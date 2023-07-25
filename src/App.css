@@ -65,7 +65,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1em;
-  align-items: center;
+  padding-left: 20px ;
 }
 
 .subtitle__Dr-mario-FirstSection {
@@ -195,21 +195,46 @@ body {
 
 .button__Cart {
   position: fixed;
-  bottom: 15px;
-  right: 5px;
+  top: 40px;
+  right: 15px;
   z-index: 6000;
 
   display: flex;
   justify-content: center;
   align-items: center;
 
-  background-color: #1c76c5;
+  background-color: #040a0f9d;
   width: 3em;
   height: 3em;
   border-radius: 50%;
   transition:
     background-color ease-in-out 0.2s,
     transform ease-in-out 0.2s;
+}
+
+.number-products__Cart{
+  position: absolute;
+  right: 0px;
+  top: -3px;
+  height: 18px;
+  width: 18px;
+  background-color: red;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bg__Cart{
+  display: none;
+  position: fixed;
+  z-index: 500;
+  height: 100vh;
+  width: 100vw;
+}
+
+.input-button__Cart:checked ~ .bg__Cart{
+  display: block;
 }
 
 .input-button__Cart:checked ~ .button__Cart {
@@ -254,11 +279,11 @@ body {
   background-color: #526980;
   opacity: 0;
   z-index: -1;
-  bottom: 55px;
+  top: 90px;
   right: 16px;
   box-shadow: 0 5px 15px #0c151c;
   transition:
-    bottom ease-in-out 0.2s,
+    top ease-in-out 0.2s,
     opacity ease-in-out 0.2s,
     z-index 0.2s;
 }
@@ -271,9 +296,9 @@ body {
   border-right: 9px solid transparent;
   border-bottom: 12px solid #526980;
   position: absolute;
-  bottom: 0;
+  top: -20px;
   right: 0;
-  transform: translate(-5px, 9px) rotate(180deg);
+  transform: translate(-15px, 9px) rotate(0deg);
 }
 
 .aside__Cart::-webkit-scrollbar {
@@ -288,7 +313,7 @@ body {
 .input-button__Cart:checked ~ .aside__Cart-0 {
   opacity: 1;
   z-index: 10000;
-  bottom: 80px;
+  top: 105px;
   right: 16px;
 }
 
@@ -296,9 +321,8 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
   margin-bottom: 20px;
-  padding: 5px 20px 20px;
+  padding: 25px 20px 20px;
 }
 
 .header__Cart-home > h3 {

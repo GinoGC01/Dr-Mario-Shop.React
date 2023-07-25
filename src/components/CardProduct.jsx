@@ -1,10 +1,11 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { AddCart, RemoveCart } from '../components/Icons'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Pagination, Zoom } from 'swiper/modules'
 import { useProductsVisited } from '../Hooks/useProductsVisited'
 import { Link } from 'react-router-dom'
-import Toastify from 'toastify-js'
+import { CartContext } from '../Context/CartContext'
+import { popUpAddToCart, popUpRemoveToCart } from './Alerts'
 import 'animate.css'
 import './CardProduct.css'
 import 'swiper/css'
@@ -20,6 +21,7 @@ export default function CardProduct ({
   isFavoriteProduct
 }) {
   const [selected, setSelected] = useState(false)
+  const { setFormActive } = useContext(CartContext)
 
   const {
     handleProductosVisitados,
@@ -46,44 +48,16 @@ export default function CardProduct ({
   }
 
   const handleAddToCart = (product) => {
-    Toastify({
-      text: 'Producto agregado',
-      duration: 3000,
-      close: false,
-      gravity: 'top',
-      position: 'left',
-      stopOnFocus: true,
-      style: {
-        background: '#202b38',
-        fontSize: '.8rem',
-        width: '200px',
-        boxShadow: '0 0 15px black',
-        opacity: '1',
-        borderRadius: '10px'
-      },
-      onClick: addToCart(product) // Callback after click
-    }).showToast()
+    popUpAddToCart({ addToCart, product })
   }
 
-  const handleRemoveFromCart = () => {
-    Toastify({
-      text: 'Producto eliminado :c',
-      duration: 3000,
-      close: false,
-      gravity: 'top',
-      position: 'left',
-      stopOnFocus: true,
-      style: {
-        background: '#202b38',
-        fontSize: '.8rem',
-        width: '200px',
-        boxShadow: '0 0 15px black',
-        opacity: '1',
-        borderRadius: '10px',
-        paddingLeft: '15px'
-      },
-      onClick: removeFromCart(product)
-    }).showToast()
+  const handleRemoveFromCart = (product) => {
+    popUpRemoveToCart({ removeFromCart, product })
+  }
+
+  const handleEndBuild = (product) => {
+    addToCart(product)
+    setTimeout(() => { setFormActive(true) }, 500)
   }
 
   return (
@@ -123,46 +97,50 @@ export default function CardProduct ({
       </section>
 
       {selected
-        ? <>
-        <span className='background-select' onClick={() => handleSelected(product)}></span>
-        <Swiper
-          pagination={{
-            dynamicBullets: true
-          }}
-          zoom={true}
-          modules={[Zoom, Pagination]}
-          className="mySwiper img-content__Card-selected"
-        >
-          <SwiperSlide>
-            <div className="swiper-zoom-container">
-              <img
-                src={product.img.image01}
-                alt={product.nombre}
-                className={selected ? 'img__Card' : 'img__Card-selected'}
-              />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="swiper-zoom-container">
-              <img
-                src={product.img.image02}
-                alt={product.nombre}
-                className={selected ? 'img__Card' : 'img__Card-selected'}
-              />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="swiper-zoom-container">
-              <img
-                src={product.img.image03}
-                alt={product.nombre}
-                className={selected ? 'img__Card' : 'img__Card-selected'}
-              />
-            </div>
-          </SwiperSlide>
-        </Swiper>
-          </>
-
+        ? (
+        <>
+          <span
+            className="background-select"
+            onClick={() => handleSelected(product)}
+          ></span>
+          <Swiper
+            pagination={{
+              dynamicBullets: true
+            }}
+            zoom={true}
+            modules={[Zoom, Pagination]}
+            className="mySwiper img-content__Card-selected"
+          >
+            <SwiperSlide>
+              <div className="swiper-zoom-container">
+                <img
+                  src={product.img.image01}
+                  alt={product.nombre}
+                  className={selected ? 'img__Card' : 'img__Card-selected'}
+                />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="swiper-zoom-container">
+                <img
+                  src={product.img.image02}
+                  alt={product.nombre}
+                  className={selected ? 'img__Card' : 'img__Card-selected'}
+                />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="swiper-zoom-container">
+                <img
+                  src={product.img.image03}
+                  alt={product.nombre}
+                  className={selected ? 'img__Card' : 'img__Card-selected'}
+                />
+              </div>
+            </SwiperSlide>
+          </Swiper>
+        </>
+          )
         : (
         <div
           className={
@@ -234,20 +212,23 @@ export default function CardProduct ({
           Guía de talles
         </Link>
         {product.stock && (
-          <button
-            className={selected ? 'button__Card-selected' : 'button__Card'}
-            style={{
-              backgroundColor: isProductInCart ? 'red' : '#0c151c',
-              transition: 'background-color 0.3s'
-            }}
-            onClick={() => {
-              isProductInCart
-                ? handleRemoveFromCart(product)
-                : handleAddToCart(product)
-            }}
-          >
-            {isProductInCart ? <RemoveCart /> : <AddCart />}
-          </button>
+          <div className={selected ? 'buttons-container__Card-selected' : 'buttons-container'}>
+            <button
+              className={'button__Card'}
+              style={{
+                backgroundColor: isProductInCart ? 'red' : '#0c151c',
+                transition: 'background-color 0.3s'
+              }}
+              onClick={() => {
+                isProductInCart
+                  ? handleRemoveFromCart(product)
+                  : handleAddToCart(product)
+              }}
+            >
+              {isProductInCart ? <RemoveCart /> : <AddCart />}
+            </button>
+            <Link to={'/Carrito/#ordenDeCompra'} className='button-end-build__Card' onClick={() => { handleEndBuild(product) }}>Finalizar compra</Link>
+          </div>
         )}
       </div>
     </li>

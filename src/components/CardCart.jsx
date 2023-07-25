@@ -1,9 +1,8 @@
 /* eslint-disable no-unused-expressions */
 import React, { useState } from 'react'
 import { useCart } from '../Hooks/useCart'
-import Toastify from 'toastify-js'
 import 'animate.css'
-import Swal from 'sweetalert2'
+import { handleRemoveItemCardCart, popUpRestartToCart } from './Alerts'
 
 export const CardCart = ({ product }) => {
   const { restartToCart, addToCart, cart } = useCart()
@@ -22,49 +21,12 @@ export const CardCart = ({ product }) => {
   }
 
   const handleRestartToCart = () => {
-    Toastify({
-      text: 'Producto eliminado',
-      duration: 3000,
-      close: false,
-      gravity: 'top',
-      position: 'left',
-      stopOnFocus: true,
-      style: {
-        background: '#202b38',
-        fontSize: '.8rem',
-        width: '200px',
-        boxShadow: '0 0 15px black',
-        opacity: '1',
-        borderRadius: '10px',
-        paddingLeft: '15px'
-      },
-      onClick: restartToCart(product)
-    }).showToast()
+    popUpRestartToCart({ restartToCart, product })
   }
 
   const handleRestarToCart = product => {
     if (cart.length <= 1 && product.cantidad === 1) {
-      Swal.fire({
-        title: '¿Está seguro?',
-        text: `Se eliminará ${product.cantidad} ${product.cantidad > 1 ? 'productos' : 'producto'} del carrito`,
-        icon: 'warning',
-        showCancelButton: true,
-        confirmButtonColor: '#0c151c',
-        cancelButtonColor: '#a9a9a9',
-        confirmButtonText: 'Si eliminar',
-        iconColor: '#0c151c'
-      }).then((result) => {
-        if (result.isConfirmed) {
-          restartToCart(product)
-          Swal.fire({
-            text: 'El carrito quedó vacío',
-            icon: 'success',
-            confirmButtonColor: '#0c151c',
-            confirmButtonText: 'OK'
-
-          })
-        }
-      })
+      handleRemoveItemCardCart({ product, restartToCart })
       return
     }
     handleRestartToCart()

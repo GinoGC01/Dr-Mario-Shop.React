@@ -1,10 +1,11 @@
-import React, { createContext } from 'react'
+import React, { createContext, useState } from 'react'
 import { useReduceCart } from '../Hooks/useReduceCart'
 
 export const CartContext = createContext()
 
 export function CartProvider ({ children }) {
   const { state, addToCart, removeFromCart, clearCart, restartToCart } = useReduceCart()
+  const [formActive, setFormActive] = useState(false)
 
   return (
     <CartContext.Provider
@@ -13,7 +14,9 @@ export function CartProvider ({ children }) {
         addToCart,
         removeFromCart,
         restartToCart,
-        clearCart
+        clearCart,
+        formActive,
+        setFormActive
       }}
     >
       {children}
