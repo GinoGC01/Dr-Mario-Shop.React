@@ -13,10 +13,7 @@
         "marca":"Gildan",
         "img": {"image01": "../images/Ropa/Buzos/S-gildan-101/S-gildan-01.webp",
                 "image02": "../images/Ropa/Buzos/S-gildan-101/S-gildan-02.webp",
-                "image03": "../images/Ropa/Buzos/S-gildan-101/S-gildan-03.webp",
-                "image01Index": "images/Ropa/Buzos/S-gildan-101/S-gildan-01.webp",
-                "image02Index": "images/Ropa/Buzos/S-gildan-101/S-gildan-02.webp",
-                "image03Index": "images/Ropa/Buzos/S-gildan-101/S-gildan-03.webp"},
+                "image03": "../images/Ropa/Buzos/S-gildan-101/S-gildan-03.webp"},
         "calificacion":9.1
     },
     {
@@ -33,10 +30,7 @@
         "marca":"Gildan",
         "img": {"image01": "../images/Ropa/Buzos/L-Gildan-102/L-gildan-01.webp",
                 "image02": "../images/Ropa/Buzos/L-Gildan-102/L-gildan-02.webp",
-                "image03": "../images/Ropa/Buzos/L-Gildan-102/L-gildan-03.webp",
-                "image01Index": "images/Ropa/Buzos/L-Gildan-102/L-gildan-01.webp",
-                "image02Index": "images/Ropa/Buzos/L-Gildan-102/L-gildan-02.webp",
-                "image03Index": "images/Ropa/Buzos/L-Gildan-102/L-gildan-03.webp"},
+                "image03": "../images/Ropa/Buzos/L-Gildan-102/L-gildan-03.webp"},
         "calificacion":9.2
     },
     {
@@ -53,10 +47,7 @@
         "marca":"Pacify Company",
         "img": {"image01": "../images/Ropa/Buzos/M-PacifyCompany-103/M-PacifyCompany-01.webp",
                 "image02": "../images/Ropa/Buzos/M-PacifyCompany-103/M-PacifyCompany-02.webp",
-                "image03": "../images/Ropa/Buzos/M-PacifyCompany-103/M-PacifyCompany-03.webp",
-                "image01Index": "images/Ropa/Buzos/M-PacifyCompany-103/M-PacifyCompany-01.webp",
-                "image02Index": "images/Ropa/Buzos/M-PacifyCompany-103/M-PacifyCompany-01.webp",
-                "image03Index": "images/Ropa/Buzos/M-PacifyCompany-103/M-PacifyCompany-01.webp"},
+                "image03": "../images/Ropa/Buzos/M-PacifyCompany-103/M-PacifyCompany-03.webp"},
         "calificacion":9.3
     },
     {
@@ -73,10 +64,7 @@
         "marca":"Athleta Girld",
         "img": {"image01": "../images/Ropa/Buzos/L-AthletaGirld-104/L-AthletaGirld-01.webp",
                 "image02": "../images/Ropa/Buzos/L-AthletaGirld-104/L-AthletaGirld-02.webp",
-                "image03": "../images/Ropa/Buzos/L-AthletaGirld-104/L-AthletaGirld-03.webp",
-                "image01Index": "images/Ropa/Buzos/L-AthletaGirld-104/L-AthletaGirld-01.webp",
-                "image02Index": "images/Ropa/Buzos/L-AthletaGirld-104/L-AthletaGirld-02.webp",
-                "image03Index": "images/Ropa/Buzos/L-AthletaGirld-104/L-AthletaGirld-03.webp"},
+                "image03": "../images/Ropa/Buzos/L-AthletaGirld-104/L-AthletaGirld-03.webp"},
         "calificacion":7.9
     },
     {
@@ -93,10 +81,7 @@
         "marca":"Roses",
         "img": {"image01": "../images/Ropa/Buzos/M-Rose-105/M-Rose-01.webp",
                 "image02": "../images/Ropa/Buzos/M-Rose-105/M-Rose-02.webp",
-                "image03": "../images/Ropa/Buzos/M-Rose-105/M-Rose-03.webp",
-                "image01Index": "images/Ropa/Buzos/M-Rose-105/M-Rose-01.webp",
-                "image02Index": "images/Ropa/Buzos/M-Rose-105/M-Rose-02.webp",
-                "image03Index": "images/Ropa/Buzos/M-Rose-105/M-Rose-03.webp"},
+                "image03": "../images/Ropa/Buzos/M-Rose-105/M-Rose-03.webp"},
         "calificacion":9.5
     },
     {
@@ -113,10 +98,7 @@
         "marca":"Goodiellow",
         "img": {"image01": "../images/Ropa/Camperas/S-Goodiellow-106/S-Goodiellow-01.webp",
                 "image02": "../images/Ropa/Camperas/S-Goodiellow-106/S-Goodiellow-02.webp",
-                "image03": "../images/Ropa/Camperas/S-Goodiellow-106/S-Goodiellow-03.webp",
-                "image01Index": "images/Ropa/Buzos/S-Goodiellow-106/S-Goodiellow-01.webp",
-                "image02Index": "images/Ropa/Buzos/S-Goodiellow-106/S-Goodiellow-02.webp",
-                "image03Index": "images/Ropa/Buzos/S-Goodiellow-106/S-Goodiellow-03.webp"},
+                "image03": "../images/Ropa/Camperas/S-Goodiellow-106/S-Goodiellow-03.webp"},
         "calificacion":8.3
     },
     {
@@ -133,10 +115,7 @@
         "marca":"Old Navi Active",
         "img": {"image01": "../images/Ropa/Buzos/M-OldNaviActive-107/M-OldNaviActive- (1).webp",
                 "image02": "../images/Ropa/Buzos/M-OldNaviActive-107/M-OldNaviActive- (2).webp",
-                "image03": "../images/Ropa/Buzos/M-OldNaviActive-107/M-OldNaviActive- (3).webp",
-                "image01Index": "images/Ropa/Buzos/M-OldNaviActive-107/M-OldNaviActive- (1).webp",
-                "image02Index": "images/Ropa/Buzos/M-OldNaviActive-107/M-OldNaviActive- (2).webp",
-                "image03Index": "images/Ropa/Buzos/M-OldNaviActive-107/M-OldNaviActive- (3).webp"},
+                "image03": "../images/Ropa/Buzos/M-OldNaviActive-107/M-OldNaviActive- (3).webp"},
         "calificacion":8.9
     },
     {
@@ -153,10 +132,7 @@
         "marca":"Harms",
         "img": {"image01": "../images/Ropa/Buzos/S-Harms-108/S-Harms- (1).webp",
                 "image02": "../images/Ropa/Buzos/S-Harms-108/S-Harms- (2).webp",
-                "image03": "../images/Ropa/Buzos/S-Harms-108/S-Harms- (3).webp",
-                "image01Index": "images/Ropa/Buzos/S-Harms-108/S-Harms- (1).webp",
-                "image02Index": "images/Ropa/Buzos/S-Harms-108/S-Harms- (2).webp",
-                "image03Index": "images/Ropa/Buzos/S-Harms-108/S-Harms- (3).webp"},
+                "image03": "../images/Ropa/Buzos/S-Harms-108/S-Harms- (3).webp"},
         "calificacion":9.7
     },
     {
@@ -173,10 +149,7 @@
         "marca":"NIKE",
         "img": {"image01": "../images/Ropa/Buzos/S-Nike-109/S-Nike- (3).webp",
                 "image02": "../images/Ropa/Buzos/S-Nike-109/S-Nike- (2).webp",
-                "image03": "../images/Ropa/Buzos/S-Nike-109/S-Nike- (1).webp",
-                "image01Index": "images/Ropa/Buzos/S-Nike-109/S-Nike- (3).webp",
-                "image02Index": "images/Ropa/Buzos/S-Nike-109/S-Nike- (2).webp",
-                "image03Index": "images/Ropa/Buzos/S-Nike-109/S-Nike- (1).webp"},
+                "image03": "../images/Ropa/Buzos/S-Nike-109/S-Nike- (1).webp"},
         "calificacion":9.1
     },
     {
@@ -193,10 +166,7 @@
         "marca":"Blfacher Report",
         "img": {"image01": "../images/Ropa/Buzos/XXL-BlfacherReport-110/XXL-BlfacherReport- (1).webp",
                 "image02": "../images/Ropa/Buzos/XXL-BlfacherReport-110/XXL-BlfacherReport- (2).webp",
-                "image03": "../images/Ropa/Buzos/XXL-BlfacherReport-110/XXL-BlfacherReport- (3).webp",
-                "image01Index": "images/Ropa/Buzos/XXL-BlfacherReport-110/XXL-BlfacherReport- (1).webp",
-                "image02Index": "images/Ropa/Buzos/XXL-BlfacherReport-110/XXL-BlfacherReport- (2).webp",
-                "image03Index": "images/Ropa/Buzos/XXL-BlfacherReport-110/XXL-BlfacherReport- (3).webp"},
+                "image03": "../images/Ropa/Buzos/XXL-BlfacherReport-110/XXL-BlfacherReport- (3).webp"},
         "calificacion":9.2
     },
     {
@@ -213,10 +183,7 @@
         "marca":"Gildan",
         "img": {"image01": "../images/Ropa/Buzos/L-Gildan-111/L-Gildan- (1).webp",
                 "image02": "../images/Ropa/Buzos/L-Gildan-111/L-Gildan- (2).webp",
-                "image03": "../images/Ropa/Buzos/L-Gildan-111/L-Gildan- (3).webp",
-                "image01Index": "images/Ropa/Buzos/L-Gildan-111/L-Gildan- (1).webp",
-                "image02Index": "images/Ropa/Buzos/L-Gildan-111/L-Gildan- (2).webp",
-                "image03Index": "images/Ropa/Buzos/L-Gildan-111/L-Gildan- (3).webp"},
+                "image03": "../images/Ropa/Buzos/L-Gildan-111/L-Gildan- (3).webp"},
         "calificacion":9.7
     },
     {
@@ -233,10 +200,7 @@
         "marca":"Turth Substonee",
         "img": {"image01": "../images/Ropa/Buzos/S-TruthSubstone-112/S-TruthSubstone- (1).webp",
                 "image02": "../images/Ropa/Buzos/S-TruthSubstone-112/S-TruthSubstone- (2).webp",
-                "image03": "../images/Ropa/Buzos/S-TruthSubstone-112/S-TruthSubstone- (3).webp",
-                "image01Index": "images/Ropa/Buzos/S-TruthSubstone-112/S-TruthSubstone- (1).webp",
-                "image02Index": "images/Ropa/Buzos/S-TruthSubstone-112/S-TruthSubstone- (2).webp",
-                "image03Index": "images/Ropa/Buzos/S-TruthSubstone-112/S-TruthSubstone- (3).webp"},
+                "image03": "../images/Ropa/Buzos/S-TruthSubstone-112/S-TruthSubstone- (3).webp"},
         "calificacion":8.3
     },
     {
@@ -253,10 +217,7 @@
         "marca":"Independent",
         "img": {"image01": "../images/Ropa/Buzos/S-Independent-113/S-Independent- (1).webp",
                 "image02": "../images/Ropa/Buzos/S-Independent-113/S-Independent- (2).webp",
-                "image03": "../images/Ropa/Buzos/S-Independent-113/S-Independent- (3).webp",
-                "image01Index": "images/Ropa/Buzos/S-Independent-113/S-Independent- (1).webp",
-                "image02Index": "images/Ropa/Buzos/S-Independent-113/S-Independent- (2).webp",
-                "image03Index": "images/Ropa/Buzos/S-Independent-113/S-Independent- (3).webp"},
+                "image03": "../images/Ropa/Buzos/S-Independent-113/S-Independent- (3).webp"},
         "calificacion":9.2
     },
     {
@@ -273,10 +234,7 @@
         "marca":"Snoop Oversize Hoodie",
         "img": {"image01": "../images/Ropa/Buzos/XXL-SnoopOversizeHoodie-114/XXL-SnoopOversizeHoodie- (1).webp",
                 "image02": "../images/Ropa/Buzos/XXL-SnoopOversizeHoodie-114/XXL-SnoopOversizeHoodie- (2).webp",
-                "image03": "../images/Ropa/Buzos/XXL-SnoopOversizeHoodie-114/XXL-SnoopOversizeHoodie- (3).webp",
-                "image01Index": "images/Ropa/Buzos/XXL-SnoopOversizeHoodie-114/XXL-SnoopOversizeHoodie- (1).webp",
-                "image02Index": "images/Ropa/Buzos/XXL-SnoopOversizeHoodie-114/XXL-SnoopOversizeHoodie- (2).webp",
-                "image03Index": "images/Ropa/Buzos/XXL-SnoopOversizeHoodie-114/XXL-SnoopOversizeHoodie- (3).webp"},
+                "image03": "../images/Ropa/Buzos/XXL-SnoopOversizeHoodie-114/XXL-SnoopOversizeHoodie- (3).webp"},
         "calificacion":9.8
     },
     {
@@ -293,10 +251,7 @@
         "marca":"Roger Williams",
         "img": {"image01": "../images/Ropa/Buzos/S-RogerWilliams-115/S-RogerWilliams- (1).webp",
                 "image02": "../images/Ropa/Buzos/S-RogerWilliams-115/S-RogerWilliams- (2).webp",
-                "image03": "../images/Ropa/Buzos/S-RogerWilliams-115/S-RogerWilliams- (3).webp",
-                "image01Index": "images/Ropa/Buzos/S-RogerWilliams-115/S-RogerWilliams- (1).webp",
-                "image02Index": "images/Ropa/Buzos/S-RogerWilliams-115/S-RogerWilliams- (2).webp",
-                "image03Index": "images/Ropa/Buzos/S-RogerWilliams-115/S-RogerWilliams- (3).webp"},
+                "image03": "../images/Ropa/Buzos/S-RogerWilliams-115/S-RogerWilliams- (3).webp"},
         "calificacion":8.2
     },
     {
@@ -313,10 +268,7 @@
         "marca":"Coloniaa Corner",
         "img": {"image01": "../images/Ropa/Buzos/M-ColoniaCorner-116/M-ColoniaCorner- (1).webp",
                 "image02": "../images/Ropa/Buzos/M-ColoniaCorner-116/M-ColoniaCorner- (2).webp",
-                "image03": "../images/Ropa/Buzos/M-ColoniaCorner-116/M-ColoniaCorner- (3).webp",
-                "image01Index": "images/Ropa/Buzos/M-ColoniaCorner-116/M-ColoniaCorner- (1).webp",
-                "image02Index": "images/Ropa/Buzos/M-ColoniaCorner-116/M-ColoniaCorner- (2).webp",
-                "image03Index": "images/Ropa/Buzos/M-ColoniaCorner-116/M-ColoniaCorner- (3).webp"},
+                "image03": "../images/Ropa/Buzos/M-ColoniaCorner-116/M-ColoniaCorner- (3).webp"},
         "calificacion":9.2
     },
     {
@@ -333,10 +285,7 @@
         "marca":"Tek Gear",
         "img": {"image01": "../images/Ropa/Buzos/M-TekGear-117/M-TekGear- (1).webp",
                 "image02": "../images/Ropa/Buzos/M-TekGear-117/M-TekGear- (2).webp",
-                "image03": "../images/Ropa/Buzos/M-TekGear-117/M-TekGear- (3).webp",
-                "image01Index": "images/Ropa/Buzos/M-TekGear-117/M-TekGear- (1).webp",
-                "image02Index": "images/Ropa/Buzos/M-TekGear-117/M-TekGear- (2).webp",
-                "image03Index": "images/Ropa/Buzos/M-TekGear-117/M-TekGear- (3).webp"},
+                "image03": "../images/Ropa/Buzos/M-TekGear-117/M-TekGear- (3).webp"},
         "calificacion":8.9
     },
     {
@@ -353,10 +302,7 @@
         "marca":"47'",
         "img": {"image01": "../images/Ropa/Buzos/Caja-01/47-Azul-XXL/47-Azul-XXL (2).webp",
                 "image02": "../images/Ropa/Buzos/Caja-01/47-Azul-XXL/47-Azul-XXL (3).webp",
-                "image03": "../images/Ropa/Buzos/Caja-01/47-Azul-XXL/47-Azul-XXL (1).webp",
-                "image01Index": "images/Ropa/Buzos/Caja-01/47-Azul-XXL/47-Azul-XXL (2).webp",
-                "image02Index": "images/Ropa/Buzos/Caja-01/47-Azul-XXL/47-Azul-XXL (3).webp",
-                "image03Index": "images/Ropa/Buzos/Caja-01/47-Azul-XXL/47-Azul-XXL (1).webp"},
+                "image03": "../images/Ropa/Buzos/Caja-01/47-Azul-XXL/47-Azul-XXL (1).webp"},
         "calificacion":9.1
     },
     {
@@ -373,10 +319,7 @@
         "marca":"Champion",
         "img": {"image01": "../images/Ropa/Buzos/Caja-01/Champion-Bebaly-XXL/Champion-Bebaly-XXL (1).webp",
                 "image02": "../images/Ropa/Buzos/Caja-01/Champion-Bebaly-XXL/Champion-Bebaly-XXL (2).webp",
-                "image03": "../images/Ropa/Buzos/Caja-01/Champion-Bebaly-XXL/Champion-Bebaly-XXL (3).webp",
-                "image01Index": "images/Ropa/Buzos/Caja-01/Champion-Bebaly-XXL/Champion-Bebaly-XXL (1).webp",
-                "image02Index": "images/Ropa/Buzos/Caja-01/Champion-Bebaly-XXL/Champion-Bebaly-XXL (2).webp",
-                "image03Index": "images/Ropa/Buzos/Caja-01/Champion-Bebaly-XXL/Champion-Bebaly-XXL (3).webp"},
+                "image03": "../images/Ropa/Buzos/Caja-01/Champion-Bebaly-XXL/Champion-Bebaly-XXL (3).webp"},
         "calificacion":9.8
     },
     {
@@ -393,10 +336,7 @@
         "marca":"Everlast",
         "img": {"image01": "../images/Ropa/Buzos/Caja-01/Everlast-XL/Everlast-XL (1).webp",
                 "image02": "../images/Ropa/Buzos/Caja-01/Everlast-XL/Everlast-XL (2).webp",
-                "image03": "../images/Ropa/Buzos/Caja-01/Everlast-XL/Everlast-XL (3).webp",
-                "image01Index": "images/Ropa/Buzos/Caja-01/Everlast-XL/Everlast-XL (1).webp",
-                "image02Index": "images/Ropa/Buzos/Caja-01/Everlast-XL/Everlast-XL (2).webp",
-                "image03Index": "images/Ropa/Buzos/Caja-01/Everlast-XL/Everlast-XL (3).webp"},
+                "image03": "../images/Ropa/Buzos/Caja-01/Everlast-XL/Everlast-XL (3).webp"},
         "calificacion":9.8
     },
     {
@@ -413,10 +353,7 @@
         "marca":"Gildan",
         "img": {"image01": "../images/Ropa/Buzos/Caja-01/Gildan-XL/Gildan-XL (1).webp",
                 "image02": "../images/Ropa/Buzos/Caja-01/Gildan-XL/Gildan-XL (2).webp",
-                "image03": "../images/Ropa/Buzos/Caja-01/Gildan-XL/Gildan-XL (3).webp",
-                "image01Index": "images/Ropa/Buzos/Caja-01/Gildan-XL/Gildan-XL (1).webp",
-                "image02Index": "images/Ropa/Buzos/Caja-01/Gildan-XL/Gildan-XL (2).webp",
-                "image03Index": "images/Ropa/Buzos/Caja-01/Gildan-XL/Gildan-XL (3).webp"},
+                "image03": "../images/Ropa/Buzos/Caja-01/Gildan-XL/Gildan-XL (3).webp"},
         "calificacion":8.5
     },
     {
@@ -433,10 +370,7 @@
         "marca":"POINT",
         "img": {"image01": "../images/Ropa/Buzos/Caja-01/Point-XL-Nasa/Point-XL-Nasa (1).webp",
                 "image02": "../images/Ropa/Buzos/Caja-01/Point-XL-Nasa/Point-XL-Nasa (2).webp",
-                "image03": "../images/Ropa/Buzos/Caja-01/Point-XL-Nasa/Point-XL-Nasa (3).webp",
-                "image01Index": "images/Ropa/Buzos/Caja-01/Point-XL-Nasa/Point-XL-Nasa (1).webp",
-                "image02Index": "images/Ropa/Buzos/Caja-01/Point-XL-Nasa/Point-XL-Nasa (2).webp",
-                "image03Index": "images/Ropa/Buzos/Caja-01/Point-XL-Nasa/Point-XL-Nasa (3).webp"},
+                "image03": "../images/Ropa/Buzos/Caja-01/Point-XL-Nasa/Point-XL-Nasa (3).webp"},
         "calificacion":9.1
     },
     {
@@ -453,10 +387,7 @@
         "marca":"Truss",
         "img": {"image01": "../images/Ropa/Buzos/Caja-01/Truss-Campera-XL/Truss-Campera-XL (1).webp",
                 "image02": "../images/Ropa/Buzos/Caja-01/Truss-Campera-XL/Truss-Campera-XL (2).webp",
-                "image03": "../images/Ropa/Buzos/Caja-01/Truss-Campera-XL/Truss-Campera-XL (3).webp",
-                "image01Index": "images/Ropa/Buzos/Caja-01/Truss-Campera-XL/Truss-Campera-XL (1).webp",
-                "image02Index": "images/Ropa/Buzos/Caja-01/Truss-Campera-XL/Truss-Campera-XL (2).webp",
-                "image03Index": "images/Ropa/Buzos/Caja-01/Truss-Campera-XL/Truss-Campera-XL (3).webp"},
+                "image03": "../images/Ropa/Buzos/Caja-01/Truss-Campera-XL/Truss-Campera-XL (3).webp"},
         "calificacion":8.8
     },
     {
@@ -473,10 +404,7 @@
         "marca":"Praire Mountain",
         "img": {"image01": "../images/Ropa/Buzos/Caja-01/Praire-Montain-XL/Praire-Montain-XL (1).webp",
                 "image02": "../images/Ropa/Buzos/Caja-01/Praire-Montain-XL/Praire-Montain-XL (2).webp",
-                "image03": "../images/Ropa/Buzos/Caja-01/Praire-Montain-XL/Praire-Montain-XL (3).webp",
-                "image01Index": "images/Ropa/Buzos/Caja-01/Praire-Montain-XL/Praire-Montain-XL (1).webp",
-                "image02Index": "images/Ropa/Buzos/Caja-01/Praire-Montain-XL/Praire-Montain-XL (2).webp",
-                "image03Index": "images/Ropa/Buzos/Caja-01/Praire-Montain-XL/Praire-Montain-XL (3).webp"},
+                "image03": "../images/Ropa/Buzos/Caja-01/Praire-Montain-XL/Praire-Montain-XL (3).webp"},
         "calificacion":9.7
     },
     {
@@ -493,10 +421,7 @@
         "marca":"Troilee",
         "img": {"image01": "../images/Ropa/Buzos/Caja-01/Troilee-XL/Troilee-XL (1).webp",
                 "image02": "../images/Ropa/Buzos/Caja-01/Troilee-XL/Troilee-XL (2).webp",
-                "image03": "../images/Ropa/Buzos/Caja-01/Troilee-XL/Troilee-XL (3).webp",
-                "image01Index": "images/Ropa/Buzos/Caja-01/Troilee-XL/Troilee-XL (1).webp",
-                "image02Index": "images/Ropa/Buzos/Caja-01/Troilee-XL/Troilee-XL (2).webp",
-                "image03Index": "images/Ropa/Buzos/Caja-01/Troilee-XL/Troilee-XL (3).webp"},
+                "image03": "../images/Ropa/Buzos/Caja-01/Troilee-XL/Troilee-XL (3).webp"},
         "calificacion":9.2
     },
     {
@@ -513,10 +438,7 @@
         "marca":"Champion",
         "img": {"image01": "../images/Ropa/Buzos/Caja-01/Champion-XXL/Champion-XXL (1).webp",
                 "image02": "../images/Ropa/Buzos/Caja-01/Champion-XXL/Champion-XXL (2).webp",
-                "image03": "../images/Ropa/Buzos/Caja-01/Champion-XXL/Champion-XXL (3).webp",
-                "image01Index": "images/Ropa/Buzos/Caja-01/Troilee-XL/Troilee-XL (1).webp",
-                "image02Index": "images/Ropa/Buzos/Caja-01/Troilee-XL/Troilee-XL (2).webp",
-                "image03Index": "images/Ropa/Buzos/Caja-01/Troilee-XL/Troilee-XL (3).webp"},
+                "image03": "../images/Ropa/Buzos/Caja-01/Champion-XXL/Champion-XXL (3).webp"},
         "calificacion":9.8
     },
     {
@@ -533,10 +455,7 @@
         "marca":"Hungmaven",
         "img": {"image01": "../images/Ropa/Buzos/Caja-01/Hunmaven-XXL/Hunmaven-XXL (1).webp",
                 "image02": "../images/Ropa/Buzos/Caja-01/Hunmaven-XXL/Hunmaven-XXL (2).webp",
-                "image03": "../images/Ropa/Buzos/Caja-01/Hunmaven-XXL/Hunmaven-XXL (3).webp",
-                "image01Index": "images/Ropa/Buzos/Caja-01/Hunmaven-XXL/Hunmaven-XXL (1).webp",
-                "image02Index": "images/Ropa/Buzos/Caja-01/Hunmaven-XXL/Hunmaven-XXL (2).webp",
-                "image03Index": "images/Ropa/Buzos/Caja-01/Hunmaven-XXL/Hunmaven-XXL (3).webp"},
+                "image03": "../images/Ropa/Buzos/Caja-01/Hunmaven-XXL/Hunmaven-XXL (3).webp"},
         "calificacion":8.7
     },
     {
@@ -553,10 +472,7 @@
         "marca":"NIKE",
         "img": {"image01": "../images/Ropa/Buzos/Caja-01/Nike-XL/Nike-XL (1).webp",
                 "image02": "../images/Ropa/Buzos/Caja-01/Nike-XL/Nike-XL (2).webp",
-                "image03": "../images/Ropa/Buzos/Caja-01/Nike-XL/Nike-XL (3).webp",
-                "image01Index": "images/Ropa/Buzos/Caja-01/Nike-XL/Nike-XL (1).webp",
-                "image02Index": "images/Ropa/Buzos/Caja-01/Nike-XL/Nike-XL (2).webp",
-                "image03Index": "images/Ropa/Buzos/Caja-01/Nike-XL/Nike-XL (3).webp"},
+                "image03": "../images/Ropa/Buzos/Caja-01/Nike-XL/Nike-XL (3).webp"},
         "calificacion":9.9
     },
     {
@@ -573,10 +489,7 @@
         "marca":"Gildan",
         "img": {"image01": "../images/Ropa/Buzos/Caja-01/Gildan-Premium-Campera-XXL/Gildan-Premium-Campera-XXL (1).webp",
                 "image02": "../images/Ropa/Buzos/Caja-01/Gildan-Premium-Campera-XXL/Gildan-Premium-Campera-XXL (2).webp",
-                "image03": "../images/Ropa/Buzos/Caja-01/Gildan-Premium-Campera-XXL/Gildan-Premium-Campera-XXL (3).webp",
-                "image01Index": "images/Ropa/Buzos/Caja-01/Gildan-Premium-Campera-XXL/Gildan-Premium-Campera-XXL (1).webp",
-                "image02Index": "images/Ropa/Buzos/Caja-01/Gildan-Premium-Campera-XXL/Gildan-Premium-Campera-XXL (2).webp",
-                "image03Index": "images/Ropa/Buzos/Caja-01/Gildan-Premium-Campera-XXL/Gildan-Premium-Campera-XXL (3).webp"},
+                "image03": "../images/Ropa/Buzos/Caja-01/Gildan-Premium-Campera-XXL/Gildan-Premium-Campera-XXL (3).webp"},
         "calificacion":9.2
     },
     {
@@ -593,10 +506,7 @@
         "marca":"Gildan",
         "img": {"image01": "../images/Ropa/Buzos/Caja-02/Gildan-S-bordo/Gildan-S-bordo (1).webp",
                 "image02": "../images/Ropa/Buzos/Caja-02/Gildan-S-bordo/Gildan-S-bordo (2).webp",
-                "image03": "../images/Ropa/Buzos/Caja-02/Gildan-S-bordo/Gildan-S-bordo (3).webp",
-                "image01Index": "images/Ropa/Buzos/Caja-02/Gildan-S-bordo/Gildan-S-bordo (1).webp",
-                "image02Index": "images/Ropa/Buzos/Caja-02/Gildan-S-bordo/Gildan-S-bordo (2).webp",
-                "image03Index": "images/Ropa/Buzos/Caja-02/Gildan-S-bordo/Gildan-S-bordo (3).webp"},
+                "image03": "../images/Ropa/Buzos/Caja-02/Gildan-S-bordo/Gildan-S-bordo (3).webp"},
         "calificacion":8.9
     },
     {
@@ -613,10 +523,7 @@
         "marca":"Canvas",
         "img": {"image01": "../images/Ropa/Buzos/Caja-02/Canvas-S/Canvas-S (1).webp",
                 "image02": "../images/Ropa/Buzos/Caja-02/Canvas-S/Canvas-S (2).webp",
-                "image03": "../images/Ropa/Buzos/Caja-02/Canvas-S/Canvas-S (3).webp",
-                "image01Index": "images/Ropa/Buzos/Caja-02/Canvas-S/Canvas-S (1).webp",
-                "image02Index": "images/Ropa/Buzos/Caja-02/Canvas-S/Canvas-S (2).webp",
-                "image03Index": "images/Ropa/Buzos/Caja-02/Canvas-S/Canvas-S (3).webp"},
+                "image03": "../images/Ropa/Buzos/Caja-02/Canvas-S/Canvas-S (3).webp"},
         "calificacion":8.2
     },
     {
@@ -633,10 +540,7 @@
         "marca":"GAP",
         "img": {"image01": "../images/Ropa/Buzos/Caja-02/Gap-Campera-S/Gap-Campera-S (1).webp",
                 "image02": "../images/Ropa/Buzos/Caja-02/Gap-Campera-S/Gap-Campera-S (2).webp",
-                "image03": "../images/Ropa/Buzos/Caja-02/Gap-Campera-S/Gap-Campera-S (3).webp",
-                "image01Index": "images/Ropa/Buzos/Caja-02/Gap-Campera-S/Gap-Campera-S (1).webp",
-                "image02Index": "images/Ropa/Buzos/Caja-02/Gap-Campera-S/Gap-Campera-S (2).webp",
-                "image03Index": "images/Ropa/Buzos/Caja-02/Gap-Campera-S/Gap-Campera-S (3).webp"},
+                "image03": "../images/Ropa/Buzos/Caja-02/Gap-Campera-S/Gap-Campera-S (3).webp"},
         "calificacion":9.8
     },
     {
@@ -653,10 +557,7 @@
         "marca":"E5-Army",
         "img": {"image01": "../images/Ropa/Buzos/Caja-01/E5-Army-XL/E5-Army-XL (1).webp",
                 "image02": "../images/Ropa/Buzos/Caja-01/E5-Army-XL/E5-Army-XL (2).webp",
-                "image03": "../images/Ropa/Buzos/Caja-01/E5-Army-XL/E5-Army-XL (3).webp",
-                "image01Index": "images/Ropa/Buzos/Caja-01/E5-Army-XL/E5-Army-XL (1).webp",
-                "image02Index": "images/Ropa/Buzos/Caja-01/E5-Army-XL/E5-Army-XL (2).webp",
-                "image03Index": "images/Ropa/Buzos/Caja-01/E5-Army-XL/E5-Army-XL (3).webp"},
+                "image03": "../images/Ropa/Buzos/Caja-01/E5-Army-XL/E5-Army-XL (3).webp"},
         "calificacion":9.2
     },
     {
@@ -673,10 +574,7 @@
         "marca":"Pernant",
         "img": {"image01": "../images/Ropa/Buzos/Caja-02/Pernant-S/Pernant-S (1).webp",
                 "image02": "../images/Ropa/Buzos/Caja-02/Pernant-S/Pernant-S (2).webp",
-                "image03": "../images/Ropa/Buzos/Caja-02/Pernant-S/Pernant-S (3).webp",
-                "image01Index": "images/Ropa/Buzos/Caja-02/Pernant-S/Pernant-S (1).webp",
-                "image02Index": "images/Ropa/Buzos/Caja-02/Pernant-S/Pernant-S (2).webp",
-                "image03Index": "images/Ropa/Buzos/Caja-02/Pernant-S/Pernant-S (3).webp"},
+                "image03": "../images/Ropa/Buzos/Caja-02/Pernant-S/Pernant-S (3).webp"},
         "calificacion":9.7
     },
     {
@@ -693,10 +591,7 @@
         "marca":"Gildan",
         "img": {"image01": "../images/Ropa/Buzos/Caja-02/Gildan-Premium-D-M/Gildan-Premium-D-M (1).webp",
                 "image02": "../images/Ropa/Buzos/Caja-02/Gildan-Premium-D-M/Gildan-Premium-D-M (2).webp",
-                "image03": "../images/Ropa/Buzos/Caja-02/Gildan-Premium-D-M/Gildan-Premium-D-M (3).webp",
-                "image01Index": "images/Ropa/Buzos/Caja-02/Gildan-Premium-D-M/Gildan-Premium-D-M (1).webp",
-                "image02Index": "images/Ropa/Buzos/Caja-02/Gildan-Premium-D-M/Gildan-Premium-D-M (2).webp",
-                "image03Index": "images/Ropa/Buzos/Caja-02/Gildan-Premium-D-M/Gildan-Premium-D-M (3).webp"},
+                "image03": "../images/Ropa/Buzos/Caja-02/Gildan-Premium-D-M/Gildan-Premium-D-M (3).webp"},
         "calificacion":5.1
     },
     {
@@ -713,10 +608,7 @@
         "marca":"Port-Company",
         "img": {"image01": "../images/Ropa/Buzos/Caja-02/Port&Company-S/Port&Company-S (1).webp",
                 "image02": "../images/Ropa/Buzos/Caja-02/Port&Company-S/Port&Company-S (2).webp",
-                "image03": "../images/Ropa/Buzos/Caja-02/Port&Company-S/Port&Company-S (3).webp",
-                "image01Index": "images/Ropa/Buzos/Caja-02/Port&Company-S/Port&Company-S (1).webp",
-                "image02Index": "images/Ropa/Buzos/Caja-02/Port&Company-S/Port&Company-S (2).webp",
-                "image03Index": "images/Ropa/Buzos/Caja-02/Port&Company-S/Port&Company-S (3).webp"},
+                "image03": "../images/Ropa/Buzos/Caja-02/Port&Company-S/Port&Company-S (3).webp"},
         "calificacion":8.7
     },
     {
@@ -733,10 +625,7 @@
         "marca":"Pink",
         "img": {"image01": "../images/Ropa/Buzos/Caja-02/Pink-M/Pink-M (1).webp",
                 "image02": "../images/Ropa/Buzos/Caja-02/Pink-M/Pink-M (2).webp",
-                "image03": "../images/Ropa/Buzos/Caja-02/Pink-M/Pink-M (3).webp",
-                "image01Index": "images/Ropa/Buzos/Caja-02/Pink-M/Pink-M (1).webp",
-                "image02Index": "images/Ropa/Buzos/Caja-02/Pink-M/Pink-M (2).webp",
-                "image03Index": "images/Ropa/Buzos/Caja-02/Pink-M/Pink-M (3).webp"},
+                "image03": "../images/Ropa/Buzos/Caja-02/Pink-M/Pink-M (3).webp"},
         "calificacion":8.9
     },
     {
@@ -753,10 +642,7 @@
         "marca":"Champion",
         "img": {"image01": "../images/Ropa/Buzos/Caja-02/Champion-M/Champion-M (1).webp",
                 "image02": "../images/Ropa/Buzos/Caja-02/Champion-M/Champion-M (2).webp",
-                "image03": "../images/Ropa/Buzos/Caja-02/Champion-M/Champion-M (3).webp",
-                "image01Index": "images/Ropa/Buzos/Caja-02/Champion-M/Champion-M (1).webp",
-                "image02Index": "images/Ropa/Buzos/Caja-02/Champion-M/Champion-M (2).webp",
-                "image03Index": "images/Ropa/Buzos/Caja-02/Champion-M/Champion-M (3).webp"},
+                "image03": "../images/Ropa/Buzos/Caja-02/Champion-M/Champion-M (3).webp"},
         "calificacion":9.1
     },
     {
@@ -773,10 +659,7 @@
         "marca":"Hanes",
         "img": {"image01": "../images/Ropa/Buzos/Caja-02/Hanes-L/Hanes-L (1).webp",
                 "image02": "../images/Ropa/Buzos/Caja-02/Hanes-L/Hanes-L (2).webp",
-                "image03": "../images/Ropa/Buzos/Caja-02/Hanes-L/Hanes-L (3).webp",
-                "image01Index": "images/Ropa/Buzos/Caja-02/Hanes-L/Hanes-L (1).webp",
-                "image02Index": "images/Ropa/Buzos/Caja-02/Hanes-L/Hanes-L (2).webp",
-                "image03Index": "images/Ropa/Buzos/Caja-02/Hanes-L/Hanes-L (3).webp"},
+                "image03": "../images/Ropa/Buzos/Caja-02/Hanes-L/Hanes-L (3).webp"},
         "calificacion":9.2
     },
     {
@@ -793,10 +676,7 @@
         "marca":"Champion",
         "img": {"image01": "../images/Ropa/Buzos/Caja-02/Champion-S-D/Champion-S-D (1).webp",
                 "image02": "../images/Ropa/Buzos/Caja-02/Champion-S-D/Champion-S-D (2).webp",
-                "image03": "../images/Ropa/Buzos/Caja-02/Champion-S-D/Champion-S-D (3).webp",
-                "image01Index": "images/Ropa/Buzos/Caja-02/Champion-S-D/Champion-S-D (1).webp",
-                "image02Index": "images/Ropa/Buzos/Caja-02/Champion-S-D/Champion-S-D (2).webp",
-                "image03Index": "images/Ropa/Buzos/Caja-02/Champion-S-D/Champion-S-D (3).webp"},
+                "image03": "../images/Ropa/Buzos/Caja-02/Champion-S-D/Champion-S-D (3).webp"},
         "calificacion":9.1
     },
     {
@@ -813,10 +693,7 @@
         "marca":"Vanta",
         "img": {"image01": "../images/Ropa/Buzos/Caja-02/Vanta-Black-S/Vanta-Black-S (1).webp",
                 "image02": "../images/Ropa/Buzos/Caja-02/Vanta-Black-S/Vanta-Black-S (2).webp",
-                "image03": "../images/Ropa/Buzos/Caja-02/Vanta-Black-S/Vanta-Black-S (3).webp",
-                "image01Index": "images/Ropa/Buzos/Caja-02/Vanta-Black-S/Vanta-Black-S (1).webp",
-                "image02Index": "images/Ropa/Buzos/Caja-02/Vanta-Black-S/Vanta-Black-S (2).webp",
-                "image03Index": "images/Ropa/Buzos/Caja-02/Vanta-Black-S/Vanta-Black-S (3).webp"},
+                "image03": "../images/Ropa/Buzos/Caja-02/Vanta-Black-S/Vanta-Black-S (3).webp"},
         "calificacion":8.5
     },
     {
@@ -833,10 +710,7 @@
         "marca":"Urban Pipeland",
         "img": {"image01": "../images/Ropa/Buzos/Caja-02/Urban-Pipeland-S/Urban-Pipeland-S (1).webp",
                 "image02": "../images/Ropa/Buzos/Caja-02/Urban-Pipeland-S/Urban-Pipeland-S (2).webp",
-                "image03": "../images/Ropa/Buzos/Caja-02/Urban-Pipeland-S/Urban-Pipeland-S (3).webp",
-                "image01Index": "images/Ropa/Buzos/Caja-02/Urban-Pipeland-S/Urban-Pipeland-S (1).webp",
-                "image02Index": "images/Ropa/Buzos/Caja-02/Urban-Pipeland-S/Urban-Pipeland-S (2).webp",
-                "image03Index": "images/Ropa/Buzos/Caja-02/Urban-Pipeland-S/Urban-Pipeland-S (3).webp"},
+                "image03": "../images/Ropa/Buzos/Caja-02/Urban-Pipeland-S/Urban-Pipeland-S (3).webp"},
         "calificacion":8.7
     },
     {
@@ -853,10 +727,7 @@
         "marca":"Port & Company",
         "img": {"image01": "../images/Ropa/Buzos/Caja-02/Port-Company-M/Port-Company-M (1).webp",
                 "image02": "../images/Ropa/Buzos/Caja-02/Port-Company-M/Port-Company-M (2).webp",
-                "image03": "../images/Ropa/Buzos/Caja-02/Port-Company-M/Port-Company-M (3).webp",
-                "image01Index": "images/Ropa/Buzos/Caja-02/Port-Company-M/Port-Company-M (1).webp",
-                "image02Index": "images/Ropa/Buzos/Caja-02/Port-Company-M/Port-Company-M (2).webp",
-                "image03Index": "images/Ropa/Buzos/Caja-02/Port-Company-M/Port-Company-M (3).webp"},
+                "image03": "../images/Ropa/Buzos/Caja-02/Port-Company-M/Port-Company-M (3).webp"},
         "calificacion":9.1
     },
     {
@@ -873,10 +744,7 @@
         "marca":"Avengers",
         "img": {"image01": "../images/Ropa/Buzos/Caja-02/Avengers-M-Campera/Avengers-M-Campera (1).webp",
                 "image02": "../images/Ropa/Buzos/Caja-02/Avengers-M-Campera/Avengers-M-Campera (2).webp",
-                "image03": "../images/Ropa/Buzos/Caja-02/Avengers-M-Campera/Avengers-M-Campera (3).webp",
-                "image01Index": "images/Ropa/Buzos/Caja-02/Avengers-M-Campera/Avengers-M-Campera (1).webp",
-                "image02Index": "images/Ropa/Buzos/Caja-02/Avengers-M-Campera/Avengers-M-Campera (2).webp",
-                "image03Index": "images/Ropa/Buzos/Caja-02/Avengers-M-Campera/Avengers-M-Campera (3).webp"},
+                "image03": "../images/Ropa/Buzos/Caja-02/Avengers-M-Campera/Avengers-M-Campera (3).webp"},
         "calificacion":9.1
     },
     {
@@ -893,10 +761,7 @@
         "marca":"Junk-Food",
         "img": {"image01": "../images/Ropa/Buzos/Caja-02/Junk-Food-M-Campera/Junk-Food-M-Campera (1).webp",
                 "image02": "../images/Ropa/Buzos/Caja-02/Junk-Food-M-Campera/Junk-Food-M-Campera (2).webp",
-                "image03": "../images/Ropa/Buzos/Caja-02/Junk-Food-M-Campera/Junk-Food-M-Campera (3).webp",
-                "image01Index": "images/Ropa/Buzos/Caja-02/Junk-Food-M-Campera/Junk-Food-M-Campera (1).webp",
-                "image02Index": "images/Ropa/Buzos/Caja-02/Junk-Food-M-Campera/Junk-Food-M-Campera (2).webp",
-                "image03Index": "images/Ropa/Buzos/Caja-02/Junk-Food-M-Campera/Junk-Food-M-Campera (3).webp"},
+                "image03": "../images/Ropa/Buzos/Caja-02/Junk-Food-M-Campera/Junk-Food-M-Campera (3).webp"},
         "calificacion":9.5
     },
     {
@@ -913,10 +778,7 @@
         "marca":"Champion",
         "img": {"image01": "../images/Ropa/Buzos/Caja-02/American-M/American-M (1).webp",
                 "image02": "../images/Ropa/Buzos/Caja-02/American-M/American-M (2).webp",
-                "image03": "../images/Ropa/Buzos/Caja-02/American-M/American-M (3).webp",
-                "image01Index": "images/Ropa/Buzos/Caja-02/American-M/American-M (1).webp",
-                "image02Index": "images/Ropa/Buzos/Caja-02/American-M/American-M (2).webp",
-                "image03Index": "images/Ropa/Buzos/Caja-02/American-M/American-M (3).webp"},
+                "image03": "../images/Ropa/Buzos/Caja-02/American-M/American-M (3).webp"},
         "calificacion":7.5
     },
     {
@@ -933,10 +795,7 @@
         "marca":"Nike",
         "img": {"image01": "../images/Ropa/Buzos/Caja-02/Nike-L-D/Nike-L-D (1).webp",
                 "image02": "../images/Ropa/Buzos/Caja-02/Nike-L-D/Nike-L-D (2).webp",
-                "image03": "../images/Ropa/Buzos/Caja-02/Nike-L-D/Nike-L-D (3).webp",
-                "image01Index": "images/Ropa/Buzos/Caja-02/Nike-L-D/Nike-L-D (1).webp",
-                "image02Index": "images/Ropa/Buzos/Caja-02/Nike-L-D/Nike-L-D (2).webp",
-                "image03Index": "images/Ropa/Buzos/Caja-02/Nike-L-D/Nike-L-D (3).webp"},
+                "image03": "../images/Ropa/Buzos/Caja-02/Nike-L-D/Nike-L-D (3).webp"},
         "calificacion":9.5
     },
     {
@@ -953,10 +812,7 @@
         "marca":"Jerzees",
         "img": {"image01": "../images/Ropa/Buzos/Caja-02/Jerzees-M/Jerzees-M (1).webp",
                 "image02": "../images/Ropa/Buzos/Caja-02/Jerzees-M/Jerzees-M (2).webp",
-                "image03": "../images/Ropa/Buzos/Caja-02/Jerzees-M/Jerzees-M (3).webp",
-                "image01Index": "images/Ropa/Buzos/Caja-02/Jerzees-M/Jerzees-M (1).webp",
-                "image02Index": "images/Ropa/Buzos/Caja-02/Jerzees-M/Jerzees-M (2).webp",
-                "image03Index": "images/Ropa/Buzos/Caja-02/Jerzees-M/Jerzees-M (3).webp"},
+                "image03": "../images/Ropa/Buzos/Caja-02/Jerzees-M/Jerzees-M (3).webp"},
         "calificacion":9.7
     }
 ]

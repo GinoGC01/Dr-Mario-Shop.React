@@ -1,6 +1,7 @@
 {
   "name": "dr-mario-shop",
   "private": true,
+  "homepage": "http://drmarioind.website/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
