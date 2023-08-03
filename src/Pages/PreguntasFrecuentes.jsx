@@ -5,116 +5,128 @@ import { Footer } from '../components/Footer'
 export default function PreguntasFrecuentes () {
   return (
     <>
-    <div className='back-to-home'>
+      <div className="back-to-home">
         <Link to="/" className="back-to-home__cart-section">
-        <span className="material-symbols-outlined">chevron_left</span>
-      </Link>
-    </div>
+          <span className="material-symbols-outlined">chevron_left</span>
+        </Link>
+      </div>
 
-      <section className="preguntas-frecuentes" id='preguntas-frecuentes'>
+      <section className="preguntas-frecuentes" id="preguntas-frecuentes">
         <h1>PREGUNTAS FRECUENTES</h1>
         <ul className="preguntas">
-        <li className="pregunta">
-            <strong>¿Qué es una orden de compra?</strong>
+          <li className="pregunta">
+            <strong>Concepto de Órdenes de Compra</strong>
             <p>
-              En nuestro sistema de ventas no utilizamos métodos de pago online,
-              en la página web. Por eso, creamos un sistema de ventas a travez
-              de ordenes de compra con un <strong>NUMERO DE ORDEN</strong>{' '}
-              único. En esta orden, solicitamos una serie de datos para ponernos
-              en contacto y coordinar métodos de pagos, envios y demás dudas que
-              pueda llegar a tener, atravez de nuestros vendedores. La finalidad
-              de este método es proteger a nuestros clientes de fraudes y
-              estáfas, contactandonos personalmente.
+              Definición de Órdenes de Compra: En nuestra plataforma de ventas,
+              hemos optado por un enfoque de transacciones que prescinde de
+              métodos de pago en línea directos en el sitio web. En su lugar,
+              hemos implementado un sistema de Órdenes de Compra, cada una con
+              un <strong>número de orden único</strong>. A través de esta
+              modalidad, solicitamos ciertos datos al cliente para establecer un
+              contacto personalizado y coordinar aspectos como métodos de pago,
+              envíos y aclarar cualquier duda a través de nuestros vendedores.
+              Este enfoque busca salvaguardar la seguridad de nuestros clientes
+              al evitar posibles fraudes o malentendidos, mediante un contacto
+              directo y personal.
             </p>
           </li>
           <li className="pregunta">
-            <strong>¿Cuánto tiempo es válida mi orden de compra?</strong>
+            <strong>Validez de las Órdenes de Compra</strong>
             <p>
-              Una vez procesada la orden de compra, está vigente por 24Hs para llegar concretar la compra, y el envío.
-              <small>La orden de compra se procesa una vez que ingresa al sistema y el cliente es contactado por nuestros vendedores</small>
+              Validez de las Órdenes: Una vez que una orden de compra es
+              procesada, su validez se extiende por 24 horas. Durante este
+              período, los clientes pueden concretar la compra y el envío. Cabe
+              destacar que la orden de compra se oficializa una vez que ingresa
+              al sistema y el cliente es contactado por nuestros vendedores.
             </p>
           </li>
           <li className="pregunta">
-            <strong>¿Qué forma de pago puedo utilizar?</strong>
+            <strong>Opciones de Pago</strong>
             <p>
-              Disponemos de varias formas de pago, <strong>Mercado pago</strong>
-              , <strong>Uala</strong>, <strong>BruBank</strong>,{' '}
-              <strong>Cuenta DNI</strong>, <strong>MODO</strong>,{' '}
+              Alternativas de Pago: Nuestra oferta abarca diversas formas de
+              pago, entre las que se incluyen <strong>Mercado Pago</strong>,{' '}
+              <strong>Ualá</strong>, <strong>BruBank</strong>,{' '}
+              <strong>Cuenta DNI</strong>, <strong>MODO</strong> y{' '}
               <strong>Transferencias Bancarias</strong>.
             </p>
           </li>
           <li className="pregunta">
-            <strong>Perdí mi número de orden ¿Qué hago?</strong>
+            <strong>Recuperación del Número de Orden</strong>
             <p>
-              No hay problema. Nosotros nos encargamos de guardarlo por usted.
-              Sin embargo, deberemos pedirle que nos brinde algunos datos para
-              confirar su identidad.
+              Extravío del Número: En caso de que pierda su número de orden, no
+              hay motivo de preocupación, ya que lo conservamos en nuestro
+              registro. No obstante, necesitaremos algunos datos adicionales
+              para confirmar su identidad antes de proporcionárselo nuevamente.
             </p>
           </li>
           <li className="pregunta">
-            <strong>¿Cuál es el costo del envío?</strong>
+            <strong>Costo de Envío</strong>
             <p>
-              El costo del envio, como se sabe, puede variar porque depende de
-              muchos factores. Sin embargo, nuestros agentes de ventas cuando se
-              comuniquen con usted le harán saber el costo del envío en caso de
-              poder realizarlo.{' '}
+              Tarifas de Envío: El costo de envío varía, como es de esperarse,
+              debido a diversos factores. No obstante, nuestros agentes de
+              ventas, al ponerse en contacto, le informarán el costo exacto del
+              envío en caso de que sea posible realizarlo.
             </p>
           </li>
           <li className="pregunta">
-            <strong>¿Cómo se realizan los envíos?</strong>
+            <strong>Procedimiento de Envío</strong>
             <p>
-              Nosotros trabajamos con Correo Argentino, para distintas
-              provincias o zonas lejos del alcance de la moto-mensajería. Para
-              zonas aledañas a José C. Paz, contamos con moto mensajería. De
-              igual forma, el coste del envío será informado por nuesttros
-              vendedores.
+              Procedimiento de Envío: Colaboramos con Correo Argentino para las
+              entregas en provincias distantes o áreas no cubiertas por nuestro
+              servicio de mensajería local. Para las zonas cercanas a José C.
+              Paz, contamos con la opción de mensajería en moto. Los detalles y
+              costos de envío serán proporcionados por nuestros vendedores.
             </p>
           </li>
           <li className="pregunta">
-            <strong>¿Donde puedo recibir mi pedido?</strong>
+            <strong>Destino de Entrega</strong>
             <p>
-              Al igual que en todas las agencias de envío, se pueden retirar en
-              la sucursal del correo (en caso de envío por correo Argentino) o
-              bien en su domicilio. En caso de envío por moto-mensajería, se
-              puede pactar un punto de encuentro, o domicilio.
+              Lugares de Recepción: De manera similar a otras empresas de envío,
+              los productos pueden ser retirados en la sucursal del correo (en
+              el caso de envíos por Correo Argentino) o ser entregados
+              directamente en el domicilio. Para envíos por mensajería en moto,
+              es posible coordinar un punto de encuentro o la entrega en
+              domicilio.
             </p>
           </li>
           <li className="pregunta">
-            <strong>¿Cuánto tardan los envíos?</strong>
+            <strong>Tiempo de Entrega</strong>
             <p>
-              El tiempo de entrega depende del tipo de envío seleccionado. En
-              general la demora se encuentra entre 1 y 7 días hábiles luego de
-              acreditado el pago. En el caso de la moto-mensajería puede ser en
-              el mismo día.
+              Plazos de Entrega: El tiempo necesario para recibir su pedido
+              varía según el tipo de envío seleccionado. En general, el período
+              de entrega oscila entre 1 y 7 días hábiles luego de que se
+              confirma el pago. En el caso de los envíos por mensajería en moto,
+              es posible recibir el pedido el mismo día.
             </p>
           </li>
           <li className="pregunta">
-            <strong>No me quedó el buzo / campera, ¿Lo puedo cambiar?</strong>
+            <strong>Política de Cambios</strong>
             <p>
-              ¡Obviamente! tiene un plazo de cambio de hasta una semana para
-              acordar el cambio, y 15 días para realizarlo. Si el envío fue a
-              otra provincia, se deberá realizar todo el procedimiento
-              nuevamente (Correo Argentino), en caso de ser moto-mensajería de
-              igual forma, pero lo coordinamos nosotros. (Nos encargamos que el
-              cadete retire el producto y lo traiga nuevamente). Todo estos
-              servicios de envios y cambios de prendas se cargan a costa del
-              cliente. Cabe aclarar que el producto tiene que estar en las
-              mismas condiciones que fué entregado, en caso de estar manchado, o
-              tener algun detalle o alteración se cancela la devolución.
+              Cambio de Productos: Si el producto no cumple con sus
+              expectativas, dispone de una semana para coordinar un cambio y 15
+              días para realizarlo efectivamente. Para envíos a otras
+              provincias, será necesario realizar el procedimiento nuevamente
+              (en el caso de Correo Argentino). En el caso de mensajería en
+              moto, nosotros nos encargamos de coordinar el retiro y la nueva
+              entrega. Todos los costos asociados a envíos y cambios corren por
+              cuenta del cliente. Es importante resaltar que el producto debe
+              devolverse en las mismas condiciones en las que fue entregado.
+              Cualquier signo de daño, manchas o alteraciones puede resultar en
+              la cancelación del proceso de devolución.
             </p>
           </li>
           <li className="pregunta">
-            <strong>
-              ¿Qué debo hacer si el producto no llega en buen estado?
-            </strong>
+            <strong>Recepción de Productos en Mal Estado</strong>
             <p>
-              En ese caso, contactanos por cualquier medio que tengas
-              disponible, y lo solucionaremos.
+              Productos Dañados: En el caso de recibir un producto en mal
+              estado, le instamos a contactarnos a través de cualquier medio
+              disponible para que podamos resolver el inconveniente de manera
+              oportuna y satisfactoria.
             </p>
           </li>
         </ul>
       </section>
-      <Footer/>
+      <Footer />
     </>
   )
 }

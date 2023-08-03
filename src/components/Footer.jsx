@@ -30,9 +30,6 @@ export function Footer () {
             <li className="link-li">
               <Link to="/Preguntas-Frecuentes">Preguntas frecuentes</Link>
             </li>
-            <li className="link-li">
-              <Link to="#">Ocurrió un problema</Link>
-            </li>
           </ul>
         </article>
         <article className="contacto">
@@ -49,17 +46,17 @@ export function Footer () {
             </li>
             <ul className="rrss">
               <li>
-                <a href="#">
+                <a href="https://www.facebook.com/Dr.Mario.IND/" target='_BLANK' rel="noreferrer">
                   <i className="fa-brands fa-facebook"></i>
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="https://wa.link/kwhsp9" target='_BLANK' rel="noreferrer">
                   <i className="fa-brands fa-whatsapp"></i>
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="https://www.instagram.com/dr.mario_ind/?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D" target='_BLANK' rel="noreferrer">
                   <i className="fa-brands fa-instagram"></i>
                 </a>
               </li>

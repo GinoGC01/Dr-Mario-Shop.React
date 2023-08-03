@@ -5,7 +5,7 @@ import { Footer } from '../components/Footer'
 export function TerminosYCondiciones () {
   return (
     <>
-      <section className="tyc-container" id='terminos-y-condiciones'>
+      <section className="tyc-container" id="terminos-y-condiciones">
         <header>
           <div className="back-to-home">
             <Link to="/" className="back-to-home__cart-section">
@@ -15,119 +15,126 @@ export function TerminosYCondiciones () {
           <h1 className="title-tyc">Términos y condiciones</h1>
         </header>
         <ol className="ol-tyc">
+          <h3>Procedimiento de Órdenes de Compra</h3>
+          <p>
+            Procedimiento de Órdenes de Compra: Nuestra plataforma de comercio
+            electrónico opera a través de un sistema basado en Órdenes de
+            Compra, cada una con un <b>número de orden único</b>. Al realizar
+            una adquisición, el cliente acepta que tanto el proceso de pago como
+            otros aspectos pertinentes serán gestionados por nuestro equipo de
+            vendedores, en aras de salvaguardar la seguridad y prevenir
+            actividades fraudulentas.
+          </p>
           <li className="card-tyc">
-            <h3>Uso de Órdendes de compra</h3>
+            <h3>Política de Precios</h3>
             <p>
-              Uso de Órdenes de Compra: Nuestro ecommerce opera mediante el
-              sistema de Órdenes de Compra con un <b>NÚMERO DE ORDEN único</b>.
-              Al realizar una compra, el cliente acepta que el pago y otros
-              detalles se coordinarán a través de nuestros vendedores para
-              proteger su seguridad y prevenir fraudes.
-            </p>
-          </li>
-          <li className="card-tyc">
-            <h3>Precios de los productos</h3>
-            <p>
-              Los precios de los productos están sujetos a cambios sin previo
-              aviso. Sin embargo, una vez confirmada la orden de compra, el
-              precio acordado se mantendrá para el cliente.
+              Política de Precios: Los valores asignados a los productos están
+              sujetos a posibles modificaciones sin notificación previa. Sin
+              embargo, una vez que la orden de compra es confirmada, el precio
+              acordado se mantendrá inalterado para el cliente.
             </p>
           </li>
 
           <li className="card-tyc">
-            <h3>Información del Cliente</h3>
+            <h3>Detalles del Cliente</h3>
             <p>
-              Información del Cliente: Al completar una Orden de Compra, el
-              cliente debe proporcionar información precisa y actualizada,
-              incluidos nombre, dirección, número de contacto y dirección de
-              correo electrónico para facilitar el proceso de entrega y
-              contacto.
+              Detalles del Cliente: Al completar una Orden de Compra, el cliente
+              se compromete a proporcionar información precisa y actualizada.
+              Esta incluye el nombre, la dirección, el número de contacto y la
+              dirección de correo electrónico, elementos esenciales para
+              facilitar tanto el proceso de entrega como la comunicación.
             </p>
           </li>
           <li className="card-tyc">
-            <h3>Confirmación de la Orden:</h3>
+            <h3>Confirmación de la Orden</h3>
             <p>
-              Confirmación de la Orden: Una vez recibida la Orden de Compra,
-              nuestro equipo se pondrá en contacto con el cliente psara
-              confirmar la compra, los detalles del pedido y coordinar el método
-              de pago y envío.
+              Confirmación de la Orden: Una vez que recibimos una Orden de
+              Compra, nuestro equipo se comunicará con el cliente para validar
+              la transacción, repasar los detalles del pedido y coordinar tanto
+              el método de pago como la logística de envío.
             </p>
           </li>
           <li className="card-tyc">
-            <h3>Métodos de Pago y Seguridad</h3>
+            <h3>Opciones de Pago y Seguridad</h3>
             <p>
-              Métodos de Pago y Seguridad: Nuestros vendedores ofrecerán
-              opciones de pago seguras y confiables, asegurándose de proteger la
-              privacidad y los datos financieros del cliente en todo momento.
+              Opciones de Pago y Seguridad: Nuestros vendedores ofrecen
+              alternativas de pago seguras y confiables, garantizando en todo
+              momento la salvaguarda de la privacidad y los datos financieros
+              del cliente.
             </p>
           </li>
           <li className="card-tyc">
-            <h3>Cambios y Cancelaciones</h3>
+            <h3>Solicitudes de Cambio y Cancelación</h3>
             <p>
-              Cambios y Cancelaciones: Los clientes pueden solicitar cambios o
-              cancelaciones en su Orden de Compra antes de que el pedido sea
-              procesado y enviado. Comuníquese con nuestro equipo de vendedores
-              para realizar cualquier modificación.
+              Solicitudes de Cambio y Cancelación: Antes de que un pedido sea
+              procesado y enviado, los clientes tienen la posibilidad de
+              solicitar modificaciones o cancelaciones de su Orden de Compra.
+              Les instamos a comunicarse con nuestros vendedores para llevar a
+              cabo tales ajustes.
             </p>
           </li>
           <li className="card-tyc">
-            <h3>Envíos y Entregas</h3>
+            <h3>Proceso de Envío y Entrega</h3>
             <p>
-              Envíos y Entregas: Nos esforzamos por garantizar entregas
-              puntuales y precisas. Sin embargo, no nos responsabilizamos por
-              retrasos causados por circunstancias ajenas a nuestro control,
+              Proceso de Envío y Entrega: Nos esforzamos por garantizar entregas
+              precisas y puntuales. No obstante, no nos hacemos responsables por
+              retrasos ocasionados por circunstancias ajenas a nuestro control,
               como problemas logísticos o eventos imprevistos.
             </p>
           </li>
           <li className="card-tyc">
-            <h3>Comunicación y Soporte</h3>
+            <h3>Canal de Comunicación y Asistencia</h3>
             <p>
-              Comunicación y Soporte: Nuestro equipo de vendedores está
-              disponible para atender cualquier duda o consulta relacionada con
-              la Orden de Compra, pagos, envíos u otros aspectos del proceso de
-              compra. La comunicación se realizará por medios seguros y
-              confidenciales.
+              Canal de Comunicación y Asistencia: Nuestro equipo de vendedores
+              se encuentra disponible para abordar cualquier duda o consulta
+              relacionada con el proceso de compra, ya sea referente a la Orden
+              de Compra, los pagos, los envíos u otros aspectos afines. Toda
+              comunicación se efectuará de manera confidencial y segura.
             </p>
           </li>
           <li className="card-tyc">
             <h3>Derechos de Propiedad Intelectual</h3>
             <p>
               Derechos de Propiedad Intelectual: Todo el contenido, diseños y
-              materiales en nuestro sitio web están protegidos por derechos de
-              propiedad intelectual y no deben ser copiados, modificados o
-              distribuidos sin autorización previa.
+              materiales presentes en nuestro sitio web están protegidos por
+              derechos de propiedad intelectual, quedando prohibida su
+              reproducción, modificación o distribución sin la debida
+              autorización previa.
             </p>
           </li>
           <li className="card-tyc">
             <h3>Limitación de Responsabilidad</h3>
             <p>
-              Limitación de Responsabilidad: Nos esforzamos por brindar una
-              experiencia de compra satisfactoria, pero no podemos garantizar la
-              disponibilidad ininterrumpida del sitio web o la ausencia de
-              errores. No nos hacemos responsables de daños indirectos o
-              incidentales relacionados con el uso de nuestros servicios.
+              Limitación de Responsabilidad: Si bien trabajamos en pos de
+              brindar una experiencia de compra satisfactoria, no podemos
+              garantizar la disponibilidad ininterrumpida de nuestro sitio web
+              ni asegurar la ausencia absoluta de errores. Declinamos toda
+              responsabilidad por daños indirectos o incidentales derivados del
+              uso de nuestros servicios.
             </p>
           </li>
           <li className="card-tyc">
-            <h3>Modificaciones a los Términos</h3>
+            <h3>Modificaciones a los Términos y Condiciones</h3>
             <p>
-              Modificaciones a los Términos: Nos reservamos el derecho de
-              actualizar o modificar estos Términos y Condiciones en cualquier
-              momento. Se notificará a los clientes sobre cambios importantes.
-              Al continuar utilizando nuestro servicio después de dichas
-              modificaciones, se aceptan los nuevos términos.
+              Modificaciones a los Términos y Condiciones: Nos reservamos el
+              derecho de actualizar o modificar estos Términos y Condiciones en
+              cualquier momento. Notificaremos a nuestros clientes acerca de
+              cambios sustanciales. La continuidad en el uso de nuestros
+              servicios tras dichas modificaciones implicará la aceptación de
+              los nuevos términos.
             </p>
           </li>
         </ol>
         <strong>
-          Al realizar una orden de compra, el cliente indica su conformidad con
-          estos términos y condiciones. Le recomendamos revisarlos detenidamente
-          antes de realizar una compra. Si no está de acuerdo con alguno de los
-          puntos mencionados, le solicitamos abstenerse de utilizar nuestro
-          sistema de ventas con número de orden único.
+          Al efectuar una orden de compra, el cliente manifiesta su aceptación y
+          conformidad con estos términos y condiciones. Le sugerimos revisar
+          detenidamente dichos términos antes de llevar a cabo cualquier compra.
+          Si no está de acuerdo con algún aspecto aquí expuesto, le exhortamos a
+          abstenerse de utilizar nuestro sistema de ventas basado en números de
+          orden únicos.
         </strong>
       </section>
-    <Footer/>
+      <Footer />
     </>
   )
 }
