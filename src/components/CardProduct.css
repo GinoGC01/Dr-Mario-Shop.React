@@ -225,6 +225,7 @@
   display: flex;
   width: 100%;
   margin-top: 20px;
+  
 }
 
 .button__Card,
@@ -235,10 +236,37 @@
   padding: 10px;
   border-radius: 5px;
   flex: 1 0 30%;
+  transition: transform ease-in-out .2s;
+  
 }
+
+.button-end-build__Card:hover{
+  text-decoration: none;
+  transform: scale(1.05);
+  background-color: #202b38;
+  box-shadow: 0 0 15px #040a0f63;
+}
+
 
 .button-end-build__Card{
   flex: 1 0 60%;
   margin: 0 6px 6px 0;
   text-align: center;
+}
+
+
+@media screen and (min-width: 1200px) {
+  .Card {
+    height: 350px;
+    cursor: pointer;
+  }
+
+  .Card-selected{
+    width: 50%;
+  }
+
+  .buttons-container__Card-selected{
+    gap: 1em;
+    
+  }
 }

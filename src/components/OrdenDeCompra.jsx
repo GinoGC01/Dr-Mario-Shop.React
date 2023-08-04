@@ -33,6 +33,7 @@ export function OrdenDeCompra ({ handleOrdenCompra }) {
           action="https://formsubmit.co/dr.mario.shop@gmail.com"
           method="POST"
         >
+
           <header className="header__orden-compra">
             <h2 style={{ color: error ? 'red' : 'white' }}>{error ? 'Orden de compra rechazada' : 'Orden de compra'}</h2>
             <strong>Código: {ErrorSend.message === 'TypeError: Failed to fetch' ? 'XXXXXX' : IdOrdenCompra}</strong>

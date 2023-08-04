@@ -111,7 +111,6 @@
   body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif;
     line-height: 1.4;
-    max-width: 800px;
     margin: 20px auto 0;
     word-wrap: break-word;
     color: #363636;
@@ -120,6 +119,7 @@
     background: var(--background-body);
     text-rendering: optimizeLegibility;
   }
+
   
   @media (prefers-color-scheme: dark) {
   
@@ -732,7 +732,7 @@
     appearance: none;
     -webkit-appearance: none;
   }
-  
+
   textarea {
     display: block;
     margin-right: 0;

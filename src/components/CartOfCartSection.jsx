@@ -46,7 +46,7 @@ export function CartOfCartSection ({ openForm }) {
   }
 
   return (
-      <>
+      <section className='cart-section'>
         <header className="header__cart-section">
           <Link to="/" className="back-to-home__cart-section" onClick={() => { setFormActive(false) }}>
             <span className="material-symbols-outlined">chevron_left</span>
@@ -58,10 +58,10 @@ export function CartOfCartSection ({ openForm }) {
             </span>
           </h3>
         </header>
-        <ul className="card-conteiner__cart-section animate__animated animate__fadeIn">
           <h4 className="title-prodcuts-cart">
             <RigthArrow /> Productos
           </h4>
+        <ul className="card-conteiner__cart-section animate__animated animate__fadeIn">
           {cart.length > 0
             ? (
             <ProductsInCart cart={cart} setFormActive={setFormActive} />
@@ -72,6 +72,7 @@ export function CartOfCartSection ({ openForm }) {
               <i className="fa-solid fa-face-sad-tear"/>
             </div>
               )}
+        </ul>
           {cart.length > 0
             ? (
             <section>
@@ -102,7 +103,6 @@ export function CartOfCartSection ({ openForm }) {
             : (
               <Link to="/" className='voler-tienda__cart-section'>Volver a la tienda</Link>
               )}
-        </ul>
-      </>
+      </section>
   )
 }

@@ -1,28 +1,31 @@
-
-.swiper-principal{
-    padding-left: 15px;
-    padding: 15px 5px 15px 15px;
-    height: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.swiper-principal {
+  padding-left: 15px;
+  padding: 15px 5px 15px 15px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .swiper-principal > .swiper-wrapper {
-    height: 100%;
+  height: 100%;
 }
 
-.swiper-principal > .swiper-wrapper >  .swiper-slide{
-    display: flex;
-    background-color: transparent;
-    border-radius: 15px;
-    box-shadow: 0 0 15px #101113;
-
+.swiper-principal > .swiper-wrapper > .swiper-slide {
+  display: flex;
+  background-color: transparent;
+  border-radius: 15px;
+  box-shadow: 0 0 15px #101113;
 }
 
-.swiper-principal > .swiper-wrapper >  .swiper-slide > img{
-    display: block;
-    border-radius: 15px;
-    object-fit: cover;
+.swiper-principal > .swiper-wrapper > .swiper-slide > img {
+  display: block;
+  border-radius: 15px;
+  object-fit: cover;
+}
 
+@media screen and (min-width: 1200px) {
+  .swiper-principal {
+    height: 400px;
+  }
 }

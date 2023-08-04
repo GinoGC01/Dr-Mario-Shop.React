@@ -15,17 +15,18 @@ export default function Home () {
 
   const filteredProducts = filterProducts(products)
   return (
-    <main className="animate__animated animate__fadeIn" id='home'>
-      <DrMarioFirstSection />
-      <section className="body-sections">
-      <Cart />
-        <FavoriteProducts />
-        <ProductsVisited />
-        <Filters />
-        <Products products={filteredProducts} />
-      </section>
-      <Footer />
-
-    </main>
+    <>
+      <main className="animate__animated animate__fadeIn" id="home">
+        <DrMarioFirstSection />
+        <section className="body-sections">
+          <Cart />
+          <FavoriteProducts />
+          <ProductsVisited />
+          <Filters />
+          <Products products={filteredProducts} />
+        </section>
+      </main>
+        <Footer />
+    </>
   )
 }

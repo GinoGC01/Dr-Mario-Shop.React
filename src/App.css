@@ -35,7 +35,6 @@ html {
 
 body {
   background-color: var(--background-body);
-
 }
 
 .body-sections {
@@ -47,6 +46,7 @@ body {
 
 .Dr-mario-FirstSection {
   display: flex;
+  width: 100%;
   flex-direction: column;
   gap: 1em;
 }
@@ -56,7 +56,7 @@ body {
   position: absolute;
   display: block;
   overflow: hidden;
-  width: 100%;
+  width: 500px;
   opacity: 0.05;
   z-index: -1;
 }
@@ -65,7 +65,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1em;
-  padding-left: 20px ;
+  padding-left: 20px;
 }
 
 .subtitle__Dr-mario-FirstSection {
@@ -112,6 +112,7 @@ body {
   color: white;
   padding: 10px;
   margin-bottom: 10px;
+  cursor: pointer;
 }
 
 .search-content__filters {
@@ -124,8 +125,13 @@ body {
   justify-content: end;
   width: 80%;
 }
+
 .search-content__filters > input {
   width: 90%;
+}
+
+.search-content__filters > label {
+  cursor: pointer;
 }
 
 .filters__content,
@@ -207,25 +213,26 @@ body {
   width: 3em;
   height: 3em;
   border-radius: 50%;
+  cursor: pointer;
   transition:
     background-color ease-in-out 0.2s,
     transform ease-in-out 0.2s;
 }
 
-.number-products__Cart{
+.number-products__Cart {
   position: absolute;
   right: 0px;
   top: -3px;
   height: 18px;
   width: 18px;
-  background-color: red;
+  background-color: rgb(201, 8, 8);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.bg__Cart{
+.bg__Cart {
   display: none;
   position: fixed;
   z-index: 500;
@@ -233,7 +240,7 @@ body {
   width: 100vw;
 }
 
-.input-button__Cart:checked ~ .bg__Cart{
+.input-button__Cart:checked ~ .bg__Cart {
   display: block;
 }
 
@@ -425,6 +432,7 @@ body {
 
 .completar-compra-buttons__aside:hover {
   background-color: #040a0f;
+  text-decoration: none;
 }
 
 /* productos recientes */
@@ -669,7 +677,7 @@ body {
   margin-top: 20px;
 }
 
-.provincia__orden-compra{
+.provincia__orden-compra {
   width: 100%;
 }
 
@@ -839,28 +847,28 @@ body {
   position: relative;
 }
 
-.preguntas-frecuentes  h1::before{
-  content: url('../../images/isotipo\ blanco.png');
+.preguntas-frecuentes h1::before {
+  content: url("../../images/isotipo\ blanco.png");
   display: flex;
   align-items: center;
   justify-content: center;
-  scale: .15;
+  scale: 0.15;
   height: 5em;
   width: 5em;
-  margin:0 auto 20px;
+  margin: 0 auto 20px;
 }
 
 .preguntas {
   width: 98%;
   margin: auto;
-  padding: 0 .5em;
+  padding: 0 0.5em;
   border-left: 1px solid rgb(238, 238, 238);
 }
 
 .pregunta {
   display: flex;
   flex-direction: column;
-  gap: .5em;
+  gap: 0.5em;
   margin: 3em 0;
   text-align: justify;
 }
@@ -876,7 +884,7 @@ body {
   position: relative;
   width: 100%;
   overflow: hidden;
-  padding: .5em;
+  padding: 0.5em;
 }
 
 .tyc-container::after {
@@ -899,7 +907,7 @@ body {
   opacity: 0.02;
 }
 
-.tyc-container  h1 {
+.tyc-container h1 {
   display: block;
   width: 300px;
   margin: 10px auto;
@@ -908,28 +916,27 @@ body {
   padding: 10px 20px;
   border-bottom: 1px solid white;
   text-transform: uppercase;
-
 }
 
-.tyc-container  h1::before{
-  content: url('../../images/isotipo\ blanco.png');
+.tyc-container h1::before {
+  content: url("../../images/isotipo\ blanco.png");
   display: flex;
   align-items: center;
   justify-content: center;
-  scale: .15;
+  scale: 0.15;
   height: 5em;
   width: 5em;
-  margin:0 auto 20px;
+  margin: 0 auto 20px;
 }
 
 .ol-tyc {
   width: 98%;
   margin: auto;
-  padding: 0 .5em;
+  padding: 0 0.5em;
   border-left: 1px solid rgb(238, 238, 238);
 }
 
-.card-tyc{
+.card-tyc {
   display: flex;
   flex-direction: column;
   margin: 1em 0;
@@ -941,15 +948,13 @@ body {
   text-align: left;
 }
 
-.tyc-container >  strong{
+.tyc-container > strong {
   display: block;
   text-align: center;
   font-weight: 300;
-
 }
 
-
-.footer-tyc{
+.footer-tyc {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -960,7 +965,7 @@ body {
   margin-top: 20px;
 }
 
-.footer-tyc h4{
+.footer-tyc h4 {
   text-align: center;
   margin: 0;
 }
@@ -1051,7 +1056,6 @@ body {
   height: 100%;
 }
 
-
 /* footer */
 
 .footer-principal {
@@ -1080,8 +1084,6 @@ body {
   transform: translateY(7px);
 }
 
-
-
 .img-footer {
   display: flex;
   align-items: center;
@@ -1100,6 +1102,7 @@ body {
 }
 
 .rrss > li > a {
+  display: block;
   color: white;
   font-size: 2.5em;
 }
@@ -1131,4 +1134,86 @@ body {
 
 .copy {
   text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  #home,
+  .cart-section {
+    max-width: 1000px;
+    margin: auto;
+  }
+  .subtitle__Dr-mario-FirstSection {
+    text-align: center;
+  }
+
+  .title-mario-FirstSection {
+    text-align: center;
+  }
+
+  .filters__content-on > div,
+  .filters__content > div {
+    width: 20%;
+    position: relative;
+  }
+
+  .filters__content-on {
+    padding: 20px 0;
+    flex-direction: row;
+    gap: 1.5em;
+    justify-content: center;
+    box-shadow: 0 0 10px #040a0f80;
+    margin: 20px 0;
+  }
+
+  .price-from span {
+    position: absolute;
+    right: 20px;
+    font-weight: bold;
+  }
+
+  .Productos {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+  }
+
+  .aside__Cart {
+    width: 23%;
+    padding: 0 20px;
+  }
+
+  .bg__Cart,
+  .input-button__Cart:checked ~ .bg__Cart {
+    display: none;
+  }
+
+  .card-conteiner__cart-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+    margin: 20px;
+  }
+
+  .card__cart-section {
+    width: 48%;
+    margin: 0;
+  }
+
+  .content {
+    width: 50%;
+    margin: auto;
+  }
+
+  .metodos-de-pago{
+    width: 50%;
+  }
+
+  .rrss > li > a:hover{
+    transform: scale(1.1);
+    color: #a9a9a9;
+  }
 }
