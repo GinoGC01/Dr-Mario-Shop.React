@@ -37,6 +37,11 @@ body {
   background-color: var(--background-body);
 }
 
+#home,
+.cart-section {
+  position: relative;
+  z-index: 100;}
+
 .body-sections {
   position: relative;
   padding: 0 10px;
@@ -1154,8 +1159,6 @@ body {
 @media screen and (min-width: 1200px) {
   #home,
   .cart-section {
-    position: relative;
-    z-index: 100;
     max-width: 1000px;
     margin: auto;
   }
