@@ -42,6 +42,10 @@ body {
   padding: 0 10px;
 }
 
+.show-rigth, .show-left{
+  display: none;
+}
+
 /* first section */
 
 .Dr-mario-FirstSection {
