@@ -51,12 +51,17 @@ body {
   gap: 1em;
 }
 
-.Dr-mario-FirstSection::after {
-  content: url("../../images/isotipo blanco.png");
+.Dr-mario-FirstSection::before {
+  content: "";
+  background-image: url("../../images/isotipo blanco.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:-50%;
   position: absolute;
-  display: block;
-  overflow: hidden;
-  width: 500px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 500px;
   opacity: 0.05;
   z-index: -1;
 }
@@ -1152,6 +1157,14 @@ body {
   }
   .subtitle__Dr-mario-FirstSection {
     text-align: center;
+  }
+
+  .Dr-mario-FirstSection::before{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:top ;
+    height: 100vh;
+
   }
 
   .title-mario-FirstSection {

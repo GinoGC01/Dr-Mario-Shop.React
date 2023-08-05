@@ -70,8 +70,6 @@
   background-color: transparent;
 }
 
-
-
 .favorite-section__Card {
   position: relative;
   width: 100%;
@@ -286,6 +284,5 @@
 
   .buttons-container__Card-selected{
     gap: 1em;
-    
   }
 }
