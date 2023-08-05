@@ -23,6 +23,8 @@
 }
 
 .Card {
+  position: relative;
+  z-index: 1;
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -31,6 +33,15 @@
   height: 200px;
   background-color: var(--background);
   border-radius: 10px 10px 0 0;
+  transition:
+    box-shadow ease-in-out 0.1s,
+    transform ease-in-out 0.2s;
+}
+
+.Card:hover {
+  box-shadow: 0 0 25px #040a0fc2;
+  transform: scale(1.05);
+  z-index: 10;
 }
 
 .Card-selected {
@@ -50,9 +61,11 @@
   box-shadow: 0 0 0 100vmax #080b0eb0;
   border-radius: 10px;
   background-color: var(--background);
+  cursor: -webkit-grab;
+  cursor: grab;
 }
 
-.background-select{
+.background-select {
   position: fixed;
   top: -100px;
   z-index: -1;
@@ -60,8 +73,6 @@
   width: 100vw;
   background-color: transparent;
 }
-
-
 
 .favorite-section__Card {
   position: relative;
@@ -84,7 +95,6 @@
   font-size: 1.3em;
   top: 10px;
   right: 12px;
-
 }
 
 .back-arrow__favorite-section {
@@ -102,21 +112,22 @@
 
 .img-content__Card {
   border-radius: 7px 7px 0 0;
-
 }
 
-.img-content__Card > img{
+.img-content__Card > img {
   border-radius: 7px 7px 0 0;
-
 }
 
-.img-content__Card,
+.img-content__Card {
+  height: 80%;
+  width: 100%;
+}
 .img-content__Card-selected {
   height: 58%;
   width: 100%;
 }
 
-.img-content__Card-selected{
+.img-content__Card-selected {
   position: relative;
 }
 
@@ -127,7 +138,6 @@
   background-color: white;
   object-fit: contain;
 }
-
 
 .swiper {
   width: 100%;
@@ -179,7 +189,7 @@
   padding: 5px 0;
 }
 
-.text__Card-selected > strong{
+.text__Card-selected > strong {
   font-size: 1.2em;
 }
 
@@ -203,7 +213,7 @@
   align-items: center;
 }
 
-.price > p{
+.price > p {
   font-size: 1.5em;
 }
 
@@ -217,15 +227,14 @@
   font-size: 1.5em;
 }
 
-.buttons-container{
+.buttons-container {
   display: none;
 }
 
-.buttons-container__Card-selected{
+.buttons-container__Card-selected {
   display: flex;
   width: 100%;
   margin-top: 20px;
-  
 }
 
 .button__Card,
@@ -236,24 +245,21 @@
   padding: 10px;
   border-radius: 5px;
   flex: 1 0 30%;
-  transition: transform ease-in-out .2s;
-  
+  transition: transform ease-in-out 0.2s;
 }
 
-.button-end-build__Card:hover{
+.button-end-build__Card:hover {
   text-decoration: none;
   transform: scale(1.05);
   background-color: #202b38;
   box-shadow: 0 0 15px #040a0f63;
 }
 
-
-.button-end-build__Card{
+.button-end-build__Card {
   flex: 1 0 60%;
   margin: 0 6px 6px 0;
   text-align: center;
 }
-
 
 @media screen and (min-width: 1200px) {
   .Card {
@@ -261,12 +267,11 @@
     cursor: pointer;
   }
 
-  .Card-selected{
+  .Card-selected {
     width: 50%;
   }
 
-  .buttons-container__Card-selected{
+  .buttons-container__Card-selected {
     gap: 1em;
-    
   }
 }
