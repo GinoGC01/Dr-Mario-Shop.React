@@ -644,6 +644,8 @@ body {
 /* orden de compra */
 
 .orden-compra {
+  position: relative;
+  z-index: 1000;
   width: 95%;
   margin: 0 auto 50px;
   margin-top: 20px;
@@ -1271,6 +1273,16 @@ body {
   .show-left{
     right: -10px;
     transform:  scale(1.5);
+  }
+
+
+  /* guia talles */
+  .guia-talles-conteiner {
+    padding: 20px 25%;
+  }
+
+  .img-conteiner__guia-talles-conteiner {
+    height: 18em;
   }
 
 }
