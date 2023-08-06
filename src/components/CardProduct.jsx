@@ -13,7 +13,7 @@ import 'swiper/css/zoom'
 import 'swiper/css/pagination'
 import 'toastify-js/src/toastify.css'
 
-export default function CardProduct ({
+export default function CardProduct({
   product,
   removeFromCart,
   addToCart,
@@ -57,7 +57,9 @@ export default function CardProduct ({
 
   const handleEndBuild = (product) => {
     addToCart(product)
-    setTimeout(() => { setFormActive(true) }, 500)
+    setTimeout(() => {
+      setFormActive(true)
+    }, 500)
   }
 
   return (
@@ -69,20 +71,18 @@ export default function CardProduct ({
           : 'Card animate__animated animate__fadeIn animate__faster'
       }
     >
-      <section className="favorite-section__Card">
+      <section className='favorite-section__Card'>
         <div
           className={
             selected ? 'favorite-product-selected' : 'favorite-product'
           }
           onClick={handleFavoriteProducts}
         >
-          {isFavoriteProduct
-            ? (
-            <i className="fa-solid fa-heart animate__animated animate__rubberBand animate__fasted"></i>
-              )
-            : (
-            <i className="fa-regular fa-heart"></i>
-              )}
+          {isFavoriteProduct ? (
+            <i className='fa-solid fa-heart animate__animated animate__rubberBand animate__fasted'></i>
+          ) : (
+            <i className='fa-regular fa-heart'></i>
+          )}
         </div>
         <span
           className={
@@ -96,11 +96,10 @@ export default function CardProduct ({
         </span>
       </section>
 
-      {selected
-        ? (
+      {selected ? (
         <>
           <span
-            className="background-select"
+            className='background-select'
             onClick={() => handleSelected(product)}
           ></span>
           <Swiper
@@ -109,10 +108,10 @@ export default function CardProduct ({
             }}
             zoom={true}
             modules={[Zoom, Pagination]}
-            className="mySwiper img-content__Card-selected"
+            className='mySwiper img-content__Card-selected'
           >
             <SwiperSlide>
-              <div className="swiper-zoom-container">
+              <div className='swiper-zoom-container'>
                 <img
                   src={product.img.image01}
                   alt={product.nombre}
@@ -121,7 +120,7 @@ export default function CardProduct ({
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="swiper-zoom-container">
+              <div className='swiper-zoom-container'>
                 <img
                   src={product.img.image02}
                   alt={product.nombre}
@@ -130,7 +129,7 @@ export default function CardProduct ({
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="swiper-zoom-container">
+              <div className='swiper-zoom-container'>
                 <img
                   src={product.img.image03}
                   alt={product.nombre}
@@ -140,8 +139,7 @@ export default function CardProduct ({
             </SwiperSlide>
           </Swiper>
         </>
-          )
-        : (
+      ) : (
         <div
           className={
             selected ? 'img-content__Card-selected' : 'img-content__Card'
@@ -152,33 +150,35 @@ export default function CardProduct ({
               src={product.img.image01}
               alt={product.nombre}
               className={selected ? 'img__Card' : 'img__Card-selected'}
-              loading="lazy"
+              loading='lazy'
               onClick={() => handleSelected(product)}
             />
           }
         </div>
-          )}
+      )}
 
       <div className={selected ? 'text__Card-selected' : 'text__Card'}>
         <strong className={selected ? 'title__Card-selected' : 'title__Card'}>
           {product.nombre}
         </strong>
-        <div className="price">
+        <div className='price'>
           <p>
             $ <b>{product.precio}</b>
           </p>
-          <strike className="price__offer">$ {product.precio + 2500}</strike>
+          <strike className='price__offer'>
+            $ {Math.round(product.precio * 1.2)}
+          </strike>
         </div>
         <div
           className={
             selected ? 'data-product__Card-selected' : 'data-product__Card'
           }
         >
-          <p className="details details-open">
+          <p className='details details-open'>
             {' '}
             Marca: <b>{product.marca}</b>{' '}
           </p>
-          <p className="details details-open">
+          <p className='details details-open'>
             Talle: <b>{product.talle.talle}</b>
           </p>
           <p>
@@ -212,7 +212,13 @@ export default function CardProduct ({
           Guía de talles
         </Link>
         {product.stock && (
-          <div className={selected ? 'buttons-container__Card-selected' : 'buttons-container'}>
+          <div
+            className={
+              selected
+                ? 'buttons-container__Card-selected'
+                : 'buttons-container'
+            }
+          >
             <button
               className={'button__Card'}
               style={{
@@ -227,7 +233,15 @@ export default function CardProduct ({
             >
               {isProductInCart ? <RemoveCart /> : <AddCart />}
             </button>
-            <Link to={'/Carrito/#ordenDeCompra'} className='button-end-build__Card' onClick={() => { handleEndBuild(product) }}>Finalizar compra</Link>
+            <Link
+              to={'/Carrito/#ordenDeCompra'}
+              className='button-end-build__Card'
+              onClick={() => {
+                handleEndBuild(product)
+              }}
+            >
+              Finalizar compra
+            </Link>
           </div>
         )}
       </div>
