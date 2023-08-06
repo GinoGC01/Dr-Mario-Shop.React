@@ -827,9 +827,9 @@
         "precio":17999,
         "description":"Buzo de calidad PREMIUM, excelente algodón, frizado.",
         "marca":"Artist Union",
-        "img": {"image01": "../../public/images/Ropa/Buzos/Caja-03/S-ArtistUnion-149/Artist-Union-S (1).webp",
-                "image02": "../../public/images/Ropa/Buzos/Caja-03/S-ArtistUnion-149/Artist-Union-S (2).webp",
-                "image03": "../../public/images/Ropa/Buzos/Caja-03/S-ArtistUnion-149/Artist-Union-S (3).webp"},
+        "img": {"image01": "../images/Ropa/Buzos/Caja-03/S-ArtistUnion-149/Artist-Union-S (1).webp",
+                "image02": "../images/Ropa/Buzos/Caja-03/S-ArtistUnion-149/Artist-Union-S (2).webp",
+                "image03": "../images/Ropa/Buzos/Caja-03/S-ArtistUnion-149/Artist-Union-S (3).webp"},
         "calificacion":9.7
     },
     {
@@ -844,9 +844,9 @@
         "precio":16499,
         "description":"Buzo de calidad PREMIUM, excelente algodón, frizado.",
         "marca":"Fruit Of The Loom",
-        "img": {"image01": "../../public/images/Ropa/Buzos/Caja-03/L-Fruit-Of-Loom-151/Fruit-Of-Loom-L (1).webp",
-                "image02": "../../public/images/Ropa/Buzos/Caja-03/L-Fruit-Of-Loom-151/Fruit-Of-Loom-L (2).webp",
-                "image03": "../../public/images/Ropa/Buzos/Caja-03/L-Fruit-Of-Loom-151/Fruit-Of-Loom-L (3).webp"},
+        "img": {"image01": "../images/Ropa/Buzos/Caja-03/L-Fruit-Of-Loom-151/Fruit-Of-Loom-L (1).webp",
+                "image02": "../images/Ropa/Buzos/Caja-03/L-Fruit-Of-Loom-151/Fruit-Of-Loom-L (2).webp",
+                "image03": "../images/Ropa/Buzos/Caja-03/L-Fruit-Of-Loom-151/Fruit-Of-Loom-L (3).webp"},
         "calificacion":9.7
     },
     {
@@ -861,9 +861,9 @@
         "precio":14499,
         "description":"Buzo de calidad PREMIUM, excelente algodón, frizado.",
         "marca":"Danskin Now",
-        "img": {"image01": "../../public/images/Ropa/Buzos/Caja-03/M-DanskinNow-150/Danskin-Now-M (1).webp",
-                "image02": "../../public/images/Ropa/Buzos/Caja-03/M-DanskinNow-150/Danskin-Now-M (2).webp",
-                "image03": "../../public/images/Ropa/Buzos/Caja-03/M-DanskinNow-150/Danskin-Now-M (3).webp"},
+        "img": {"image01": "../images/Ropa/Buzos/Caja-03/M-DanskinNow-150/Danskin-Now-M (1).webp",
+                "image02": "../images/Ropa/Buzos/Caja-03/M-DanskinNow-150/Danskin-Now-M (2).webp",
+                "image03": "../images/Ropa/Buzos/Caja-03/M-DanskinNow-150/Danskin-Now-M (3).webp"},
         "calificacion":9.7
     },
     {
@@ -878,9 +878,9 @@
         "precio":12499,
         "description":"Buzo de calidad PREMIUM, excelente algodón, frizado.",
         "marca":"Nubeland",
-        "img": {"image01": "../../public/images/Ropa/Buzos/Caja-03/M-Grey'sAnatomy-152/Grey'sAnatomy-M (1).webp",
-                "image02": "../../public/images/Ropa/Buzos/Caja-03/M-Grey'sAnatomy-152/Grey'sAnatomy-M (2).webp",
-                "image03": "../../public/images/Ropa/Buzos/Caja-03/M-Grey'sAnatomy-152/Grey'sAnatomy-M (3).webp"},
+        "img": {"image01": "../images/Ropa/Buzos/Caja-03/M-Grey'sAnatomy-152/Grey'sAnatomy-M (1).webp",
+                "image02": "../images/Ropa/Buzos/Caja-03/M-Grey'sAnatomy-152/Grey'sAnatomy-M (2).webp",
+                "image03": "../images/Ropa/Buzos/Caja-03/M-Grey'sAnatomy-152/Grey'sAnatomy-M (3).webp"},
         "calificacion":9.7
     },
     {
@@ -895,9 +895,9 @@
         "precio":14499,
         "description":"Buzo de calidad PREMIUM, excelente algodón, frizado.",
         "marca":"Goodiellow",
-        "img": {"image01": "../../public/images/Ropa/Buzos/Caja-03/S-Goodielow-153/S-Goodielow (1).webp",
-                "image02": "../../public/images/Ropa/Buzos/Caja-03/S-Goodielow-153/S-Goodielow (2).webp",
-                "image03": "../../public/images/Ropa/Buzos/Caja-03/S-Goodielow-153/S-Goodielow (3).webp"},
+        "img": {"image01": "../images/Ropa/Buzos/Caja-03/S-Goodielow-153/S-Goodielow (1).webp",
+                "image02": "../images/Ropa/Buzos/Caja-03/S-Goodielow-153/S-Goodielow (2).webp",
+                "image03": "../images/Ropa/Buzos/Caja-03/S-Goodielow-153/S-Goodielow (3).webp"},
         "calificacion":9.7
     },
     {
@@ -912,9 +912,9 @@
         "precio":16499,
         "description":"Buzo de calidad PREMIUM, excelente algodón, frizado.",
         "marca":"Beach Island",
-        "img": {"image01": "../../public/images/Ropa/Buzos/Caja-03/L-LongBeachIsland-154/L-LongBeachIsland (1).webp",
-                "image02": "../../public/images/Ropa/Buzos/Caja-03/L-LongBeachIsland-154/L-LongBeachIsland (2).webp",
-                "image03": "../../public/images/Ropa/Buzos/Caja-03/L-LongBeachIsland-154/L-LongBeachIsland (3).webp"},
+        "img": {"image01": "../images/Ropa/Buzos/Caja-03/L-LongBeachIsland-154/L-LongBeachIsland (1).webp",
+                "image02": "../images/Ropa/Buzos/Caja-03/L-LongBeachIsland-154/L-LongBeachIsland (2).webp",
+                "image03": "../images/Ropa/Buzos/Caja-03/L-LongBeachIsland-154/L-LongBeachIsland (3).webp"},
         "calificacion":9.7
     },
     {
@@ -929,9 +929,9 @@
         "precio":18499,
         "description":"Buzo de calidad PREMIUM, excelente algodón, frizado.",
         "marca":"NAUTICA",
-        "img": {"image01": "../../public/images/Ropa/Buzos/Caja-03/M-CamperaNautica-156/M-CamperaNautica (1).webp",
-                "image02": "../../public/images/Ropa/Buzos/Caja-03/M-CamperaNautica-156/M-CamperaNautica (2).webp",
-                "image03": "../../public/images/Ropa/Buzos/Caja-03/M-CamperaNautica-156/M-CamperaNautica (3).webp"},
+        "img": {"image01": "../images/Ropa/Buzos/Caja-03/M-CamperaNautica-156/M-CamperaNautica (1).webp",
+                "image02": "../images/Ropa/Buzos/Caja-03/M-CamperaNautica-156/M-CamperaNautica (2).webp",
+                "image03": "../images/Ropa/Buzos/Caja-03/M-CamperaNautica-156/M-CamperaNautica (3).webp"},
         "calificacion":9.7
     },
     {
@@ -946,9 +946,9 @@
         "precio":16999,
         "description":"Buzo de calidad PREMIUM, excelente algodón, frizado.",
         "marca":"Port Company",
-        "img": {"image01": "../../public/images/Ropa/Buzos/Caja-03/L-PortCompany-157/L-PortCompany (1).webp",
-                "image02": "../../public/images/Ropa/Buzos/Caja-03/L-PortCompany-157/L-PortCompany (2).webp",
-                "image03": "../../public/images/Ropa/Buzos/Caja-03/L-PortCompany-157/L-PortCompany (3).webp"},
+        "img": {"image01": "../images/Ropa/Buzos/Caja-03/L-PortCompany-157/L-PortCompany (1).webp",
+                "image02": "../images/Ropa/Buzos/Caja-03/L-PortCompany-157/L-PortCompany (2).webp",
+                "image03": "../images/Ropa/Buzos/Caja-03/L-PortCompany-157/L-PortCompany (3).webp"},
         "calificacion":9.7
     },
     {
@@ -963,9 +963,9 @@
         "precio":17499,
         "description":"Buzo de calidad PREMIUM, excelente algodón, frizado.",
         "marca":"Gildan",
-        "img": {"image01": "../../public/images/Ropa/Buzos/Caja-03/L-Gildan-Premium-158/L-Gildan-Premium (1).webp",
-                "image02": "../../public/images/Ropa/Buzos/Caja-03/L-Gildan-Premium-158/L-Gildan-Premium (2).webp",
-                "image03": "../../public/images/Ropa/Buzos/Caja-03/L-Gildan-Premium-158/L-Gildan-Premium (3).webp"},
+        "img": {"image01": "../images/Ropa/Buzos/Caja-03/L-Gildan-Premium-158/L-Gildan-Premium (1).webp",
+                "image02": "../images/Ropa/Buzos/Caja-03/L-Gildan-Premium-158/L-Gildan-Premium (2).webp",
+                "image03": "../images/Ropa/Buzos/Caja-03/L-Gildan-Premium-158/L-Gildan-Premium (3).webp"},
         "calificacion":9.7
     },
     {
@@ -980,9 +980,9 @@
         "precio":18499,
         "description":"Buzo de calidad PREMIUM, excelente algodón, frizado.",
         "marca":"The North Face",
-        "img": {"image01": "../../public/images/Ropa/Buzos/Caja-03/L-theNorthFace-159/L-theNorthFace (1).webp",
-                "image02": "../../public/images/Ropa/Buzos/Caja-03/L-theNorthFace-159/L-theNorthFace (2).webp",
-                "image03": "../../public/images/Ropa/Buzos/Caja-03/L-theNorthFace-159/L-theNorthFace (3).webp"},
+        "img": {"image01": "../images/Ropa/Buzos/Caja-03/L-theNorthFace-159/L-theNorthFace (1).webp",
+                "image02": "../images/Ropa/Buzos/Caja-03/L-theNorthFace-159/L-theNorthFace (2).webp",
+                "image03": "../images/Ropa/Buzos/Caja-03/L-theNorthFace-159/L-theNorthFace (3).webp"},
         "calificacion":9.7
     },
     {
@@ -997,9 +997,9 @@
         "precio":16499,
         "description":"Buzo de calidad PREMIUM, excelente algodón, frizado.",
         "marca":"Mossy OAC",
-        "img": {"image01": "../../public/images/Ropa/Buzos/Caja-03/L-MossyOAK-160/L-MossyOAK (1).webp",
-                "image02": "../../public/images/Ropa/Buzos/Caja-03/L-MossyOAK-160/L-MossyOAK (2).webp",
-                "image03": "../../public/images/Ropa/Buzos/Caja-03/L-MossyOAK-160/L-MossyOAK (3).webp"},
+        "img": {"image01": "../images/Ropa/Buzos/Caja-03/L-MossyOAK-160/L-MossyOAK (1).webp",
+                "image02": "../images/Ropa/Buzos/Caja-03/L-MossyOAK-160/L-MossyOAK (2).webp",
+                "image03": "../images/Ropa/Buzos/Caja-03/L-MossyOAK-160/L-MossyOAK (3).webp"},
         "calificacion":9.7
     },
     {
@@ -1014,9 +1014,9 @@
         "precio":15599,
         "description":"Buzo de calidad PREMIUM, excelente algodón, frizado.",
         "marca":"Ecko unltd",
-        "img": {"image01": "../../public/images/Ropa/Buzos/Caja-03/L-EckoUnltd-161/L-EckoUnltd (1).webp",
-                "image02": "../../public/images/Ropa/Buzos/Caja-03/L-EckoUnltd-161/L-EckoUnltd (2).webp",
-                "image03": "../../public/images/Ropa/Buzos/Caja-03/L-EckoUnltd-161/L-EckoUnltd (3).webp"},
+        "img": {"image01": "../images/Ropa/Buzos/Caja-03/L-EckoUnltd-161/L-EckoUnltd (1).webp",
+                "image02": "../images/Ropa/Buzos/Caja-03/L-EckoUnltd-161/L-EckoUnltd (2).webp",
+                "image03": "../images/Ropa/Buzos/Caja-03/L-EckoUnltd-161/L-EckoUnltd (3).webp"},
         "calificacion":9.7
     },
     {
@@ -1031,9 +1031,9 @@
         "precio":12499,
         "description":"Buzo de calidad PREMIUM, excelente algodón, frizado.",
         "marca":"Nubeland",
-        "img": {"image01": "../../public/images/Ropa/Buzos/Caja-03/L-Nublend-Minions-162/L-Nublend-Minions (1).webp",
-                "image02": "../../public/images/Ropa/Buzos/Caja-03/L-Nublend-Minions-162/L-Nublend-Minions (2).webp",
-                "image03": "../../public/images/Ropa/Buzos/Caja-03/L-Nublend-Minions-162/L-Nublend-Minions (3).webp"},
+        "img": {"image01": "../images/Ropa/Buzos/Caja-03/L-Nublend-Minions-162/L-Nublend-Minions (1).webp",
+                "image02": "../images/Ropa/Buzos/Caja-03/L-Nublend-Minions-162/L-Nublend-Minions (2).webp",
+                "image03": "../images/Ropa/Buzos/Caja-03/L-Nublend-Minions-162/L-Nublend-Minions (3).webp"},
         "calificacion":9.7
     }
     

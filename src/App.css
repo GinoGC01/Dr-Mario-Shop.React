@@ -1165,10 +1165,9 @@ body {
   bottom: -2.5em;
   right: 30%;
   display: flex;
+  padding: 10px;
   justify-content: center;
   align-items: center;
-  width: 4em;
-  height: 3em;
   font-size: 1.2em;
   font-weight: bold;
   background-color: #b31313;

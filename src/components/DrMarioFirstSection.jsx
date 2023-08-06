@@ -4,7 +4,7 @@ import SliderPrincipal from './SliderPrincipal'
 function Oferta() {
   return (
     <>
-      <span className='oferta'>20%</span>
+      <span className='oferta'>20% OFF</span>
       <p className='texto__oferta'>
         Oferta de Inaguración <b>$2500</b> en cualquier artículo
       </p>
