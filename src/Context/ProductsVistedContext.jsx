@@ -16,7 +16,7 @@ export function ProductosVisitadosProvider({ children }) {
     localStorage.getItem(prductsFavoritesLSKey)
   )
 
-  const actualizarPrecios = (localstorage, localstoragekey) => {
+  const actualizarProductos = (localstorage, localstoragekey) => {
     const productosActualizados = localstorage.map((productoVisitado) => {
       const productoActualizado = Products.find(
         (productoJson) => productoJson.id === productoVisitado.id
@@ -24,7 +24,12 @@ export function ProductosVisitadosProvider({ children }) {
       if (productoActualizado) {
         return {
           ...productoVisitado,
-          precio: productoActualizado.precio
+          precio: productoActualizado.precio,
+          img: {
+            image01: productoActualizado.img.image01,
+            image02: productoActualizado.img.image02,
+            image03: productoActualizado.img.image03
+          }
         }
       }
       return productoVisitado
@@ -34,8 +39,8 @@ export function ProductosVisitadosProvider({ children }) {
   }
 
   useEffect(() => {
-    actualizarPrecios(productsVisitedLS, productsVisitedLSkey)
-    actualizarPrecios(prductsFavoritesLS, prductsFavoritesLSKey)
+    actualizarProductos(productsVisitedLS, productsVisitedLSkey)
+    actualizarProductos(prductsFavoritesLS, prductsFavoritesLSKey)
 
     const ProductVisitedInitialState = productsVisitedLS || []
     setProductosVisitados(ProductVisitedInitialState)
