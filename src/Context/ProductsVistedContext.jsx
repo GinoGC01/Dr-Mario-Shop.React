@@ -7,40 +7,39 @@ export function ProductosVisitadosProvider({ children }) {
   const [productosFavoritos, setProductosFavoritos] = useState([])
 
   const productsVisitedLSkey = 'products-visited-Dr-Mario-IND'
-  const productsVisitedLS = JSON.parse(
-    localStorage.getItem(productsVisitedLSkey)
-  )
+  const productsVisitedLS = localStorage.getItem(productsVisitedLSkey)
 
   const prductsFavoritesLSKey = 'favorite-products-Dr-Mario-IND'
-  const prductsFavoritesLS = JSON.parse(
-    localStorage.getItem(prductsFavoritesLSKey)
-  )
+  const prductsFavoritesLS = localStorage.getItem(prductsFavoritesLSKey)
 
-  const actualizarProductos = (localstorage, localstoragekey) => {
-    const productosActualizados = localstorage.map((productoVisitado) => {
-      const productoActualizado = Products.find(
-        (productoJson) => productoJson.id === productoVisitado.id
-      )
-      if (productoActualizado) {
-        return {
-          ...productoVisitado,
-          precio: productoActualizado.precio,
-          img: {
-            image01: productoActualizado.img.image01,
-            image02: productoActualizado.img.image02,
-            image03: productoActualizado.img.image03
+  const actualizarProductos = (localstorageProducts, localstoragekey) => {
+    const ProductosLocalStorage = JSON.parse(localstorageProducts)
+    const productosActualizados = ProductosLocalStorage?.map(
+      (productoVisitado) => {
+        const productoActualizado = Products.find(
+          (productoJson) => productoJson.id === productoVisitado.id
+        )
+        if (productoActualizado) {
+          return {
+            ...productoVisitado,
+            precio: productoActualizado.precio,
+            img: {
+              image01: productoActualizado.img.image01,
+              image02: productoActualizado.img.image02,
+              image03: productoActualizado.img.image03
+            }
           }
         }
+        return productoVisitado
       }
-      return productoVisitado
-    })
+    )
 
     localStorage.setItem(localstoragekey, JSON.stringify(productosActualizados))
   }
 
   useEffect(() => {
-    actualizarProductos(productsVisitedLS, productsVisitedLSkey)
-    actualizarProductos(prductsFavoritesLS, prductsFavoritesLSKey)
+    // actualizarProductos(productsVisitedLS, productsVisitedLSkey)
+    // actualizarProductos(prductsFavoritesLS, prductsFavoritesLSKey)
 
     const ProductVisitedInitialState = productsVisitedLS || []
     setProductosVisitados(ProductVisitedInitialState)
