@@ -1,17 +1,6 @@
 import React from 'react'
 import SliderPrincipal from './SliderPrincipal'
 
-function Oferta() {
-  return (
-    <>
-      <span className='oferta'>20% OFF</span>
-      <p className='texto__oferta'>
-        Oferta de Inaguración <b>$2500</b> en cualquier artículo
-      </p>
-    </>
-  )
-}
-
 export default function DrMarioFirstSection() {
   return (
     <section className='Dr-mario-FirstSection'>
@@ -20,7 +9,6 @@ export default function DrMarioFirstSection() {
         <h1 className='title-mario-FirstSection'>
           Buzos y Camperas importadas
         </h1>
-        {/* <Oferta /> */}
       </header>
       <SliderPrincipal />
     </section>

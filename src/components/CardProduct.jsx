@@ -202,6 +202,9 @@ export default function CardProduct({
               {product.cantidadDisponible > 1 ? 'Unidades' : 'Unidad'}
             </b>
           </p>
+          <p className='Oferta-card'>
+            ¡OFERTA APLICADA! <span>oferta de 20% de descuento</span>
+          </p>
         </div>
         <Link
           className={

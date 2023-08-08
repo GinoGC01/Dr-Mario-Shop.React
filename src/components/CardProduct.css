@@ -227,6 +227,27 @@
   color: #9b9b9b;
 }
 
+.Oferta-card{
+  display: flex;
+  color: var(--highlight);
+  font-weight: 600;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.Oferta-card > span{
+  opacity:0;
+  transform: translateX(-3px);
+  transition: opacity ease-in-out .2s, transform ease-in-out .2s;
+}
+
+.Oferta-card:hover > span{
+  opacity:.5;
+  transform: translateX(0px);
+  text-transform: lowercase;
+}
+
 .add-cart,
 .remove-cart {
   font-weight: 300;

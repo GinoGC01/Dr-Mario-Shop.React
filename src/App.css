@@ -1162,9 +1162,9 @@ body {
 .oferta{
   position: absolute;
   z-index: 1000;
-  bottom: -2.5em;
-  right: 30%;
-  display: flex;
+  top: -45px;
+  right: -5.2em;
+  display: none;
   padding: 10px;
   justify-content: center;
   align-items: center;
@@ -1173,8 +1173,16 @@ body {
   background-color: #b31313;
   box-shadow: 2px 2px 0px #dbdbdb, 0 0 15px #040a0f;
   border-radius: 0px 10px;
-  transform: rotate(10deg);
+  transform: rotate(15deg);
+  cursor: pointer;
 }
+
+.oferta:hover ~ .texto__oferta{
+  top: -30px;
+  opacity: 1;
+
+}
+
 
 .oferta::after{
   position: absolute;
@@ -1193,13 +1201,40 @@ position: absolute;
 z-index: 10;
 content: "";
 height: 1.2em;
-width: .3em;
-border-radius: 5px;
-border-left: 2px solid white;
+width: .5em;
+border-radius: 10px;
+border-left: 5px solid white;
 border-bottom: 1px solid white;
-top: -25%;
-left: 5px;
+top: -.1em;
+left: -10px;
+transform: rotate(-90deg);
 }
+
+.texto__oferta{
+  position: absolute;
+  z-index: -1;
+  top: -50px;
+  right: 8px;
+  width: 14em;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px #040a0f;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  opacity: 0;
+  transition: top ease-in-out .2s, opacity ease-in-out .2s;
+}
+
+.texto__oferta > span {
+  font-weight: bold;
+  color: #efdb43;
+  text-transform: uppercase;
+}
+
 
 @media screen and (min-width: 1200px) {
   #home,
@@ -1350,4 +1385,8 @@ left: 5px;
     height: 18em;
   }
 
+
+  .oferta, .texto__oferta{
+    display: flex;
+  }
 }
