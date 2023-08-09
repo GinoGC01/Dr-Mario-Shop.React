@@ -56,12 +56,11 @@ export function ProductosVisitadosProvider({ children }) {
 
   // estado productos visitados
   useEffect(() => {
-    actualizarProductos(prductsFavoritesLSKey)
     const FavoritesProdcutsitialState = JSON.parse(prductsFavoritesLS) || []
     setProductosFavoritos(FavoritesProdcutsitialState)
     if (FavoritesProdcutsitialState.length > 0) {
       const newState = actualizarProductos(prductsFavoritesLSKey)
-      setProductosVisitados(newState)
+      setProductosFavoritos(newState)
       updateLocalStorage(newState, prductsFavoritesLSKey)
     }
   }, [])
