@@ -6,15 +6,22 @@ export function ProductosVisitadosProvider({ children }) {
   const [productosVisitados, setProductosVisitados] = useState([])
   const [productosFavoritos, setProductosFavoritos] = useState([])
 
+  const updateLocalStorage = (state, storage) => {
+    localStorage.setItem(storage, JSON.stringify(state))
+  }
+
   const productsVisitedLSkey = 'products-visited-Dr-Mario-IND'
   const productsVisitedLS = localStorage.getItem(productsVisitedLSkey)
 
   const prductsFavoritesLSKey = 'favorite-products-Dr-Mario-IND'
   const prductsFavoritesLS = localStorage.getItem(prductsFavoritesLSKey)
 
-  const actualizarProductos = (localstorageProducts, localstoragekey) => {
-    const ProductosLocalStorage = JSON.parse(localstorageProducts)
-    const productosActualizados = ProductosLocalStorage?.map(
+  // actualiza el producto y devuelve el arreglo actualizado
+  const actualizarProductos = (localstoragekey) => {
+    const productosInteresados = JSON.parse(
+      localStorage.getItem(localstoragekey)
+    )
+    const productosActualizados = productosInteresados?.map(
       (productoVisitado) => {
         const productoActualizado = Products.find(
           (productoJson) => productoJson.id === productoVisitado.id
@@ -33,24 +40,31 @@ export function ProductosVisitadosProvider({ children }) {
         return productoVisitado
       }
     )
-
-    localStorage.setItem(localstoragekey, JSON.stringify(productosActualizados))
+    return productosActualizados
   }
 
+  // estado productos visitados
   useEffect(() => {
-    // actualizarProductos(productsVisitedLS, productsVisitedLSkey)
-    // actualizarProductos(prductsFavoritesLS, prductsFavoritesLSKey)
-
-    const ProductVisitedInitialState = productsVisitedLS || []
+    const ProductVisitedInitialState = JSON.parse(productsVisitedLS) || []
     setProductosVisitados(ProductVisitedInitialState)
-
-    const FavoritesProdcutsitialState = prductsFavoritesLS || []
-    setProductosFavoritos(FavoritesProdcutsitialState)
+    if (ProductVisitedInitialState.length > 0) {
+      const newState = actualizarProductos(productsVisitedLSkey)
+      setProductosVisitados(newState)
+      updateLocalStorage(newState, productsVisitedLSkey)
+    }
   }, [])
 
-  const updateLocalStorage = (state, storage) => {
-    localStorage.setItem(storage, JSON.stringify(state))
-  }
+  // estado productos visitados
+  useEffect(() => {
+    actualizarProductos(prductsFavoritesLSKey)
+    const FavoritesProdcutsitialState = JSON.parse(prductsFavoritesLS) || []
+    setProductosFavoritos(FavoritesProdcutsitialState)
+    if (FavoritesProdcutsitialState.length > 0) {
+      const newState = actualizarProductos(prductsFavoritesLSKey)
+      setProductosVisitados(newState)
+      updateLocalStorage(newState, prductsFavoritesLSKey)
+    }
+  }, [])
 
   function handleProductosVisitados(producto) {
     const { id } = producto
@@ -63,14 +77,14 @@ export function ProductosVisitadosProvider({ children }) {
       const newState = [...productosVisitados.slice(1)]
 
       setProductosVisitados(newState)
-      updateLocalStorage(newState, 'products-visited-Dr-Mario-IND')
+      updateLocalStorage(newState, productsVisitedLSkey)
     }
     // no repite el producto
     if (productoVisitado >= 0) return
 
     const newState = [...productosVisitados, { ...producto }]
     setProductosVisitados(newState)
-    updateLocalStorage(newState, 'products-visited-Dr-Mario-IND')
+    updateLocalStorage(newState, productsVisitedLSkey)
   }
 
   function AddProductosFavoritos(producto) {
@@ -84,14 +98,14 @@ export function ProductosVisitadosProvider({ children }) {
     const newState = [...productosFavoritos, { ...producto }]
 
     setProductosFavoritos(newState)
-    updateLocalStorage(newState, 'favorite-products-Dr-Mario-IND')
+    updateLocalStorage(newState, prductsFavoritesLSKey)
   }
 
   function deleteProductosFavoritos(producto) {
     const { id } = producto
     const newState = productosFavoritos.filter((item) => item.id !== id)
     setProductosFavoritos(newState)
-    updateLocalStorage(newState, 'favorite-products-Dr-Mario-IND')
+    updateLocalStorage(newState, prductsFavoritesLSKey)
   }
 
   return (
