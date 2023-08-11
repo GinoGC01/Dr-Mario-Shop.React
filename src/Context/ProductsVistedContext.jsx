@@ -1,5 +1,6 @@
 import React, { createContext, useEffect, useState } from 'react'
 import Products from '../mocks/Products-01.json'
+import { actualizarProductos } from '../Logic/UpdateProduct'
 export const ProductosVisitadosContext = createContext()
 
 export function ProductosVisitadosProvider({ children }) {
@@ -16,39 +17,12 @@ export function ProductosVisitadosProvider({ children }) {
   const prductsFavoritesLSKey = 'favorite-products-Dr-Mario-IND'
   const prductsFavoritesLS = localStorage.getItem(prductsFavoritesLSKey)
 
-  // actualiza el producto y devuelve el arreglo actualizado
-  const actualizarProductos = (localstoragekey) => {
-    const productosInteresados = JSON.parse(
-      localStorage.getItem(localstoragekey)
-    )
-    const productosActualizados = productosInteresados?.map(
-      (productoVisitado) => {
-        const productoActualizado = Products.find(
-          (productoJson) => productoJson.id === productoVisitado.id
-        )
-        if (productoActualizado) {
-          return {
-            ...productoVisitado,
-            precio: productoActualizado.precio,
-            img: {
-              image01: productoActualizado.img.image01,
-              image02: productoActualizado.img.image02,
-              image03: productoActualizado.img.image03
-            }
-          }
-        }
-        return productoVisitado
-      }
-    )
-    return productosActualizados
-  }
-
   // estado productos visitados
   useEffect(() => {
     const ProductVisitedInitialState = JSON.parse(productsVisitedLS) || []
     setProductosVisitados(ProductVisitedInitialState)
     if (ProductVisitedInitialState.length > 0) {
-      const newState = actualizarProductos(productsVisitedLSkey)
+      const newState = actualizarProductos(productsVisitedLSkey, Products)
       setProductosVisitados(newState)
       updateLocalStorage(newState, productsVisitedLSkey)
     }
@@ -59,7 +33,7 @@ export function ProductosVisitadosProvider({ children }) {
     const FavoritesProdcutsitialState = JSON.parse(prductsFavoritesLS) || []
     setProductosFavoritos(FavoritesProdcutsitialState)
     if (FavoritesProdcutsitialState.length > 0) {
-      const newState = actualizarProductos(prductsFavoritesLSKey)
+      const newState = actualizarProductos(prductsFavoritesLSKey, Products)
       setProductosFavoritos(newState)
       updateLocalStorage(newState, prductsFavoritesLSKey)
     }

@@ -211,7 +211,16 @@ body {
 
 .input-button__Cart {
   position: absolute;
+  width: 0;
+  height: 0;
   top: -200px;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.input-button__Cart:checked{
+  color: transparent;
+  background-color: transparent;
 }
 
 .button__Cart {

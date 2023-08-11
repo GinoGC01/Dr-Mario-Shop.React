@@ -24,6 +24,7 @@ module.exports = {
   rules: {
     'react/prop-types': 'off',
     'space-before-function-paren': 'off',
-    'multiline-ternary': 'off'
+    'multiline-ternary': 'off',
+    'no-fallthrough': 'off'
   }
 }
