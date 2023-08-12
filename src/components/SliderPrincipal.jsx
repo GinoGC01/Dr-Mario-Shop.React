@@ -41,7 +41,7 @@ export default function SliderPrincipal () {
         </SwiperSlide>
         <SwiperSlide>
           {' '}
-          <img src="../../public/images/Orange.png" alt="" />
+          <img src="/images/Orange.png" alt="" />
         </SwiperSlide>
       </Swiper>
     </>
