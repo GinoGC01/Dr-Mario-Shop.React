@@ -210,12 +210,21 @@ body {
 /* cart */
 
 .input-button__Cart {
-  position: absolute;
+  /* position: absolute;
   width: 0;
   height: 0;
-  top: -200px;
+  top: -5200px;
   overflow: hidden;
-  z-index: -1;
+  z-index: -1; */
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .input-button__Cart:checked{
@@ -1187,7 +1196,7 @@ body {
 }
 
 .oferta:hover ~ .texto__oferta{
-  top: -30px;
+  top: -35px;
   opacity: 1;
 
 }
