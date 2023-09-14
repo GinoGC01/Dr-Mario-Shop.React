@@ -3,8 +3,9 @@ import CardProduct from './CardProduct'
 import { useCart } from '../Hooks/useCart'
 import { RigthArrow } from './Icons'
 import { useProductsVisited } from '../Hooks/useProductsVisited'
+import { SliderButtons } from './SliderButtons'
 
-export function ProductsVisited () {
+export function ProductsVisited() {
   const { addToCart, removeFromCart, cart } = useCart()
   const { productosVisitados, productosFavoritos } = useProductsVisited()
   const scrollSection = useRef()
@@ -16,27 +17,25 @@ export function ProductsVisited () {
     return check
   }
 
-  const ckeckProductFavorite = product => {
-    const checkFavoriteProduct = productosFavoritos.some((item) => item.id === product.id)
+  const ckeckProductFavorite = (product) => {
+    const checkFavoriteProduct = productosFavoritos.some(
+      (item) => item.id === product.id
+    )
     return checkFavoriteProduct
-  }
-
-  const handleScrollClick = (scrollAmount) => {
-    if (scrollSection.current) {
-      scrollSection.current.scrollLeft += scrollAmount
-    }
   }
 
   return (
     <>
       {productosVisitados.length > 0 && (
-        <section className="productos-recientes__container">
+        <section className='productos-recientes__container'>
           <h2>
             Productos vistos recientemente <RigthArrow />{' '}
           </h2>
-          <span className='show-left' onClick={() => { handleScrollClick(300) }}> <RigthArrow/></span>
-          <span className='show-rigth' onClick={() => { handleScrollClick(-300) }}> <RigthArrow/></span>
-          <ul className="container-productos__productos-recientes" ref={scrollSection}>
+          <SliderButtons scrollSection={scrollSection} />
+          <ul
+            className='container-productos__productos-recientes'
+            ref={scrollSection}
+          >
             {productosVisitados
               .map((product) => {
                 const isProductInCart = checkProductInCart(product)

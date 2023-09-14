@@ -39,6 +39,10 @@ export default function SliderPrincipal () {
           {' '}
           <img src="/images/nike-slider.png" alt="" />
         </SwiperSlide>
+        <SwiperSlide>
+          {' '}
+          <img src="/images/Orange.png" alt="" />
+        </SwiperSlide>
       </Swiper>
     </>
   )

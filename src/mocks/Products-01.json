@@ -7,13 +7,13 @@
     "nombre": "Buzo Gildan Premium",
     "stock": true,
     "talle": { "talle": "S", "detalle": "buzos-s" },
-    "precio": 16000,
+    "precio": 15999,
     "description": "Buzo de calidad PREMIUM, excelente algodón, frizado.",
     "marca": "Gildan",
     "img": {
-      "image01": "../images/Ropa/Buzos/S-gildan-101/S-gildan-01.webp",
-      "image02": "../images/Ropa/Buzos/S-gildan-101/S-gildan-02.webp",
-      "image03": "../images/Ropa/Buzos/S-gildan-101/S-gildan-03.webp"
+      "image01": "../images/Ropa/Buzos/Caja-03/S-GildanPremium-155/S-GildanPremium- (1).webp",
+      "image02": "../images/Ropa/Buzos/Caja-03/S-GildanPremium-155/S-GildanPremium- (2).webp",
+      "image03": "../images/Ropa/Buzos/Caja-03/S-GildanPremium-155/S-GildanPremium- (3).webp"
     },
     "calificacion": 9.1
   },
@@ -25,7 +25,7 @@
     "nombre": "Buzo Gildan Premium",
     "stock": true,
     "talle": { "talle": "L", "detalle": "buzos-l" },
-    "precio": 16000,
+    "precio": 15999,
     "description": "Buzo de calidad PREMIUM, excelente algodón, frizado.",
     "marca": "Gildan",
     "img": {
@@ -43,7 +43,7 @@
     "linea": "premium",
     "stock": true,
     "talle": { "talle": "M", "detalle": "buzos-m" },
-    "precio": 16000,
+    "precio": 15999,
     "description": "Buzo de calidad PREMIUM, excelente algodón, frizado.",
     "marca": "Pacify Company",
     "img": {
@@ -61,7 +61,7 @@
     "linea": "primera-linea",
     "stock": true,
     "talle": { "talle": "L", "detalle": "buzos-l" },
-    "precio": 15000,
+    "precio": 14999,
     "description": "Buzo de calidad PREMIUM, excelente algodón, frizado.",
     "marca": "Athleta Girld",
     "img": {
@@ -79,7 +79,7 @@
     "linea": "premium",
     "stock": true,
     "talle": { "talle": "M", "detalle": "buzos-m" },
-    "precio": 17500,
+    "precio": 17499,
     "description": "Buzo de calidad PREMIUM, excelente algodón, frizado.",
     "marca": "Roses",
     "img": {
@@ -97,7 +97,7 @@
     "nombre": "Campera Goodie",
     "stock": true,
     "talle": { "talle": "S", "detalle": "camperas-s" },
-    "precio": 16000,
+    "precio": 15999,
     "description": "Buzo de calidad PREMIUM, excelente algodón, frizado.",
     "marca": "Goodiellow",
     "img": {
@@ -115,7 +115,7 @@
     "nombre": "Buzo Navi",
     "stock": true,
     "talle": { "talle": "M", "detalle": "buzos-m" },
-    "precio": 17000,
+    "precio": 16999,
     "description": "Buzo de calidad PREMIUM, excelente algodón, frizado.",
     "marca": "Old Navi Active",
     "img": {
@@ -133,7 +133,7 @@
     "nombre": "Buzo Harms",
     "stock": true,
     "talle": { "talle": "S", "detalle": "buzos-s" },
-    "precio": 16500,
+    "precio": 16499,
     "description": "Buzo de calidad PREMIUM, excelente algodón, frizado.",
     "marca": "Harms",
     "img": {
@@ -151,7 +151,7 @@
     "nombre": "Campera NIKE",
     "stock": true,
     "talle": { "talle": "S", "detalle": "camperas-s" },
-    "precio": 23500,
+    "precio": 23499,
     "description": "Buzo de calidad PREMIUM, excelente algodón, frizado.",
     "marca": "NIKE",
     "img": {
@@ -169,7 +169,7 @@
     "linea": "premium",
     "stock": true,
     "talle": { "talle": "XXL", "detalle": "buzos-xxl" },
-    "precio": 18500,
+    "precio": 18499,
     "description": "Buzo de calidad PREMIUM, excelente algodón, frizado.",
     "marca": "Blfacher Report",
     "img": {
@@ -187,7 +187,7 @@
     "nombre": "Buzo Gildan Premium",
     "stock": false,
     "talle": { "talle": "L", "detalle": "buzos-l" },
-    "precio": 18000,
+    "precio": 17999,
     "description": "Buzo de calidad PREMIUM, excelente algodón, frizado.",
     "marca": "Gildan",
     "img": {
@@ -205,7 +205,7 @@
     "nombre": "Buzo Turth-Black",
     "stock": true,
     "talle": { "talle": "S", "detalle": "buzos-s" },
-    "precio": 15000,
+    "precio": 14999,
     "description": "Buzo de calidad PREMIUM, excelente algodón, frizado.",
     "marca": "Turth Substonee",
     "img": {
@@ -223,7 +223,7 @@
     "linea": "primera-linea",
     "stock": true,
     "talle": { "talle": "S", "detalle": "buzos-s" },
-    "precio": 16500,
+    "precio": 16499,
     "description": "Buzo de calidad PREMIUM, excelente algodón, frizado.",
     "marca": "Independent",
     "img": {
@@ -239,9 +239,9 @@
     "categoria": "buzos",
     "linea": "premium",
     "nombre": "Buzo Snoop OVERSIZE",
-    "stock": false,
+    "stock": true,
     "talle": { "talle": "XXL", "detalle": "buzos-xxl" },
-    "precio": 20000,
+    "precio": 19990,
     "description": "Buzo de calidad PREMIUM, excelente algodón, frizado.",
     "marca": "Snoop Oversize Hoodie",
     "img": {
@@ -259,7 +259,7 @@
     "nombre": "Buzo Hawks",
     "stock": true,
     "talle": { "talle": "S", "detalle": "buzos-s" },
-    "precio": 13000,
+    "precio": 12999,
     "description": "Buzo de calidad PREMIUM, excelente algodón, frizado.",
     "marca": "Roger Williams",
     "img": {
@@ -277,7 +277,7 @@
     "nombre": "Buzo Colonia",
     "stock": true,
     "talle": { "talle": "M", "detalle": "buzos-m" },
-    "precio": 16000,
+    "precio": 15999,
     "description": "Buzo de calidad PREMIUM, excelente algodón, frizado.",
     "marca": "Coloniaa Corner",
     "img": {
@@ -295,7 +295,7 @@
     "nombre": "Buzo Tek",
     "stock": false,
     "talle": { "talle": "M", "detalle": "buzos-m" },
-    "precio": 16000,
+    "precio": 15999,
     "description": "Buzo de calidad PREMIUM, excelente algodón, frizado.",
     "marca": "Tek Gear",
     "img": {
@@ -313,7 +313,7 @@
     "nombre": "47'-Blue",
     "stock": true,
     "talle": { "talle": "XXL", "detalle": "buzos-xxl" },
-    "precio": 16500,
+    "precio": 16499,
     "description": "Buzo de calidad PREMIUM, excelente algodón, frizado.",
     "marca": "47'",
     "img": {
@@ -331,7 +331,7 @@
     "nombre": "Buzo Champion Bebaly",
     "stock": true,
     "talle": { "talle": "XXL", "detalle": "buzos-xxl" },
-    "precio": 22000,
+    "precio": 21990,
     "description": "Buzo de calidad PREMIUM, excelente algodón, frizado.",
     "marca": "Champion",
     "img": {
@@ -349,7 +349,7 @@
     "nombre": "Buzo Everlast Red",
     "stock": true,
     "talle": { "talle": "XL", "detalle": "buzos-xl" },
-    "precio": 22500,
+    "precio": 22499,
     "description": "Buzo de calidad PREMIUM, excelente algodón, frizado.",
     "marca": "Everlast",
     "img": {
@@ -367,7 +367,7 @@
     "nombre": "Buzo Gildan Bordo",
     "stock": true,
     "talle": { "talle": "XL", "detalle": "buzos-xl" },
-    "precio": 16500,
+    "precio": 16499,
     "description": "Buzo de calidad PREMIUM, excelente algodón, frizado.",
     "marca": "Gildan",
     "img": {
@@ -385,7 +385,7 @@
     "nombre": "Buzo NASA - POINT",
     "stock": true,
     "talle": { "talle": "XL", "detalle": "buzos-xl" },
-    "precio": 15000,
+    "precio": 14999,
     "description": "Buzo de calidad PREMIUM, excelente algodón, frizado.",
     "marca": "POINT",
     "img": {
@@ -403,7 +403,7 @@
     "nombre": "Buzo Truss",
     "stock": true,
     "talle": { "talle": "XL", "detalle": "camperas-xl" },
-    "precio": 17000,
+    "precio": 16999,
     "description": "Buzo de calidad PREMIUM, excelente algodón, frizado.",
     "marca": "Truss",
     "img": {
@@ -421,7 +421,7 @@
     "linea": "premium",
     "stock": true,
     "talle": { "talle": "XL", "detalle": "buzos-xl" },
-    "precio": 18500,
+    "precio": 18499,
     "description": "Buzo de calidad PREMIUM, excelente algodón, frizado.",
     "marca": "Praire Mountain",
     "img": {
@@ -439,7 +439,7 @@
     "nombre": "Buzo Troilee",
     "stock": true,
     "talle": { "talle": "XL", "detalle": "buzos-xl" },
-    "precio": 21000,
+    "precio": 20990,
     "description": "Buzo de calidad PREMIUM, excelente algodón, frizado.",
     "marca": "Troilee",
     "img": {
@@ -457,7 +457,7 @@
     "nombre": "Buzo Custom - Blue Galaxy",
     "stock": true,
     "talle": { "talle": "XXL", "detalle": "buzos-xxl" },
-    "precio": 24500,
+    "precio": 24499,
     "description": "Buzo de calidad PREMIUM, excelente algodón, frizado.",
     "marca": "Champion",
     "img": {
@@ -475,7 +475,7 @@
     "nombre": "Buzo Hawaii",
     "stock": true,
     "talle": { "talle": "XXL", "detalle": "buzos-xxl" },
-    "precio": 17000,
+    "precio": 16999,
     "description": "Buzo de calidad PREMIUM, excelente algodón, frizado.",
     "marca": "Hungmaven",
     "img": {
@@ -493,7 +493,7 @@
     "nombre": "White NIKE",
     "stock": true,
     "talle": { "talle": "XL", "detalle": "buzos-xl" },
-    "precio": 24500,
+    "precio": 24499,
     "description": "Buzo de calidad PREMIUM, excelente algodón, frizado.",
     "marca": "NIKE",
     "img": {
@@ -511,7 +511,7 @@
     "nombre": "Campera Gildan",
     "stock": true,
     "talle": { "talle": "XL", "detalle": "camperas-xl" },
-    "precio": 18000,
+    "precio": 17999,
     "description": "Buzo de calidad PREMIUM, excelente algodón, frizado.",
     "marca": "Gildan",
     "img": {
@@ -529,7 +529,7 @@
     "nombre": "Buzo Gildan",
     "stock": true,
     "talle": { "talle": "S", "detalle": "buzos-s" },
-    "precio": 15000,
+    "precio": 14999,
     "description": "Buzo de calidad PREMIUM, excelente algodón, frizado.",
     "marca": "Gildan",
     "img": {
@@ -547,7 +547,7 @@
     "nombre": "Buzo Canvas",
     "stock": true,
     "talle": { "talle": "S", "detalle": "buzos-s" },
-    "precio": 16500,
+    "precio": 16499,
     "description": "Buzo de calidad PREMIUM, excelente algodón, frizado.",
     "marca": "Canvas",
     "img": {
@@ -565,7 +565,7 @@
     "nombre": "Campera GAP",
     "stock": true,
     "talle": { "talle": "S", "detalle": "camperas-s" },
-    "precio": 25000,
+    "precio": 24999,
     "description": "Buzo de calidad PREMIUM, excelente algodón, frizado.",
     "marca": "GAP",
     "img": {
@@ -583,7 +583,7 @@
     "nombre": "Buzo Army",
     "stock": true,
     "talle": { "talle": "XL", "detalle": "buzos-xl" },
-    "precio": 18500,
+    "precio": 18499,
     "description": "Buzo de calidad PREMIUM, excelente algodón, frizado.",
     "marca": "E5-Army",
     "img": {
@@ -601,7 +601,7 @@
     "nombre": "Buzo Pernant",
     "stock": true,
     "talle": { "talle": "S", "detalle": "buzos-s" },
-    "precio": 18500,
+    "precio": 18499,
     "description": "Buzo de calidad PREMIUM, excelente algodón, frizado.",
     "marca": "Pernant",
     "img": {
@@ -619,7 +619,7 @@
     "nombre": "Buzo Gildan Premium",
     "stock": true,
     "talle": { "talle": "M", "detalle": "buzos-m" },
-    "precio": 15000,
+    "precio": 14999,
     "description": "Buzo de calidad PREMIUM, excelente algodón, frizado.",
     "marca": "Gildan",
     "img": {
@@ -637,7 +637,7 @@
     "nombre": "Buzo Port",
     "stock": true,
     "talle": { "talle": "S", "detalle": "buzos-s" },
-    "precio": 15000,
+    "precio": 14999,
     "description": "Buzo de calidad PREMIUM, excelente algodón, frizado.",
     "marca": "Port-Company",
     "img": {
@@ -655,7 +655,7 @@
     "nombre": "Buzo Green",
     "stock": true,
     "talle": { "talle": "M", "detalle": "buzos-m" },
-    "precio": 16000,
+    "precio": 15999,
     "description": "Buzo de calidad PREMIUM, excelente algodón, frizado.",
     "marca": "Pink",
     "img": {
@@ -673,7 +673,7 @@
     "nombre": "Buzo Champion",
     "stock": true,
     "talle": { "talle": "M", "detalle": "buzos-m" },
-    "precio": 21500,
+    "precio": 21499,
     "description": "Buzo de calidad PREMIUM, excelente algodón, frizado.",
     "marca": "Champion",
     "img": {
@@ -691,7 +691,7 @@
     "nombre": "Buzps Hanes",
     "stock": true,
     "talle": { "talle": "L", "detalle": "buzos-l" },
-    "precio": 17000,
+    "precio": 16999,
     "description": "Buzo de calidad PREMIUM, excelente algodón, frizado.",
     "marca": "Hanes",
     "img": {
@@ -709,7 +709,7 @@
     "nombre": "Buzo Champion",
     "stock": true,
     "talle": { "talle": "S", "detalle": "buzos-s" },
-    "precio": 20500,
+    "precio": 20499,
     "description": "Buzo de calidad PREMIUM, excelente algodón, frizado.",
     "marca": "Champion",
     "img": {
@@ -727,7 +727,7 @@
     "nombre": "Buzo Vanta-Black",
     "stock": true,
     "talle": { "talle": "S", "detalle": "buzos-s" },
-    "precio": 13000,
+    "precio": 12999,
     "description": "Buzo de calidad PREMIUM, excelente algodón, frizado.",
     "marca": "Vanta",
     "img": {
@@ -745,7 +745,7 @@
     "nombre": "Buzo Urban",
     "stock": true,
     "talle": { "talle": "S", "detalle": "buzos-s" },
-    "precio": 15000,
+    "precio": 14999,
     "description": "Buzo de calidad PREMIUM, excelente algodón, frizado.",
     "marca": "Urban Pipeland",
     "img": {
@@ -763,7 +763,7 @@
     "nombre": "Buzo Company",
     "stock": true,
     "talle": { "talle": "M", "detalle": "buzos-m" },
-    "precio": 16500,
+    "precio": 16499,
     "description": "Buzo de calidad PREMIUM, excelente algodón, frizado.",
     "marca": "Port & Company",
     "img": {
@@ -781,7 +781,7 @@
     "nombre": "Campera Avengers",
     "stock": true,
     "talle": { "talle": "M", "detalle": "camperas-m" },
-    "precio": 15000,
+    "precio": 14999,
     "description": "Buzo de calidad PREMIUM, excelente algodón, frizado.",
     "marca": "Avengers",
     "img": {
@@ -799,7 +799,7 @@
     "nombre": "Campera Junk",
     "stock": true,
     "talle": { "talle": "M", "detalle": "camperas-m" },
-    "precio": 19500,
+    "precio": 19499,
     "description": "Buzo de calidad PREMIUM, excelente algodón, frizado.",
     "marca": "Junk-Food",
     "img": {
@@ -817,7 +817,7 @@
     "nombre": "Buzo American",
     "stock": true,
     "talle": { "talle": "M", "detalle": "buzos-m" },
-    "precio": 13000,
+    "precio": 12999,
     "description": "Buzo de calidad PREMIUM, excelente algodón, frizado.",
     "marca": "Champion",
     "img": {
@@ -835,7 +835,7 @@
     "nombre": "Buzo Nike",
     "stock": false,
     "talle": { "talle": "L", "detalle": "buzos-l" },
-    "precio": 18500,
+    "precio": 18499,
     "description": "Buzo de calidad PREMIUM, excelente algodón, frizado.",
     "marca": "Nike",
     "img": {
@@ -853,13 +853,247 @@
     "nombre": "Buzo Jerzees",
     "stock": true,
     "talle": { "talle": "M", "detalle": "buzos-m" },
-    "precio": 14500,
+    "precio": 17499,
     "description": "Buzo de calidad PREMIUM, excelente algodón, frizado.",
     "marca": "Jerzees",
     "img": {
       "image01": "../images/Ropa/Buzos/Caja-02/Jerzees-M/Jerzees-M (1).webp",
       "image02": "../images/Ropa/Buzos/Caja-02/Jerzees-M/Jerzees-M (2).webp",
       "image03": "../images/Ropa/Buzos/Caja-02/Jerzees-M/Jerzees-M (3).webp"
+    },
+    "calificacion": 9.7
+  },
+  {
+    "id": "149",
+    "cantidadDisponible": 1,
+    "categoria": "buzos",
+    "linea": "primera-linea",
+    "nombre": "Buzo Artist Union",
+    "stock": false,
+    "talle": { "talle": "S", "detalle": "buzos-s" },
+    "precio": 17999,
+    "description": "Buzo de calidad PREMIUM, excelente algodón, frizado.",
+    "marca": "Artist Union",
+    "img": {
+      "image01": "../images/Ropa/Buzos/Caja-03/S-ArtistUnion-149/Artist-Union-S (1).webp",
+      "image02": "../images/Ropa/Buzos/Caja-03/S-ArtistUnion-149/Artist-Union-S (2).webp",
+      "image03": "../images/Ropa/Buzos/Caja-03/S-ArtistUnion-149/Artist-Union-S (3).webp"
+    },
+    "calificacion": 9.7
+  },
+  {
+    "id": "150",
+    "cantidadDisponible": 1,
+    "categoria": "buzos",
+    "linea": "primera-linea",
+    "nombre": "Buzo Fruit Of The Loom",
+    "stock": true,
+    "talle": { "talle": "L", "detalle": "buzos-l" },
+    "precio": 16499,
+    "description": "Buzo de calidad PREMIUM, excelente algodón, frizado.",
+    "marca": "Fruit Of The Loom",
+    "img": {
+      "image01": "../images/Ropa/Buzos/Caja-03/L-Fruit-Of-Loom-151/Fruit-Of-Loom-L (1).webp",
+      "image02": "../images/Ropa/Buzos/Caja-03/L-Fruit-Of-Loom-151/Fruit-Of-Loom-L (2).webp",
+      "image03": "../images/Ropa/Buzos/Caja-03/L-Fruit-Of-Loom-151/Fruit-Of-Loom-L (3).webp"
+    },
+    "calificacion": 9.7
+  },
+  {
+    "id": "151",
+    "cantidadDisponible": 1,
+    "categoria": "buzos",
+    "linea": "primera-linea",
+    "nombre": "Buzo Danskin Now",
+    "stock": true,
+    "talle": { "talle": "M", "detalle": "buzos-m" },
+    "precio": 14499,
+    "description": "Buzo de calidad PREMIUM, excelente algodón, frizado.",
+    "marca": "Danskin Now",
+    "img": {
+      "image01": "../images/Ropa/Buzos/Caja-03/M-DanskinNow-150/Danskin-Now-M (1).webp",
+      "image02": "../images/Ropa/Buzos/Caja-03/M-DanskinNow-150/Danskin-Now-M (2).webp",
+      "image03": "../images/Ropa/Buzos/Caja-03/M-DanskinNow-150/Danskin-Now-M (3).webp"
+    },
+    "calificacion": 9.7
+  },
+  {
+    "id": "152",
+    "cantidadDisponible": 1,
+    "categoria": "buzos",
+    "linea": "primera-linea",
+    "nombre": "Buzo - Greys Anatomy",
+    "stock": true,
+    "talle": { "talle": "M", "detalle": "buzos-m" },
+    "precio": 12499,
+    "description": "Buzo de calidad PREMIUM, excelente algodón, frizado.",
+    "marca": "Nubeland",
+    "img": {
+      "image01": "../images/Ropa/Buzos/Caja-03/M-Grey'sAnatomy-152/Grey'sAnatomy-M (1).webp",
+      "image02": "../images/Ropa/Buzos/Caja-03/M-Grey'sAnatomy-152/Grey'sAnatomy-M (2).webp",
+      "image03": "../images/Ropa/Buzos/Caja-03/M-Grey'sAnatomy-152/Grey'sAnatomy-M (3).webp"
+    },
+    "calificacion": 9.7
+  },
+  {
+    "id": "153",
+    "cantidadDisponible": 1,
+    "categoria": "camperas",
+    "linea": "primera-linea",
+    "nombre": "Campera Goodie - americana",
+    "stock": true,
+    "talle": { "talle": "S", "detalle": "buzos-s" },
+    "precio": 14499,
+    "description": "Buzo de calidad PREMIUM, excelente algodón, frizado.",
+    "marca": "Goodiellow",
+    "img": {
+      "image01": "../images/Ropa/Buzos/Caja-03/S-Goodielow-153/S-Goodielow (1).webp",
+      "image02": "../images/Ropa/Buzos/Caja-03/S-Goodielow-153/S-Goodielow (2).webp",
+      "image03": "../images/Ropa/Buzos/Caja-03/S-Goodielow-153/S-Goodielow (3).webp"
+    },
+    "calificacion": 9.7
+  },
+  {
+    "id": "154",
+    "cantidadDisponible": 1,
+    "categoria": "buzos",
+    "linea": "primera-linea",
+    "nombre": "Buzo Long Beach Island",
+    "stock": true,
+    "talle": { "talle": "L", "detalle": "buzos-l" },
+    "precio": 16499,
+    "description": "Buzo de calidad PREMIUM, excelente algodón, frizado.",
+    "marca": "Beach Island",
+    "img": {
+      "image01": "../images/Ropa/Buzos/Caja-03/L-LongBeachIsland-154/L-LongBeachIsland (1).webp",
+      "image02": "../images/Ropa/Buzos/Caja-03/L-LongBeachIsland-154/L-LongBeachIsland (2).webp",
+      "image03": "../images/Ropa/Buzos/Caja-03/L-LongBeachIsland-154/L-LongBeachIsland (3).webp"
+    },
+    "calificacion": 9.7
+  },
+  {
+    "id": "155",
+    "cantidadDisponible": 1,
+    "categoria": "camperas",
+    "linea": "primera-linea",
+    "nombre": "Campera NAUTICA",
+    "stock": true,
+    "talle": { "talle": "M", "detalle": "buzos-m" },
+    "precio": 18499,
+    "description": "Buzo de calidad PREMIUM, excelente algodón, frizado.",
+    "marca": "NAUTICA",
+    "img": {
+      "image01": "../images/Ropa/Buzos/Caja-03/M-CamperaNautica-156/M-CamperaNautica (1).webp",
+      "image02": "../images/Ropa/Buzos/Caja-03/M-CamperaNautica-156/M-CamperaNautica (2).webp",
+      "image03": "../images/Ropa/Buzos/Caja-03/M-CamperaNautica-156/M-CamperaNautica (3).webp"
+    },
+    "calificacion": 9.7
+  },
+  {
+    "id": "156",
+    "cantidadDisponible": 1,
+    "categoria": "buzos",
+    "linea": "primera-linea",
+    "nombre": "Buzo Port Company",
+    "stock": true,
+    "talle": { "talle": "L", "detalle": "buzos-l" },
+    "precio": 16999,
+    "description": "Buzo de calidad PREMIUM, excelente algodón, frizado.",
+    "marca": "Port Company",
+    "img": {
+      "image01": "../images/Ropa/Buzos/Caja-03/L-PortCompany-157/L-PortCompany (1).webp",
+      "image02": "../images/Ropa/Buzos/Caja-03/L-PortCompany-157/L-PortCompany (2).webp",
+      "image03": "../images/Ropa/Buzos/Caja-03/L-PortCompany-157/L-PortCompany (3).webp"
+    },
+    "calificacion": 9.7
+  },
+  {
+    "id": "157",
+    "cantidadDisponible": 1,
+    "categoria": "buzos",
+    "linea": "primera-linea",
+    "nombre": "Buzo Gildan Premium Exercise",
+    "stock": true,
+    "talle": { "talle": "L", "detalle": "buzos-l" },
+    "precio": 17499,
+    "description": "Buzo de calidad PREMIUM, excelente algodón, frizado.",
+    "marca": "Gildan",
+    "img": {
+      "image01": "../images/Ropa/Buzos/Caja-03/L-Gildan-Premium-158/L-Gildan-Premium (1).webp",
+      "image02": "../images/Ropa/Buzos/Caja-03/L-Gildan-Premium-158/L-Gildan-Premium (2).webp",
+      "image03": "../images/Ropa/Buzos/Caja-03/L-Gildan-Premium-158/L-Gildan-Premium (3).webp"
+    },
+    "calificacion": 9.7
+  },
+  {
+    "id": "158",
+    "cantidadDisponible": 1,
+    "categoria": "buzos",
+    "linea": "primera-linea",
+    "nombre": "Buzo The North Face",
+    "stock": true,
+    "talle": { "talle": "L", "detalle": "buzos-l" },
+    "precio": 18499,
+    "description": "Buzo de calidad PREMIUM, excelente algodón, frizado.",
+    "marca": "The North Face",
+    "img": {
+      "image01": "../images/Ropa/Buzos/Caja-03/L-theNorthFace-159/L-theNorthFace (1).webp",
+      "image02": "../images/Ropa/Buzos/Caja-03/L-theNorthFace-159/L-theNorthFace (2).webp",
+      "image03": "../images/Ropa/Buzos/Caja-03/L-theNorthFace-159/L-theNorthFace (3).webp"
+    },
+    "calificacion": 9.7
+  },
+  {
+    "id": "159",
+    "cantidadDisponible": 1,
+    "categoria": "buzos",
+    "linea": "primera-linea",
+    "nombre": "Buzo Mossy",
+    "stock": true,
+    "talle": { "talle": "L", "detalle": "buzos-l" },
+    "precio": 16499,
+    "description": "Buzo de calidad PREMIUM, excelente algodón, frizado.",
+    "marca": "Mossy OAC",
+    "img": {
+      "image01": "../images/Ropa/Buzos/Caja-03/L-MossyOAK-160/L-MossyOAK (1).webp",
+      "image02": "../images/Ropa/Buzos/Caja-03/L-MossyOAK-160/L-MossyOAK (2).webp",
+      "image03": "../images/Ropa/Buzos/Caja-03/L-MossyOAK-160/L-MossyOAK (3).webp"
+    },
+    "calificacion": 9.7
+  },
+  {
+    "id": "160",
+    "cantidadDisponible": 1,
+    "categoria": "camperas",
+    "linea": "primera-linea",
+    "nombre": "Campera ECKO",
+    "stock": true,
+    "talle": { "talle": "L", "detalle": "camperas-l" },
+    "precio": 15599,
+    "description": "Buzo de calidad PREMIUM, excelente algodón, frizado.",
+    "marca": "Ecko unltd",
+    "img": {
+      "image01": "../images/Ropa/Buzos/Caja-03/L-EckoUnltd-161/L-EckoUnltd (1).webp",
+      "image02": "../images/Ropa/Buzos/Caja-03/L-EckoUnltd-161/L-EckoUnltd (2).webp",
+      "image03": "../images/Ropa/Buzos/Caja-03/L-EckoUnltd-161/L-EckoUnltd (3).webp"
+    },
+    "calificacion": 9.7
+  },
+  {
+    "id": "160",
+    "cantidadDisponible": 1,
+    "categoria": "buzos",
+    "linea": "primera-linea",
+    "nombre": "Buzo Minions",
+    "stock": true,
+    "talle": { "talle": "L", "detalle": "buzos-l" },
+    "precio": 12499,
+    "description": "Buzo de calidad PREMIUM, excelente algodón, frizado.",
+    "marca": "Nubeland",
+    "img": {
+      "image01": "../images/Ropa/Buzos/Caja-03/L-Nublend-Minions-162/L-Nublend-Minions (1).webp",
+      "image02": "../images/Ropa/Buzos/Caja-03/L-Nublend-Minions-162/L-Nublend-Minions (2).webp",
+      "image03": "../images/Ropa/Buzos/Caja-03/L-Nublend-Minions-162/L-Nublend-Minions (3).webp"
     },
     "calificacion": 9.7
   }

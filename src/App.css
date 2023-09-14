@@ -37,9 +37,18 @@ body {
   background-color: var(--background-body);
 }
 
+#home,
+.cart-section {
+  position: relative;
+  z-index: 100;}
+
 .body-sections {
   position: relative;
   padding: 0 10px;
+}
+
+.show-rigth, .show-left{
+  display: none;
 }
 
 /* first section */
@@ -51,17 +60,23 @@ body {
   gap: 1em;
 }
 
-.Dr-mario-FirstSection::after {
-  content: url("../../images/isotipo blanco.png");
+.Dr-mario-FirstSection::before {
+  content: "";
+  background-image: url("../../images/isotipo blanco.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:-50%;
   position: absolute;
-  display: block;
-  overflow: hidden;
-  width: 500px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 500px;
   opacity: 0.05;
   z-index: -1;
 }
 
 .header__Dr-mario-FirstSection {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 1em;
@@ -195,8 +210,26 @@ body {
 /* cart */
 
 .input-button__Cart {
+  /* position: absolute;
+  width: 0;
+  height: 0;
+  top: -5200px;
+  overflow: hidden;
+  z-index: -1; */
   position: absolute;
-  top: -200px;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.input-button__Cart:checked{
+  color: transparent;
+  background-color: transparent;
 }
 
 .button__Cart {
@@ -644,6 +677,8 @@ body {
 /* orden de compra */
 
 .orden-compra {
+  position: relative;
+  z-index: 1000;
   width: 95%;
   margin: 0 auto 50px;
   margin-top: 20px;
@@ -1140,16 +1175,101 @@ body {
   text-align: center;
 }
 
+/* oferta */
+
+.oferta{
+  position: absolute;
+  z-index: 1000;
+  top: -45px;
+  right: -5.2em;
+  display: none;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+  font-weight: bold;
+  background-color: #b31313;
+  box-shadow: 2px 2px 0px #dbdbdb, 0 0 15px #040a0f;
+  border-radius: 0px 10px;
+  transform: rotate(15deg);
+  cursor: pointer;
+}
+
+.oferta:hover ~ .texto__oferta{
+  top: -35px;
+  opacity: 1;
+
+}
+
+
+.oferta::after{
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  border-radius: 50%;
+  content: "";
+  width: .65em;
+  height: .65em;
+  box-shadow: 2px 0 0 #dbdbdb inset;
+  background-color: #202b38;
+}
+
+.oferta::before{
+position: absolute;
+z-index: 10;
+content: "";
+height: 1.2em;
+width: .5em;
+border-radius: 10px;
+border-left: 5px solid white;
+border-bottom: 1px solid white;
+top: -.1em;
+left: -10px;
+transform: rotate(-90deg);
+}
+
+.texto__oferta{
+  position: absolute;
+  z-index: -1;
+  top: -50px;
+  right: 8px;
+  width: 14em;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px #040a0f;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  opacity: 0;
+  transition: top ease-in-out .2s, opacity ease-in-out .2s;
+}
+
+.texto__oferta > span {
+  font-weight: bold;
+  color: #efdb43;
+  text-transform: uppercase;
+}
+
+
 @media screen and (min-width: 1200px) {
   #home,
   .cart-section {
-    position: relative;
-    z-index: 100;
     max-width: 1000px;
     margin: auto;
   }
   .subtitle__Dr-mario-FirstSection {
     text-align: center;
+  }
+
+  .Dr-mario-FirstSection::before{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:top ;
+    height: 100vh;
+
   }
 
   .title-mario-FirstSection {
@@ -1273,4 +1393,18 @@ body {
     transform:  scale(1.5);
   }
 
+
+  /* guia talles */
+  .guia-talles-conteiner {
+    padding: 20px 25%;
+  }
+
+  .img-conteiner__guia-talles-conteiner {
+    height: 18em;
+  }
+
+
+  .oferta, .texto__oferta{
+    display: flex;
+  }
 }

@@ -1,5 +1,17 @@
-/* eslint-disable no-fallthrough */
-export const cartInitalState = JSON.parse(localStorage.getItem('cart-Dr-Mario-Shop')) || []
+import Products from '../mocks/Products-01.json'
+import { actualizarProductos } from '../Logic/UpdateProduct'
+
+const localstoragekeyCART = 'cart-Dr-Mario-Shop'
+const cartInital = JSON.parse(localStorage.getItem(localstoragekeyCART)) || []
+// actualiza productos
+const UpdateProduct = (initalState) => {
+  if (initalState?.length > 0) {
+    return actualizarProductos(localstoragekeyCART, Products)
+  }
+  return initalState
+}
+
+export const cartInitalState = UpdateProduct(cartInital)
 
 export const updateLocalStorage = (state) => {
   localStorage.setItem('cart-Dr-Mario-Shop', JSON.stringify(state))
@@ -76,12 +88,10 @@ export const cartReducer = (state, action) => {
         return newState
       }
     }
-
     case 'CLEAR_CART': {
       updateLocalStorage([])
       return []
     }
   }
-
   return state
 }

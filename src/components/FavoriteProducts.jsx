@@ -1,31 +1,39 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import { useProductsVisited } from '../Hooks/useProductsVisited'
 import { useCart } from '../Hooks/useCart'
 import CardProduct from './CardProduct'
 import { RigthArrow } from './Icons'
+import { SliderButtons } from './SliderButtons'
 
-export default function FavoriteProducts () {
+export default function FavoriteProducts() {
   const { productosFavoritos } = useProductsVisited()
   const { addToCart, removeFromCart, cart } = useCart()
+  const scrollSection = useRef()
 
   const checkProductInCart = (product) => {
     const check = cart.some((item) => item.id === product.id)
     return check
   }
 
-  const ckeckProductFavorite = product => {
-    const checkFavoriteProduct = productosFavoritos.some((item) => item.id === product.id)
+  const ckeckProductFavorite = (product) => {
+    const checkFavoriteProduct = productosFavoritos.some(
+      (item) => item.id === product.id
+    )
     return checkFavoriteProduct
   }
 
   return (
     <>
       {productosFavoritos.length > 0 && (
-        <section className="productos-recientes__container">
+        <section className='productos-recientes__container'>
           <h2>
-            Productos Favoritos <RigthArrow/>
+            Productos Favoritos <RigthArrow />
           </h2>
-          <ul className="container-productos__productos-recientes">
+          <SliderButtons scrollSection={scrollSection} />
+          <ul
+            className='container-productos__productos-recientes'
+            ref={scrollSection}
+          >
             {productosFavoritos
               .map((product) => {
                 const isProductInCart = checkProductInCart(product)

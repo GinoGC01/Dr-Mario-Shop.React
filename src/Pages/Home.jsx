@@ -9,16 +9,16 @@ import productosIniciales from '../mocks/Products-01.json'
 import DrMarioFirstSection from '../components/DrMarioFirstSection'
 import { Footer } from '../components/Footer'
 
-export default function Home () {
+export default function Home() {
   const [products] = useState(productosIniciales)
   const { filterProducts } = useFilters()
 
   const filteredProducts = filterProducts(products)
   return (
     <>
-      <main className="animate__animated animate__fadeIn" id="home">
+      <main className='animate__animated animate__fadeIn' id='home'>
         <DrMarioFirstSection />
-        <section className="body-sections">
+        <section className='body-sections'>
           <Cart />
           <FavoriteProducts />
           <ProductsVisited />
@@ -26,7 +26,7 @@ export default function Home () {
           <Products products={filteredProducts} />
         </section>
       </main>
-        <Footer />
+      <Footer />
     </>
   )
 }
