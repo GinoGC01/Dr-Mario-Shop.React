@@ -1,12 +1,13 @@
 import { useCallback, useContext, useId } from 'react'
 import { FilterContext } from '../Context/FilterContext'
 
-export function useFilters () {
+export function useFilters() {
   const CATEGORY_ID = useId()
   const PRICE_ID = useId()
   const MARCA_ID = useId()
   const TALLE_ID = useId()
   const SEARCH_ID = useId()
+  const STOCK_ID = useId()
 
   const { filters, setFilters } = useContext(FilterContext)
 
@@ -23,7 +24,10 @@ export function useFilters () {
             product.categoria === filters.category) &&
           (filters.marca === 'all' || product.marca === filters.marca) &&
           (filters.talle === 'all' || product.talle.talle === filters.talle) &&
-          (filters.search === 'all' || nameProduct.includes(filters.search) || marcaProduct.includes(filters.search) || categoryProduct.includes(filters.search))
+          (filters.search === 'all' ||
+            nameProduct.includes(filters.search) ||
+            marcaProduct.includes(filters.search) ||
+            categoryProduct.includes(filters.search))
         )
       })
     },
@@ -36,6 +40,7 @@ export function useFilters () {
     MARCA_ID,
     TALLE_ID,
     SEARCH_ID,
+    STOCK_ID,
     filterProducts,
     filters,
     setFilters

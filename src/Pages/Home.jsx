@@ -10,7 +10,10 @@ import DrMarioFirstSection from '../components/DrMarioFirstSection'
 import { Footer } from '../components/Footer'
 
 export default function Home() {
-  const [products] = useState(productosIniciales)
+  const priductosStock = productosIniciales.filter(
+    (product) => product.stock === true
+  )
+  const [products] = useState(priductosStock)
   const { filterProducts } = useFilters()
 
   const filteredProducts = filterProducts(products)
